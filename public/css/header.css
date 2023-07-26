@@ -114,7 +114,7 @@ h1.studio {
     width: 100%;
   }
   nav.navbar {
-    width: 100vw;
+    width: 100%;
     margin: 0 auto; /* Выравниваем по центру */
     background: white;
   }
