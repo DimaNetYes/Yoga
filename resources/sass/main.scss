@@ -1,0 +1,57 @@
+#container19 {
+    width: 100vw;
+    margin-left: 0;
+    margin-right: 0;
+    padding-left: 0;
+    padding-right: 0;
+    // max-height: 570px; /* Set the maximum height to 570px */
+    overflow: hidden; /* Hide any content that overflows the container's height */
+  }
+  
+  .style1 {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 100%; /* Fill the entire available height inside #container19 */
+  }
+  
+  /* Optional: To add some spacing between the elements */
+  .style1 h2 {
+    margin-bottom: 1rem;
+  }
+  
+  /* Ensure the image maintains its aspect ratio and covers the container */
+  .style1 img {
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
+  }
+
+  @media (min-width: 1025px) {
+    #container19 {
+      max-height: 570px; /* Set the maximum height to 480px for smaller screens */
+    }
+}
+
+  @media (max-width: 1024px) and (min-width: 768px) {
+    #container19 {
+      max-height: 480px; /* Set the maximum height to 480px for smaller screens */
+    }
+}
+
+@media (max-width: 767px)  {
+    .col-lg-6,
+    .col-md-6,
+    .col-sm-12 {
+        max-height: 300px;
+        overflow: hidden; /* Hide any content that overflows the columns' height */
+    }
+    
+    /* Set the maximum height of .custom-height to 300px for mobile screens */
+    .custom-height {
+        height: 300px;
+        overflow: hidden; /* Hide any content that overflows the div's height */
+    }
+  }
+
+  

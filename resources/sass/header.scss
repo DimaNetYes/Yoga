@@ -13,9 +13,10 @@
     background-size: cover;
     background-position: center;
     background-attachment: fixed;
-    height: 100vh;
+    min-height: 100vh;
     position: relative;
     color: white;
+    
 }
 .t-cover__filter{
     top: 0;
@@ -60,7 +61,7 @@ nav.navbar {
     max-width: 1160px;
     height: 12vh;
     margin: 0 auto; /* Выравниваем по центру */
-    backgrund: white;
+    background: white;
 }
 
 #navbarNav {
@@ -68,7 +69,7 @@ nav.navbar {
 }
 
 ul.navbar-nav li {
-    margin-right: 25px; /* Добавляем правый отступ 15px между элементами */
+    margin-right: 15px; /* Добавляем правый отступ 15px между элементами */
     font-size: 15px;
 
     a{
@@ -102,6 +103,7 @@ h1.studio {
 
 .praktik {
     margin-top: 60px;
+    margin-bottom: 30px;
 }
 
 .praktik span{

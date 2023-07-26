@@ -11,7 +11,7 @@
   background-size: cover;
   background-position: center;
   background-attachment: fixed;
-  height: 100vh;
+  min-height: 100vh;
   position: relative;
   color: white;
 }
@@ -59,7 +59,7 @@ nav.navbar {
   max-width: 1160px;
   height: 12vh;
   margin: 0 auto; /* Выравниваем по центру */
-  backgrund: white;
+  background: white;
 }
 
 #navbarNav {
@@ -67,7 +67,7 @@ nav.navbar {
 }
 
 ul.navbar-nav li {
-  margin-right: 25px; /* Добавляем правый отступ 15px между элементами */
+  margin-right: 15px; /* Добавляем правый отступ 15px между элементами */
   font-size: 15px;
 }
 ul.navbar-nav li a {

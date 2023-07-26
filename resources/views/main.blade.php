@@ -24,6 +24,7 @@
     <link href="{{ asset('css/app.css') }}" rel="stylesheet">
      <!-- Styles -->
      <link href="{{ asset('css/header.css') }}" rel="stylesheet">
+     <link href="{{ asset('css/main.css') }}" rel="stylesheet">
      <style>
         
         
@@ -40,7 +41,7 @@
     </main>
 
     <footer>
-        
+        @include('main/footer')
     </footer>
 
 </wrapper>
