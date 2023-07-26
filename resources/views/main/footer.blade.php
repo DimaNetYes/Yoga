@@ -20,3 +20,31 @@
         adjustCoverFilterHeight();
     });
 </script>
+
+<script>
+  $(document).ready(function() {
+    // Function to slide-up and show the content on scroll
+    function showOnScroll() {
+      var windowHeight = $(window).height();
+      var scrollTop = $(window).scrollTop();
+
+      $(".custom-height .style1").each(function() {
+        var offsetTop = $(this).offset().top;
+        var isVisible = $(this).hasClass("visible");
+
+        if (!isVisible && (offsetTop < windowHeight + scrollTop -150)) {
+          $(this).addClass("visible").css("opacity", 1);
+        }
+      });
+    }
+
+    // Initial check when the page loads
+    showOnScroll();
+
+    // Check on scroll
+    $(window).scroll(function() {
+      showOnScroll();
+    });
+  });
+</script>
+

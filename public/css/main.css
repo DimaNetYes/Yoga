@@ -7,6 +7,11 @@
   overflow: hidden; /* Hide any content that overflows the container's height */
 }
 
+.custom-height .style1 {
+  opacity: 0;
+  transition: opacity 1s ease;
+}
+
 .style1 {
   display: flex;
   flex-direction: column;

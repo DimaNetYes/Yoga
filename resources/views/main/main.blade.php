@@ -1,5 +1,5 @@
 
-<div id="container19" class="style4">
+<div id="container19" class="style4 show-animation">
     <div class="row ">
       <!-- Image Column -->
       <div class="col-lg-6 col-md-6 col-sm-12 order-lg-1 order-md-1 order-sm-2 order-1 custom-height">
@@ -47,7 +47,7 @@
   </div>
 
 
-
+  
 
 
 
