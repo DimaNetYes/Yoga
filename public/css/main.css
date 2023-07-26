@@ -27,6 +27,13 @@
   height: 100%;
 }
 
+.custom-height .style1 {
+  display: flex !important;
+  flex-direction: column !important;
+  justify-content: center !important;
+  height: 100% !important;
+}
+
 @media (min-width: 1025px) {
   #container19 {
     max-height: 570px; /* Set the maximum height to 480px for smaller screens */

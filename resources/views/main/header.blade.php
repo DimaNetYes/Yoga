@@ -65,7 +65,7 @@
                     <div class="t181__descr t-descr t-descr_lg praktik" style="color: #e8e8e8;">
                         <span>Unser Studio steht allen offen, die Harmonie und Ausgeglichenheit suchen. Unabhängig von Ihrem Erfahrungsstand bieten wir Kurse an, die Ihnen helfen, im Yoga zu wachsen und sich weiterzuentwickeln.“ Unsere Praktiken helfen Ihnen dabei, der Hektik des Alltags völlig zu entfliehen und sich auf eine Reise durch Ihr eigenes Universum zu begeben. Hier finden Sie Harmonie mit der Natur, der Welt und sich selbst.</span>
                     </div>
-                    <div style="margin-top: 60px;">
+                    <div style="margin-top: 60px; margin-bottom: 30px;">
                        <!-- Use Bootstrap classes for the buttons -->
                         <div class="t-btnwrapper d-flex flex-column flex-md-row ">
                             <a href="/timetable" target="" class="btn btn-primary btn-lg btn-block mb-3 mb-md-0 mr-md-3" >ZEITPLAN ANZEIGEN</a>
