@@ -40,12 +40,22 @@
     #container19 {
       max-height: 570px; /* Set the maximum height to 480px for smaller screens */
     }
+
+    .custom-height {
+        max-height: 570px; /* Set the maximum height to 570px for larger screens */
+        overflow: hidden; /* Hide any content that overflows the div's height */
+      }
 }
 
   @media (max-width: 1024px) and (min-width: 768px) {
     #container19 {
       max-height: 480px; /* Set the maximum height to 480px for smaller screens */
     }
+
+    .custom-height {
+        max-height: 480px; /* Set the maximum height to 480px for medium-sized screens */
+        overflow: hidden; /* Hide any content that overflows the div's height */
+      }
 }
 
 @media (max-width: 767px)  {
