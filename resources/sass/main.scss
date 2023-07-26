@@ -44,6 +44,27 @@
     transition: opacity 1s ease;
   }
 
+  /* Add CSS transitions for the slide-up effect */
+.custom-height .style1 {
+    opacity: 0;
+    transform: translateY(30px);
+    transition: opacity 1s ease, transform 0.5s ease;
+  }
+  
+  .custom-height .style1.visible {
+    opacity: 1;
+    transform: translateY(0);
+  }
+
+  /* Add CSS transitions for the image size change */
+.custom-height .style1 img {
+    transition: transform 1s ease;
+  }
+  
+  .custom-height .style1.visible img {
+    transform: scale(1.2);
+  }
+
   @media (min-width: 1025px) {
     #container19 {
       max-height: 570px; /* Set the maximum height to 480px for smaller screens */
