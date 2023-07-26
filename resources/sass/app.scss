@@ -1,0 +1,30 @@
+// Fonts
+@import url('https://fonts.googleapis.com/css?family=Nunito');
+
+// Variables
+@import 'variables';
+
+// Bootstrap
+@import '~bootstrap/scss/bootstrap';
+
+@font-face {
+    font-family: 'Klavika Medium';
+    src: url('../../public/fonts/KlavikaDisplay-Black.woff2') format('woff2'), /* указывайте путь к файлу Klavika Medium .woff2 */
+        
+}
+
+@font-face {
+    font-family: 'Noto Sans';
+    src: url('../../public/fonts/NotoSans.woff2') format('woff2'), /* указывайте путь к файлу Noto Sans .woff2 */
+    /* Дополнительные форматы файла шрифта (если есть) */
+}
+
+@font-face {
+    font-family: 'Noto Sans Bold';
+    src: url('../../public/fonts/NotoSans-Bold.woff2') format('woff2'), /* указывайте путь к файлу Noto Sans .woff2 */
+    /* Дополнительные форматы файла шрифта (если есть) */
+}
+
+body {
+    font-family: 'Noto Sans', sans-serif;
+}

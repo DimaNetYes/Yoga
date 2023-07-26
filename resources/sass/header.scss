@@ -1,0 +1,132 @@
+*{
+    border: 0px;
+    // font-size: 0px;
+    margin: 0px;
+    padding: 0px;
+}
+
+
+/* Стили для header */
+#container26 {
+    
+    background-image: url("/img/zyro-image.png"); /* Change the URL to point to the local image */
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    height: 100vh;
+    position: relative;
+    color: white;
+}
+.t-cover__filter{
+    top: 0;
+     left: 0;
+     height: 739px;
+     background-image: -webkit-linear-gradient(top, rgba(26, 73, 87, 0.9), rgba(25, 92, 112, 0.7));
+     position: absolute;
+     width: 100%;
+     z-index: 0;
+}
+
+#img1 {
+    position: relative;
+    left: 40px;
+     padding: 5px;
+     border-radius: 50%;
+}
+
+/* Стили для текста внутри header */
+#text03, #text26 {
+    opacity: 1;
+    transform: none;
+    text-align: center;
+}
+
+/* Стили для списка и его элементов (если необходимо) */
+ul.style1 {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+ul.style1 li {
+    margin: 0 10px;
+}
+
+nav.navbar {
+    width: 90vw;
+    max-width: 1160px;
+    height: 12vh;
+    margin: 0 auto; /* Выравниваем по центру */
+    backgrund: white;
+}
+
+#navbarNav {
+    justify-content:center;
+}
+
+ul.navbar-nav li {
+    margin-right: 25px; /* Добавляем правый отступ 15px между элементами */
+    font-size: 15px;
+
+    a{
+        color: black;
+    }
+  }
+
+.mobilePhone_Email {
+    position: relative;
+    right: 20px;
+}
+
+.sp-black {
+    font-size: 14px;
+    color: black;
+}
+
+.i-black {
+    margin-right: 10px;
+    font-size: 14px;
+    color: black; 
+}
+.instagram{
+    font-size: 24px;
+}
+
+h1.studio {
+    font-size: 42px;
+     margin-top: 40px;
+}
+
+.praktik {
+    margin-top: 60px;
+}
+
+.praktik span{
+    font-weight: 400; 
+    font-size:20px; 
+}
+
+
+@media (max-width: 1124px) {
+    /* Уменьшаем ширину header на маленьких экранах */
+    header {
+        width: 100%;
+    }
+
+    nav.navbar {
+        width: 100vw;
+        margin: 0 auto; /* Выравниваем по центру */
+        background: white;
+    }
+
+    h1.studio {
+        font-size: 42px;
+         margin-top: 40px;
+    }
+   
+}
+
+
