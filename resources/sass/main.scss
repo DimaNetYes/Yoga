@@ -15,11 +15,28 @@
     flex-direction: column;
     justify-content: center;
     height: 100%; /* Fill the entire available height inside #container19 */
+
+    p{
+        color: rgba(0,0,0,0.302);
+        
+        letter-spacing: 0.025rem;
+        width: calc(100% + 0.025rem);
+        font-size: 1.125em;
+        line-height: 1.875;
+        font-weight: 400;
+    }
   }
   
   /* Optional: To add some spacing between the elements */
   .style1 h2 {
     margin-bottom: 1rem;
+    color: #000000;
+    /* font-family: 'Klavika Medium', sans-serif; */
+    letter-spacing: 0.025rem;
+    width: calc(100% + 0.025rem);
+    font-size: 1.95em;
+    line-height: 1.875;
+    font-weight: 400;
   }
   
   /* Ensure the image maintains its aspect ratio and covers the container */
@@ -36,6 +53,17 @@
     flex-direction: column;
     justify-content: center;
     height: 100%;
+  }
+
+  .custom-height .style1 .frame {
+    display: block;
+    background-image: none;
+    background-size: 100% 100%;
+    background-position: left top;
+    background-repeat: no-repeat;
+    width: 100%;
+    height: 31rem;
+    
   }
 
         //  for show effect animation
@@ -65,6 +93,55 @@
     transform: scale(1.2);
   }
 
+    // fullsize elements
+.container.style1 {
+    display: flex;
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+    background-color: transparent;
+}
+.container.style1:not(:first-child) {
+    margin-top: 7rem;
+}
+.container.style1:not(:last-child) {
+    margin-bottom: 6rem;
+}
+.container {
+    position: relative;
+}
+
+#image11{
+    border-radius: 0 !important;
+    max-width: 100vw;
+    position: relative;
+    width: 100%;
+    left: 50%;
+    margin-left: -50vw;
+    right: auto;
+
+    span.frame{
+        display: block;
+        background-image: none;
+        background-size: 100% 100%;
+        background-position: left top;
+        background-repeat: no-repeat;
+        height: 39.625rem;
+
+        img{
+            opacity: 1;
+            height: 100% !important;
+            object-fit: cover;
+            object-position: center;
+            width: 100% !important;
+            border-radius: 0 !important;
+            max-width: 100%;
+            vertical-align: top;
+        }
+    }
+}
+
+
   @media (min-width: 1025px) {
     #container19 {
       max-height: 570px; /* Set the maximum height to 480px for smaller screens */
@@ -74,6 +151,11 @@
         max-height: 570px; /* Set the maximum height to 570px for larger screens */
         overflow: hidden; /* Hide any content that overflows the div's height */
       }
+
+    #container01 .wrapper{
+        width: 70%;
+        margin: 0 auto;
+    }
 }
 
   @media (max-width: 1024px) and (min-width: 768px) {
@@ -85,21 +167,71 @@
         max-height: 480px; /* Set the maximum height to 480px for medium-sized screens */
         overflow: hidden; /* Hide any content that overflows the div's height */
       }
+
+    .custom-height .style1 .frame {
+        background-image: none;
+        background-size: 100% 100%;
+        background-position: left top;
+        background-repeat: no-repeat;
+        width: 100%;
+        height: 33rem;
+
+    }
+
+    #image11{
+    span.frame{
+        height: 35rem;
+    }
+    }
 }
 
-@media (max-width: 767px)  {
+@media (max-width: 767px) and (min-width: 481px)  {
     .col-lg-6,
     .col-md-6,
     .col-sm-12 {
-        max-height: 300px;
+        min-height: 300px;
         overflow: hidden; /* Hide any content that overflows the columns' height */
     }
     
     /* Set the maximum height of .custom-height to 300px for mobile screens */
     .custom-height {
-        height: 300px;
+        min-height: 300px;
         overflow: hidden; /* Hide any content that overflows the div's height */
     }
-  }
 
-  
+    #container01 {
+        margin-top: 5rem;
+    }
+
+    #container01 > .wrapper > .inner{ 
+        padding: 0px 2rem;
+    }
+
+    #image11{
+        span.frame{
+            height: 25rem;
+        }
+    }
+}
+
+
+@media (max-width: 480px)  {
+
+    .custom-height .style1 .frame {
+        display: block;
+        height: 20rem;
+        overflow: hidden;
+      }
+
+    #container01 {
+        margin-top: 4rem;
+    }
+
+    #image11{
+        span.frame{
+            height: 20rem;
+            
+        }
+    }
+
+}
