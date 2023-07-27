@@ -17,7 +17,7 @@
   color: rgba(0, 0, 0, 0.302);
   letter-spacing: 0.025rem;
   width: calc(100% + 0.025rem);
-  font-size: 1.125em;
+  font-size: 1.225em;
   line-height: 1.875;
   font-weight: 400;
 }
@@ -29,7 +29,7 @@
   /* font-family: 'Klavika Medium', sans-serif; */
   letter-spacing: 0.025rem;
   width: calc(100% + 0.025rem);
-  font-size: 1.95em;
+  font-size: 2.15em;
   line-height: 1.875;
   font-weight: 400;
 }
@@ -164,6 +164,10 @@
     width: 100%;
     height: 33rem;
   }
+  #container01 .wrapper {
+    width: 85%;
+    margin: 0 auto;
+  }
   #image11 span.frame {
     height: 35rem;
   }
@@ -197,7 +201,11 @@
     overflow: hidden;
   }
   #container01 {
-    margin-top: 4rem;
+    margin-top: 3rem;
+    margin-bottom: 3rem;
+  }
+  #container01 > .wrapper {
+    padding: 0px 5px;
   }
   #image11 span.frame {
     height: 20rem;
