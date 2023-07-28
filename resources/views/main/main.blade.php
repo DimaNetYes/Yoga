@@ -47,7 +47,7 @@
   <div id="container01" class="style1 container default">
         <div class="wrapper">
             <div class="inner">
-                <h2 id="text17" class="style1">Wir entscheiden uns für einen bewussten Lebensstil!</h2>
+                <h2 id="text17" class="">Wir entscheiden uns für einen bewussten Lebensstil!</h2>
                 <p id="text49" class="style3">«Lass Frieden mit der Natur, Frieden mit den Menschen und Frieden in dir sein»</p>
             </div>
         </div>
@@ -59,20 +59,21 @@
         </span>
     </div>
 
-    <div id="container01" class="style1 container default">
+    <div id="container02" class="style1 container default">
         <div class="wrapper">
             <div class="inner">
-                <h2 id="text17" class="style1">Das erste Studio seiner Art in Salzwedel.</h2>
+                <h2 id="text17" class="">Das erste Studio seiner Art in Salzwedel.</h2>
                 <p id="text49" class="style3">Bei uns kannst du dich vom Yoga-Anfänger zum erfahrenen Praktiker und weiter zum Yogalehrer entwickeln</p>
             </div>
         </div>
     </div>
 
-    <div id="image11" class="style2 image">
+    <div id="image11_2" class="style2 image">
         <span class="frame deferred">
             <img src="/img/logo3.png" data-src="done" alt="" style="opacity: 1;">
         </span>
     </div>
+
 
 
 

@@ -21,6 +21,7 @@
     });
 </script>
 
+          <!-- Animation for elements slide, pop up... -->
 <script>
   $(document).ready(function() {
     // Function to slide-up and show the content on scroll
@@ -28,7 +29,7 @@
       var windowHeight = $(window).height();
       var scrollTop = $(window).scrollTop();
 
-      $(".custom-height .style1").each(function() {
+      $(".custom-height .style1, #container01, #image11, #container02, #image11_2").each(function() {
         var offsetTop = $(this).offset().top;
         var isVisible = $(this).hasClass("visible");
 
