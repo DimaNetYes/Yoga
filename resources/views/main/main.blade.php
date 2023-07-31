@@ -78,7 +78,7 @@
 
     
     <div id="slider-container" class="style3 container columns" style="opacity: 1; transform: none;">
-        
+    <h2 class='newsH2'>Veranstaltungen und Neuigkeiten</h2>
         <div class="wrapper1">
        
             <div class="inner1">

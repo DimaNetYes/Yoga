@@ -214,7 +214,19 @@ $guters: 2rem;
     justify-content: center;
     align-items: center;
     flex-direction: column;
-    margin-top: 5rem;
+    margin-top: 6rem;
+}
+
+#slider-container .newsH2 {
+    margin-top: 2rem;
+    /* display: none; */
+    
+    color: #000000;
+    letter-spacing: 0.025rem;
+    
+    font-size: 2.75em;
+    font-weight: 700;
+    margin-bottom: 50px;
 }
 
 .wrapper1 {
@@ -257,6 +269,9 @@ $guters: 2rem;
   width: calc(100% + 0.025rem);
   font-size: 2.15em;
   font-weight: 400;
+  overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
 }
 
 .slider-item p {
