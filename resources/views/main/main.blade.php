@@ -109,10 +109,11 @@
             @endforeach
             </div>
         </div>
+        <!-- Вставляем кнопки "Previous" и "Next" для пролистывания остальных слайдов -->
+     <button class="slick-prev">&#9668;</button>
+    <button class="slick-next">&#9658;</button>
     </div>
-     <!-- Вставляем кнопки "Previous" и "Next" для пролистывания остальных слайдов -->
-     <button class="slick-prev">Previous</button>
-    <button class="slick-next">Next</button>
+     
    
 
              

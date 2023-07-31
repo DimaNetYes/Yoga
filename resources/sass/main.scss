@@ -227,6 +227,7 @@ $guters: 2rem;
 
 .inner1 {
   display: flex; /* Добавляем flex-свойство для расположения .slider-item в ряд */
+  padding-left: 70px;
 }
 
 /* Добавляем стили для анимации переходов */
@@ -250,15 +251,46 @@ $guters: 2rem;
 }
 
 .slider-item h2 {
-  margin-bottom: 70px; /* Устанавливаем отступ между заголовком и картинкой */
+  margin-bottom: 65px; /* Устанавливаем отступ между заголовком и картинкой */
+  color: #000000;
+  letter-spacing: 0.025rem;
+  width: calc(100% + 0.025rem);
+  font-size: 2.15em;
+  font-weight: 400;
 }
 
 .slider-item p {
   margin-top: 65px; /* Устанавливаем отступ между картинкой и параграфом */
+  color: rgba(0, 0, 0, 0.302);
+  letter-spacing: 0.025rem;
+  width: calc(100% + 0.025rem);
+  font-size: 1.225em;
+  line-height: 1.875;
+  font-weight: 400;
+  word-wrap: break-word;
 }
 
 
-                                                        
+        /* Стили для кнопок "Previous" и "Next" */
+.slick-prev,
+.slick-next {
+  font-size: 24px; /* Размер символов стрелок */
+  color: #000; /* Цвет стрелок */
+  background: none; /* Убираем фон у кнопок */
+  border: none; /* Убираем границу у кнопок */
+  cursor: pointer; /* Делаем курсор при наведении на кнопки указателем */
+  position: absolute; /* Позиционируем кнопки абсолютно внутри родительского контейнера */
+  top: 50%; /* Размещаем кнопки на вертикальном центре родительского контейнера */
+  transform: translateY(-50%); /* Корректируем позицию кнопок по вертикали */
+}
+
+.slick-prev {
+  left: 0; /* Кнопка "Previous" размещается слева */
+}
+
+.slick-next {
+  right: 0; /* Кнопка "Next" размещается справа */
+}                                                
 
 
 /* Добавляем стили для анимации переходов и скрытия элементов */
