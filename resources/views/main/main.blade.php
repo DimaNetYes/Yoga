@@ -55,7 +55,7 @@
 
     <div id="image11" class="style2 image">
         <span class="frame deferred">
-            <img src="/img/logo3.png" data-src="done" alt="" style="opacity: 1;">
+            <img src="/img/style.png" data-src="done" alt="" style="opacity: 1;">
         </span>
     </div>
 
@@ -74,7 +74,45 @@
         </span>
     </div>
 
+                                 <!-- news_slider.blade.php -->
 
+    
+    <div id="slider-container" class="style3 container columns" style="opacity: 1; transform: none;">
+        
+        <div class="wrapper">
+       
+            <div class="inner">
+            
+            @foreach($newsArticles as $article)
+                @if($loop->index < 2)
+                    <div class="slider-item">
+                        <h2 id="" class="">{{ $article->title }}</h2>
+                        <div class="style3 image" data-position="center" style="opacity: 1; transform: none;">
+                            <span  class="frame deferred news" style="background-image: none; background-size: 100% 100%; background-position: left top; background-repeat: no-repeat;">
+                                <img src="{{ $article->image_url }}" data-src="done" alt="{{ $article->title }}" style="opacity: 1;">
+                            </span>
+                        </div>
+                        <p id="" class="style3">{{ $article->content }}</p>
+                    </div>
 
+                @else
+                    <div class="slider-item hidden">
+                        <h2 id="" class="">{{ $article->title }}</h2>
+                        <div class="style3 image" data-position="center" style="opacity: 1; transform: none;">
+                            <span  class="frame deferred news" style="background-image: none; background-size: 100% 100%; background-position: left top; background-repeat: no-repeat;">
+                                <img src="{{ $article->image_url }}" data-src="done" alt="{{ $article->title }}" style="opacity: 1;">
+                            </span>
+                        </div>
+                        <p id="" class="style3">{{ $article->content }}</p>
+                    </div>
+                @endif
+            @endforeach
+            </div>
+        </div>
+    </div>
+     <!-- Вставляем кнопки "Previous" и "Next" для пролистывания остальных слайдов -->
+     <button class="slick-prev">Previous</button>
+    <button class="slick-next">Next</button>
+   
 
-
+             

@@ -1,3 +1,5 @@
+$guters: 2rem;
+
 #container19 {
     max-width: 100vw;
     margin-left: 0;
@@ -201,6 +203,87 @@
       }
   }
 }
+
+
+                                        // NEWS ELEMENTS
+  .hidden{
+    display: none;
+  }      
+  #slider-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin-top: 5rem;
+}
+
+.wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  margin-top: 2rem; /* Отступ между элементами */
+}
+
+.inner {
+  display: flex; /* Добавляем flex-свойство для расположения .slider-item в ряд */
+}
+
+/* Добавляем стили для анимации переходов */
+.slider-item {
+    width: 360px; /* Задаем ширину слайда */
+    
+    overflow: hidden; /* Ограничиваем размеры изображения внутри слайда */
+    transition: transform 0.5s;
+    margin-right: 1rem; /* Отступ между слайдами */
+    margin-right: 105px; /* Устанавливаем расстояние между слайдами */
+}
+
+.slider-item:last-child {
+    margin-right: 0; /* Убираем отступ для последнего слайда */
+}
+
+.slider-item img {
+    width: 360px; /* Задаем ширину изображения внутри слайда */
+    height: 350px; /* Задаем высоту изображения внутри слайда (высота всегда будет 350px) */
+    object-fit: fill; 
+}
+
+.slider-item h2 {
+  margin-bottom: 70px; /* Устанавливаем отступ между заголовком и картинкой */
+}
+
+.slider-item p {
+  margin-top: 65px; /* Устанавливаем отступ между картинкой и параграфом */
+}
+
+
+                                                        
+
+
+/* Добавляем стили для анимации переходов и скрытия элементов */
+
+
+
+.slider-item {
+  transition: transform 0.5s;
+}
+
+.animate-in {
+  transform: translateX(0);
+}
+
+.animate-out-left {
+  transform: translateX(-100%);
+}
+
+.animate-out-right {
+  transform: translateX(100%);
+}
+
+
+                          //END NEWS Elements
+
 
 
   @media (min-width: 1025px) {
