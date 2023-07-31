@@ -79,9 +79,9 @@
     
     <div id="slider-container" class="style3 container columns" style="opacity: 1; transform: none;">
         
-        <div class="wrapper">
+        <div class="wrapper1">
        
-            <div class="inner">
+            <div class="inner1">
             
             @foreach($newsArticles as $article)
                 @if($loop->index < 2)
