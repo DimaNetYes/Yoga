@@ -8,6 +8,7 @@ use App\Http\Controllers\TaskController;
 use App\Http\Controllers\PriceController;
 use App\Http\Controllers\CourseController;
 use App\Http\Controllers\MainController;
+use App\Http\Controllers\MapController;
 
 /*
 |--------------------------------------------------------------------------
@@ -63,4 +64,5 @@ Route::get('/tasks', [TaskController::class, '']);
 Route::get('/price', [PriceController::class, 'show']);
 
 Route::get('/course', [CourseController::class, 'show']);
-
+                  //MAP MAP MAP
+Route::get('/map', [MapController::class, 'showMap']);
