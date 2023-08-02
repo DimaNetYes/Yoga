@@ -367,7 +367,7 @@
     margin: 0 auto;
   }
 }
-@media (max-width: 1200px) {
+@media (max-width: 1200px) and (min-width: 992px) {
   .Map__El {
     text-align: center;
   }
@@ -412,9 +412,6 @@
     height: 35rem;
   }
   /* Стили для мобильных устройств */
-  .Map__El {
-    text-align: center;
-  }
   .map-container {
     padding-bottom: 50%;
   }
@@ -456,9 +453,6 @@
     height: 25rem;
   }
   /* Стили для мобильных устройств */
-  .Map__El {
-    text-align: center;
-  }
   .map-container {
     padding-bottom: 50%;
   }

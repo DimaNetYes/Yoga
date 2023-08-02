@@ -401,7 +401,7 @@ $guters: 2rem;
   }
 }
 
-@media (max-width: 1200px){
+@media (max-width: 1200px) and (min-width: 992px) {
             //MAP ELEMENTS
   .Map__El {
     text-align: center;
@@ -465,9 +465,7 @@ $guters: 2rem;
                             // MAPS AND INFO ELEMENTS
 
   /* Стили для мобильных устройств */
-  .Map__El {
-    text-align: center;
-  }
+ 
 
   .map-container {
     padding-bottom: 50%;
@@ -529,9 +527,7 @@ $guters: 2rem;
                         // MAPS AND INFO ELEMENTS
 
 /* Стили для мобильных устройств */
-.Map__El {
-  text-align: center;
-}
+
 
 .map-container {
   padding-bottom: 50%;
