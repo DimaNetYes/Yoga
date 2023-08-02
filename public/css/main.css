@@ -225,7 +225,7 @@
 
 .inner1 {
   display: flex; /* Добавляем flex-свойство для расположения .slider-item в ряд */
-  padding-left: 70px;
+  width: 100%;
 }
 
 /* Добавляем стили для анимации переходов */
@@ -235,6 +235,10 @@
   transition: transform 0.5s;
   margin-right: 1rem; /* Отступ между слайдами */
   margin-right: 105px; /* Устанавливаем расстояние между слайдами */
+}
+
+.slider-item:first-child {
+  margin-bottom: 3rem;
 }
 
 .slider-item:last-child {
@@ -307,6 +311,11 @@
 
 .animate-out-right {
   transform: translateX(100%);
+}
+
+.map-wrapper {
+  margin-top: 7rem;
+  margin-bottom: 4rem;
 }
 
 .map-container {
@@ -411,7 +420,24 @@
   #image11_2 span.frame {
     height: 35rem;
   }
+  .wrapper1 {
+    width: 100%;
+  }
+  .inner1 {
+    flex-direction: column;
+    padding-left: 0; /* Remove the left padding */
+    padding-left: 8rem;
+  }
+  /* Reset the margin and width of the slider items for the vertical layout */
+  .slider-item {
+    width: 100%; /* Set the width to 100% to take the full width of the container */
+    margin-right: 0; /* Remove the right margin */
+  }
   /* Стили для мобильных устройств */
+  .Map__El1 {
+    margin-top: 3rem;
+    padding-left: 7rem;
+  }
   .map-container {
     padding-bottom: 50%;
   }
@@ -452,7 +478,24 @@
   #image11_2 span.frame {
     height: 25rem;
   }
+  .wrapper1 {
+    width: 100%;
+  }
+  .inner1 {
+    flex-direction: column;
+    padding-left: 0; /* Remove the left padding */
+    padding-left: 4rem;
+  }
+  /* Reset the margin and width of the slider items for the vertical layout */
+  .slider-item {
+    width: 100%; /* Set the width to 100% to take the full width of the container */
+    margin-right: 0; /* Remove the right margin */
+  }
   /* Стили для мобильных устройств */
+  .Map__El1 {
+    margin-top: 3rem;
+    padding-left: 2rem;
+  }
   .map-container {
     padding-bottom: 50%;
   }
@@ -461,6 +504,13 @@
   }
   .info__info {
     font-size: 16px;
+  }
+  .map-container {
+    width: 90vw;
+    height: 60vh;
+    position: relative;
+    overflow: hidden;
+    margin: 0 auto;
   }
 }
 @media (max-width: 480px) {
@@ -488,5 +538,39 @@
   }
   #image11_2 span.frame {
     height: 20rem;
+  }
+  .wrapper1 {
+    width: 100%;
+  }
+  .inner1 {
+    flex-direction: column;
+    padding-left: 0; /* Remove the left padding */
+  }
+  /* Reset the margin and width of the slider items for the vertical layout */
+  .slider-item {
+    width: 100%; /* Set the width to 100% to take the full width of the container */
+    margin-right: 0; /* Remove the right margin */
+  }
+  .slider-item img {
+    width: 100%; /* Set the image width to 100% to make it responsive */
+    height: auto; /* Allow the image height to adjust proportionally */
+  }
+  /* Adjust the font size for smaller screens */
+  .slider-item h2 {
+    font-size: 1.75em;
+  }
+  .slider-item p {
+    font-size: 1em;
+  }
+  .Map__El1 {
+    margin-top: 3rem;
+    padding-left: 3rem;
+  }
+  .map-container {
+    width: 85vw;
+    height: 40vh;
+    position: relative;
+    overflow: hidden;
+    margin: 0 auto;
   }
 }

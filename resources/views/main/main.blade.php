@@ -118,7 +118,7 @@
 
                                      <!-- MAPS AND INFO ELEMENT -->
 
- <div class="container my-5">
+ <div class="container map-wrapper">
         <div class="row">
             <div class="col-12 col-lg-6 col-md-12 Map__El">
                 <!-- Карта -->
@@ -126,7 +126,7 @@
                     <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d2409.47253104764!2d11.151745000000002!3d52.849889000000005!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47afad3c062e369f%3A0x7844941ac34ca6a2!2sBurgstra%C3%9Fe%2075%2C%2029410%20Salzwedel!5e0!3m2!1sru!2sde!4v1690889070242!5m2!1sru!2sde" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
                 </div>
             </div>
-            <div class="col-12 col-lg-6 col-md-12 Map__El">
+            <div class="col-12 col-lg-6 col-md-12 Map__El Map__El1">
                 <!-- Информация -->
                 <div>
                     <div class="unsere"><strong><span class="info__adresse">Unsere Adresse</span></strong></div>

@@ -235,11 +235,13 @@ $guters: 2rem;
   align-items: center;
   flex-direction: column;
   margin-top: 2rem; /* Отступ между элементами */
+  
 }
 
 .inner1 {
   display: flex; /* Добавляем flex-свойство для расположения .slider-item в ряд */
-  padding-left: 70px;
+  
+  width: 100%;
 }
 
 /* Добавляем стили для анимации переходов */
@@ -250,6 +252,10 @@ $guters: 2rem;
     transition: transform 0.5s;
     margin-right: 1rem; /* Отступ между слайдами */
     margin-right: 105px; /* Устанавливаем расстояние между слайдами */
+}
+
+.slider-item:first-child {
+   margin-bottom: 3rem;
 }
 
 .slider-item:last-child {
@@ -333,6 +339,12 @@ $guters: 2rem;
 
 
                 // MAPS AND INFO ELEMENTS
+.map-wrapper {
+  margin-top: 7rem;
+  margin-bottom: 4rem;
+}
+
+
 .map-container {
   width: 550px;
   height: 370px;
@@ -461,11 +473,34 @@ $guters: 2rem;
           height: 35rem;
       }
     }
+                            //NEWS ELEMENTS
+    .wrapper1 {
+      width: 100%;
+    }
+
+    .inner1 {
+      flex-direction: column;
+      padding-left: 0; /* Remove the left padding */
+      padding-left: 8rem;
+    }
+  
+    /* Reset the margin and width of the slider items for the vertical layout */
+    .slider-item {
+      width: 100%; /* Set the width to 100% to take the full width of the container */
+      margin-right: 0; /* Remove the right margin */
+    }
+                          
+
+                            //END NEWS ELEMENTS
 
                             // MAPS AND INFO ELEMENTS
 
   /* Стили для мобильных устройств */
  
+  .Map__El1 {
+    margin-top: 3rem;
+    padding-left: 7rem;
+  }
 
   .map-container {
     padding-bottom: 50%;
@@ -524,10 +559,32 @@ $guters: 2rem;
   }
 
 
+                       // NEWS ELEMENTS
+    .wrapper1 {
+    width: 100%;
+  }
+
+  .inner1 {
+    flex-direction: column;
+    padding-left: 0; /* Remove the left padding */
+    padding-left: 4rem;
+  }
+
+  /* Reset the margin and width of the slider items for the vertical layout */
+  .slider-item {
+    width: 100%; /* Set the width to 100% to take the full width of the container */
+    margin-right: 0; /* Remove the right margin */
+  }
+  //END NEWS ELEMENTS
+
                         // MAPS AND INFO ELEMENTS
 
 /* Стили для мобильных устройств */
 
+.Map__El1 {
+  margin-top: 3rem;
+  padding-left: 2rem;
+}
 
 .map-container {
   padding-bottom: 50%;
@@ -541,6 +598,14 @@ $guters: 2rem;
   font-size: 16px;
 }
                          //END MAPS AND INFO ELEMENTS
+                            //MAP ELEMENTS
+  .map-container {
+  width: 90vw;
+  height: 60vh;
+  position: relative;
+  overflow: hidden;
+  margin: 0 auto;
+}
 }
 
 
@@ -583,5 +648,50 @@ $guters: 2rem;
             
         }
     }
+
+                            // NEWS ELEMENTS
+    .wrapper1 {
+      width: 100%;
+    }
+
+    .inner1 {
+      flex-direction: column;
+      padding-left: 0; /* Remove the left padding */
+    }
+  
+    /* Reset the margin and width of the slider items for the vertical layout */
+    .slider-item {
+      width: 100%; /* Set the width to 100% to take the full width of the container */
+      margin-right: 0; /* Remove the right margin */
+    }
+
+    .slider-item img {
+      width: 100%; /* Set the image width to 100% to make it responsive */
+      height: auto; /* Allow the image height to adjust proportionally */
+    }
+  
+    /* Adjust the font size for smaller screens */
+    .slider-item h2 {
+      font-size: 1.75em;
+    }
+  
+    .slider-item p {
+      font-size: 1em;
+    }
+                            //END NEWS ELEMENTS
+
+
+                          // Map ELEMENTS
+.Map__El1 {
+  margin-top: 3rem;
+  padding-left: 3rem;
+}
+.map-container {
+  width: 85vw;
+  height: 40vh;
+  position: relative;
+  overflow: hidden;
+  margin: 0 auto;
+}
 
 }
