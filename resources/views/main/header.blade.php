@@ -6,7 +6,7 @@
     <div class=".wrapper__My" style="max-width: 1160px; margin:0 auto;">
     <nav class="navbar navbar-expand-lg navbar-white bg-white">
             <a class="navbar-brand" href="/">
-                <img src="img\logo4.png" alt="Логотип" height="75" id="img1">
+                <img src="img\Logo_GROW!.JPG" alt="GROW" height="75" id="img1">
             </a>
 
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">

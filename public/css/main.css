@@ -340,6 +340,14 @@
   margin-bottom: 30px;
 }
 
+.Map__El1 {
+  letter-spacing: 0.025rem;
+}
+.Map__El1 p {
+  color: rgba(0, 0, 0, 0.6);
+  font-weight: 600;
+}
+
 .info__adresse {
   font-size: 34px;
   color: #414042;

@@ -26,6 +26,7 @@
      <!-- Styles -->
      <link href="{{ asset('css/header.css') }}" rel="stylesheet">
      <link href="{{ asset('css/main.css') }}" rel="stylesheet">
+     <link href="{{ asset('css/footer.css') }}" rel="stylesheet">
      
 
 </head>

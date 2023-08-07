@@ -1,6 +1,60 @@
+<div class="footer">
+  <div class="container">
+    <div class="row">
+      <div class="footer__inline col-md-4">
+        <div class="footer__logo">
+          <img src="/img/logo_transit.png" alt="Logo">
+        </div>
+        
+        <div>
+          <img style="height:70px; margin-top: 20px;" src="/img/pay.png" alt="">
+        </div>
+      </div>
+      <div class="footer__inline col-md-4 footer__graph">
+        <span class="footer__work">Öffnungszeiten des Studios</span>
+        <div>
+          <span>Проведение занятий:</span>
+          <span>Будни - 7:00-22:00</span>
+          <span>Wochende - 7:00-22:00</span>
+        </div>
+      </div>
+      <div class="footer__inline col-md-4">
+        <span id="footer__phone">+49 1512 7138054</span>
+        <span id="footer__info">info@Grow.com</span>
+        <span id="footer__feedback"><a href=""> Оставить отзыв</a></span>
+        <div class="sociallinks__item_instagram footer__sociallinks_instagram">
+            <!-- Вставка SVG-изображения Instagram -->
+            <a href="https://www.instagram.com/yoga_im_atelier_salzwedel/" target="_blank"><img src="/img/icons8-instagram-bubbles-96.png" alt="Instagram Icon" style="width:35px"></a>
+            <a href="">
+                <img src="/img/icons8-whatsapp-color-32.png" alt="Whatsapp">
+            </a>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="row">
+    <div class="commerc">
+      <p class="col-md-6" id="p__footer_1">© 2023 "Grow! Yoga & Bildung"</p>
+      <p class="col-md-6" id="p__footer_2">Das Kopieren von Website-Materialien ist verboten</p>
+    </div>
+    <div></div>
+  </div>
+
+</div>
 
 
 
+
+
+<!-- 
+      <div class="social-links__footer">
+        <a href="">
+          <img src="/img/icons8-instagram-bubbles-32.png" alt="Instagram Icon">
+        </a>
+        <a href="">
+            <img src="/img/icons8-whatsapp-color-32.png" alt="Whatsapp">
+        </a>
+      </div> -->
 
 
 <!-- Idiot script that will change the height .t-cover__filter. Yes, im lazy -->

@@ -5,7 +5,7 @@
         <div class="col-lg-6 col-md-6 col-sm-12 order-lg-1 order-md-1 order-sm-2 order-1 custom-height">
         <div class="style1" data-position="center">
             <span class="frame deferred">
-            <img src="/img/test.jpg" data-src="done" alt="" class="img-fluid">
+            <img src="/img/IMG_7055.jpg" data-src="done" alt="" class="img-fluid">
             </span>
         </div>
         </div>
@@ -55,7 +55,7 @@
 
     <div id="image11" class="style2 image">
         <span class="frame deferred">
-            <img src="/img/style.png" data-src="done" alt="" style="opacity: 1;">
+            <img src="/img/IMG_7051.jpg" data-src="done" alt="" style="opacity: 1;">
         </span>
     </div>
 
@@ -70,7 +70,7 @@
 
     <div id="image11_2" class="style2 image">
         <span class="frame deferred">
-            <img src="/img/logo3.png" data-src="done" alt="" style="opacity: 1;">
+            <img src="/img/IMG_7070.jpg" data-src="done" alt="" style="opacity: 1;">
         </span>
     </div>
 
@@ -136,20 +136,18 @@
                         <strong>Telefonnummer:</strong>
                         <p>+49 1512 7138054</p>
                         <strong>Email:</strong>
-                        <p>info@Grow.com</p>
+                        <p style="color: rgb(52, 191, 234); font-weight: 400;">info@Grow.com</p>
                     </div>
                     <div class="sociallinks">
                         <div class="sociallinks__wrapper">
                             <div class="sociallinks__item_instagram">
                                 <!-- Вставка SVG-изображения Instagram -->
-                                <a href="">
-                                    <img src="/img/icons8-instagram-bubbles-32.png" alt="Instagram Icon">
-                                </a>
+                                <a href=""><img src="/img/icons8-instagram-bubbles-32.png" alt="Instagram Icon"></a>
                                 <a href="">
                                     <img src="/img/icons8-whatsapp-color-32.png" alt="Whatsapp">
                                 </a>
                             </div>
-                            <div class="sociallinks__item_whatsapp"><a href=""></a></div>
+                            
                         </div>
                     </div>
                 </div>
