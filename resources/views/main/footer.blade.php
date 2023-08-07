@@ -1,16 +1,16 @@
 <div class="footer">
   <div class="container">
     <div class="row">
-      <div class="footer__inline col-md-4">
+      <div class="footer__inline col-lg-4 col-md-12">
         <div class="footer__logo">
           <img src="/img/logo_transit.png" alt="Logo">
         </div>
         
         <div>
-          <img style="height:70px; margin-top: 20px;" src="/img/pay.png" alt="">
+          <img style="height:70px; margin-top: 20px;" src="/img/pay.png" alt="visa mastercard" class="footer__visa">
         </div>
       </div>
-      <div class="footer__inline col-md-4 footer__graph">
+      <div class="footer__inline col-lg-4 col-md-12 footer__graph">
         <span class="footer__work">Öffnungszeiten des Studios</span>
         <div>
           <span>Проведение занятий:</span>
@@ -18,7 +18,7 @@
           <span>Wochende - 7:00-22:00</span>
         </div>
       </div>
-      <div class="footer__inline col-md-4">
+      <div class="footer__inline col-lg-4 col-md-12">
         <span id="footer__phone">+49 1512 7138054</span>
         <span id="footer__info">info@Grow.com</span>
         <span id="footer__feedback"><a href=""> Оставить отзыв</a></span>
@@ -34,8 +34,8 @@
   </div>
   <div class="row">
     <div class="commerc">
-      <p class="col-md-6" id="p__footer_1">© 2023 "Grow! Yoga & Bildung"</p>
-      <p class="col-md-6" id="p__footer_2">Das Kopieren von Website-Materialien ist verboten</p>
+      <p class="col-lg-6 col-md-12" id="p__footer_1">© 2023 "Grow! Yoga & Bildung"</p>
+      <p class="col-lg-6 col-md-12" id="p__footer_2">Das Kopieren von Website-Materialien ist verboten</p>
     </div>
     <div></div>
   </div>
