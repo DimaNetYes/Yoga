@@ -140,7 +140,7 @@
 @media (max-width: 991px) {
   #footer__feedback {
     width: 100%;
-    text-align: center;
+    text-align: none;
   }
 }
 /* Adjust styles for mobile devices */

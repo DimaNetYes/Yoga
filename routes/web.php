@@ -66,3 +66,5 @@ Route::get('/price', [PriceController::class, 'show']);
 Route::get('/course', [CourseController::class, 'show']);
                   //MAP MAP MAP
 Route::get('/map', [MapController::class, 'showMap']);
+
+Route::get('/slick', function () {return view('slick');});
