@@ -12,15 +12,16 @@
 </div>
 
 <script>
-$(document).ready(function() {
-  $('.slider-container').slick({
-    // Slick options
-    dots: false,
-    autoplay: true,
-    slidesToShow: 2,
-    autoplaySpeed: 2000
-  });
-});
+    $(document).ready(function() {
+        $('.slider-container').slick({
+            // Slick options
+            dots: false,
+            autoplay: true,
+            slidesToShow: 2,
+            margin: 80,
+            
+        });
+    });
 </script>
 
 

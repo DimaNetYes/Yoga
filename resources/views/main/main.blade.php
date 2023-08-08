@@ -84,28 +84,18 @@
             <div class="inner1">
             
             @foreach($newsArticles as $article)
-                @if($loop->index < 2)
-                    <div class="slider-item">
-                        <h2 id="" class="">{{ $article->title }}</h2>
-                        <div class="style3 image" data-position="center" style="opacity: 1; transform: none;">
-                            <span  class="frame deferred news" style="background-image: none; background-size: 100% 100%; background-position: left top; background-repeat: no-repeat;">
-                                <img src="{{ $article->image_url }}" data-src="done" alt="{{ $article->title }}" style="opacity: 1;">
-                            </span>
-                        </div>
-                        <p id="" class="style3">{{ $article->content }}</p>
+                
+                <div class="slider-item">
+                    <h2 id="" class="">{{ $article->title }}</h2>
+                    <div class="style3 image d-flex justify-content-center align-items-center" data-position="center" style="opacity: 1; transform: none;">
+                        <span  class="frame deferred news" style="background-image: none; background-size: 100% 100%; background-position: left top; background-repeat: no-repeat;">
+                            <img src="{{ $article->image_url }}" data-src="done" alt="{{ $article->title }}" style="opacity: 1;" alt={{ $article->title }}>
+                        </span>
                     </div>
+                    <p id="" class="style3">{{ $article->content }}</p>
+                </div>
 
-                @else
-                    <div class="slider-item hidden">
-                        <h2 id="" class="">{{ $article->title }}</h2>
-                        <div class="style3 image" data-position="center" style="opacity: 1; transform: none;">
-                            <span  class="frame deferred news" style="background-image: none; background-size: 100% 100%; background-position: left top; background-repeat: no-repeat;">
-                                <img src="{{ $article->image_url }}" data-src="done" alt="{{ $article->title }}" style="opacity: 1;">
-                            </span>
-                        </div>
-                        <p id="" class="style3">{{ $article->content }}</p>
-                    </div>
-                @endif
+               
             @endforeach
             </div>
         </div>
@@ -113,6 +103,8 @@
         <button class="slick-prev">&#9668;</button>
         <button class="slick-next">&#9658;</button>
     </div>
+
+
      
                                 <!-- END NEWS Elements -->
 
@@ -142,9 +134,9 @@
                         <div class="sociallinks__wrapper">
                             <div class="sociallinks__item_instagram">
                                 <!-- Вставка SVG-изображения Instagram -->
-                                <a href=""><img src="/img/icons8-instagram-bubbles-32.png" alt="Instagram Icon"></a>
+                                <a href="https://www.instagram.com/yoga_im_atelier_salzwedel/"><img src="/img/icons8-instagram.svg" alt="Instagram Icon"></a>
                                 <a href="">
-                                    <img src="/img/icons8-whatsapp-color-32.png" alt="Whatsapp">
+                                    <img src="/img/icons8-whatsapp.svg" alt="Whatsapp">
                                 </a>
                             </div>
                             

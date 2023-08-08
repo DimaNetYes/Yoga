@@ -24,9 +24,9 @@
         <span id="footer__feedback"><a href=""> Оставить отзыв</a></span>
         <div class="sociallinks__item_instagram footer__sociallinks_instagram">
             <!-- Вставка SVG-изображения Instagram -->
-            <a href="https://www.instagram.com/yoga_im_atelier_salzwedel/" target="_blank"><img src="/img/icons8-instagram-bubbles-96.png" alt="Instagram Icon" style="width:35px"></a>
+            <a href="https://www.instagram.com/yoga_im_atelier_salzwedel/" target="_blank"><img src="/img/icons8-instagram-96.svg" alt="Instagram Icon" class="footer__instagram"></a>
             <a href="">
-                <img src="/img/icons8-whatsapp-color-32.png" alt="Whatsapp">
+                <img src="/img/icons8-whatsapp(1).svg" alt="Whatsapp" class="footer__whatsapp">
             </a>
         </div>
       </div>

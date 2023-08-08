@@ -210,14 +210,15 @@ $guters: 2rem;
     display: none;
   }      
   #slider-container {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
+    // display: flex;
+    // justify-content: center;
+    // align-items: center;
+    // flex-direction: column;
     margin-top: 6rem;
 }
 
 #slider-container .newsH2 {
+    text-align: center;
     margin-top: 2rem;
     /* display: none; */
     
@@ -230,28 +231,29 @@ $guters: 2rem;
 }
 
 .wrapper1 {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-direction: column;
+  // display: flex;
+  // justify-content: center;
+  // align-items: center;
+  // flex-direction: column;
   margin-top: 2rem; /* Отступ между элементами */
   
 }
 
 .inner1 {
-  display: flex; /* Добавляем flex-свойство для расположения .slider-item в ряд */
-  
-  width: 100%;
+  // display: flex;
+  // justify-content: space-between;
+  // align-items: flex-start;
 }
 
 /* Добавляем стили для анимации переходов */
 .slider-item {
-    width: 360px; /* Задаем ширину слайда */
-    
+ 
+    padding: 0px;
+    /* Задаем ширину слайда */
     overflow: hidden; /* Ограничиваем размеры изображения внутри слайда */
     transition: transform 0.5s;
-    margin-right: 1rem; /* Отступ между слайдами */
-    margin-right: 105px; /* Устанавливаем расстояние между слайдами */
+    // margin-right: 1rem; /* Отступ между слайдами */
+    // margin-right: 105px; /* Устанавливаем расстояние между слайдами */
 }
 
 .slider-item:first-child {
@@ -266,10 +268,21 @@ $guters: 2rem;
     width: 360px; /* Задаем ширину изображения внутри слайда */
     height: 350px; /* Задаем высоту изображения внутри слайда (высота всегда будет 350px) */
     object-fit: fill; 
+     
 }
 
+// .slider-item:nth-child(odd) img:first-child{
+//   margin: 0 0 0 auto;
+// }
+
+// .slider-item:nth-child(odd) p {
+//     width: 360px;
+//     margin: 55px 0 0 auto;
+// }
+
 .slider-item h2 {
-  margin-bottom: 65px; /* Устанавливаем отступ между заголовком и картинкой */
+  margin-left: 6rem;
+  margin-bottom: 55px; /* Устанавливаем отступ между заголовком и картинкой */
   color: #000000;
   letter-spacing: 0.025rem;
   width: calc(100% + 0.025rem);
@@ -281,10 +294,11 @@ $guters: 2rem;
 }
 
 .slider-item p {
-  margin-top: 65px; /* Устанавливаем отступ между картинкой и параграфом */
+  margin-left: 5rem;
+  margin-top: 55px; /* Устанавливаем отступ между картинкой и параграфом */
   color: rgba(0, 0, 0, 0.302);
   letter-spacing: 0.025rem;
-  width: calc(100% + 0.025rem);
+  width: 360px;
   font-size: 1.225em;
   line-height: 1.875;
   font-weight: 400;
@@ -318,21 +332,21 @@ $guters: 2rem;
 
 
 
-.slider-item {
-  transition: transform 0.5s;
-}
+// .slider-item {
+//   transition: transform 0.5s;
+// }
 
-.animate-in {
-  transform: translateX(0);
-}
+// .animate-in {
+//   transform: translateX(0);
+// }
 
-.animate-out-left {
-  transform: translateX(-100%);
-}
+// .animate-out-left {
+//   transform: translateX(-100%);
+// }
 
-.animate-out-right {
-  transform: translateX(100%);
-}
+// .animate-out-right {
+//   transform: translateX(100%);
+// }
 
 
                           //END NEWS Elements
@@ -398,6 +412,18 @@ $guters: 2rem;
            //End MAPS AND INFO ELEMENTS
 
   
+}
+
+@media (min-width: 1300px) {
+  .slider-item {
+ 
+    padding: 0 60px;
+    /* Задаем ширину слайда */
+    overflow: hidden; /* Ограничиваем размеры изображения внутри слайда */
+    transition: transform 0.5s;
+    // margin-right: 1rem; /* Отступ между слайдами */
+    // margin-right: 105px; /* Устанавливаем расстояние между слайдами */
+}
 }
 
                             //END MAPS AND INFO ELEMENTS
@@ -490,13 +516,32 @@ $guters: 2rem;
     .inner1 {
       flex-direction: column;
       padding-left: 0; /* Remove the left padding */
-      padding-left: 8rem;
+      // padding-left: 8rem;
     }
   
     /* Reset the margin and width of the slider items for the vertical layout */
     .slider-item {
       width: 100%; /* Set the width to 100% to take the full width of the container */
       margin-right: 0; /* Remove the right margin */
+    }
+
+    .slider-item h2 {
+      margin-left: 0; 
+      margin-bottom: 50px;
+      font-size: 2.75em;
+      margin-top: 30px;
+      width: 100%;
+    }
+
+    .slider-item img {
+      width: 85vw;
+      height: 65vh;
+    }
+
+    .slider-item p {
+      font-size: 1.75em;
+      width: 100%;
+      margin-left: 0;
     }
                           
 
@@ -513,14 +558,26 @@ $guters: 2rem;
 
   .map-container {
     padding-bottom: 50%;
+     width: 100%; 
+    height: 500px;
+  }
+
+    .map-wrapper {
+      margin-top: 5rem;
+      margin-bottom: 4rem;
   }
 
   .info__adresse {
-    font-size: 28px;
+    font-size: 2.75em;
+    text-shadow: 1px 1px 4px #4e4b5b, 0 0 1em rgba(0, 0, 0, 0.125), 0 0 0.2em rgba(255, 255, 255, 0.15);
   }
 
-  .info__info {
-    font-size: 16px;
+  .info__info strong {
+    font-size: 1.75em;
+  }
+
+  .info__info p {
+    font-size: 1.35em;
   }
                           //END MAPS AND INFO ELEMENTS
 }
@@ -576,13 +633,28 @@ $guters: 2rem;
   .inner1 {
     flex-direction: column;
     padding-left: 0; /* Remove the left padding */
-    padding-left: 4rem;
+    // padding-left: 4rem;
   }
 
   /* Reset the margin and width of the slider items for the vertical layout */
   .slider-item {
     width: 100%; /* Set the width to 100% to take the full width of the container */
     margin-right: 0; /* Remove the right margin */
+  }
+
+  .slider-item h2 {
+    margin-left: 2rem;
+    margin-bottom: 50px;
+  }
+
+  .slider-item img {
+    width: 85vw;
+    height: 60vh;
+  }
+
+  .slider-item p {
+    margin-left: 2rem;
+    margin-top: 50px;
   }
   //END NEWS ELEMENTS
 
@@ -603,8 +675,12 @@ $guters: 2rem;
   font-size: 28px;
 }
 
+.info__info strong {
+  font-size: 20px;
+}
+
 .info__info {
-  font-size: 16px;
+  font-size: 18px;
 }
                          //END MAPS AND INFO ELEMENTS
                             //MAP ELEMENTS
@@ -615,6 +691,12 @@ $guters: 2rem;
   overflow: hidden;
   margin: 0 auto;
 }
+
+.map-wrapper {
+  margin-top: 2rem;
+  margin-bottom: 4rem;
+}
+
 }
 
 
@@ -682,10 +764,14 @@ $guters: 2rem;
     /* Adjust the font size for smaller screens */
     .slider-item h2 {
       font-size: 1.75em;
+      margin-left: 0px;
+      margin-bottom: 35px;
     }
   
     .slider-item p {
       font-size: 1em;
+      margin-left: 0;
+      margin-top: 35px;
     }
                             //END NEWS ELEMENTS
 
@@ -701,6 +787,10 @@ $guters: 2rem;
   position: relative;
   overflow: hidden;
   margin: 0 auto;
+}
+.map-wrapper {
+  margin-top: 3rem;
+  margin-bottom: 4rem;
 }
 
 }

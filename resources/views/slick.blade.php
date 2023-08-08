@@ -25,6 +25,11 @@
       max-width: 100%;
       height: auto;
     }
+    .slider-biba::after {
+      content: '';
+      display: block;
+      width: 50px; /* Измените это значение по вашему усмотрению */
+    }
   </style>
   
 </head>

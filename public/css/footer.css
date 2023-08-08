@@ -25,9 +25,8 @@
 .footer__inline span {
   display: block;
   margin-bottom: 10px;
-  font-size: 16px;
+  font-size: 18px;
   color: #ffffff;
-  font-size: 15px;
   line-height: 1.9;
   font-weight: 400;
   background-position: center center;
@@ -129,6 +128,14 @@
   vertical-align: middle;
   width: 100%;
   padding: 10px 30px;
+}
+
+.footer__whatsapp {
+  width: 50px;
+}
+
+.footer__instagram {
+  width: 50px;
 }
 
 @media (max-width: 1200px) and (min-width: 992px) {
