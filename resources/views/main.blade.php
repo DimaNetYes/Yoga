@@ -46,7 +46,7 @@
 
     <main>
         @include('main/main')
-       <!-- <x-mycomp> Здесь я могу использовать переменную</x-mycomp> -->
+       
         
     </main>
 

@@ -288,7 +288,7 @@
 /* Добавляем стили для анимации переходов и скрытия элементов */
 .map-wrapper {
   margin-top: 7rem;
-  margin-bottom: 4rem;
+  margin-bottom: 6rem;
 }
 
 .map-container {
@@ -449,7 +449,7 @@
   }
   .map-wrapper {
     margin-top: 5rem;
-    margin-bottom: 4rem;
+    margin-bottom: 6rem;
   }
   .info__adresse {
     font-size: 2.75em;
@@ -542,7 +542,7 @@
   }
   .map-wrapper {
     margin-top: 2rem;
-    margin-bottom: 4rem;
+    margin-bottom: 6rem;
   }
 }
 @media (max-width: 480px) {
@@ -611,6 +611,6 @@
   }
   .map-wrapper {
     margin-top: 3rem;
-    margin-bottom: 4rem;
+    margin-bottom: 6rem;
   }
 }
