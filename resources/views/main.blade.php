@@ -46,8 +46,7 @@
 
     <main>
         @include('main/main')
-       
-        
+
     </main>
 
     <footer>
