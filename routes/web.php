@@ -1,5 +1,6 @@
 <?php
 
+use App\Http\Controllers\CalendarController;
 use Illuminate\Support\Facades\Auth;
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\PostController;
@@ -70,4 +71,11 @@ Route::get('/map', [MapController::class, 'showMap']);
 Route::get('/slick', function () {return view('slick');});
                 //WIDGET
 Route::get('/widget', function() {return view('test/widget');} );
+
+                // Calendar
+Route::get('/calendar', 'CalendarController@showCalendar')->name('calendar.show');
+Route::get('/calendar/next', 'CalendarController@showNextMonth')->name('calendar.next');
+Route::get('/calendar/prev', 'CalendarController@showPreviousMonth')->name('calendar.prev');
+
+
 
