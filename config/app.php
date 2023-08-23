@@ -14,6 +14,7 @@ return [
     */
 
     'name' => env('APP_NAME', 'Laravel'),
+    'panel' => env('APP_PANEL', 'Admin Panel'),
 
     /*
     |--------------------------------------------------------------------------

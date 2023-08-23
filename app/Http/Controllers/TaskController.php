@@ -11,6 +11,6 @@ class TaskController extends Controller
     public function __construct()
     {
         $tasks = Task::all();
-        dd($tasks);    
+        //dd($tasks);    
     }
 }

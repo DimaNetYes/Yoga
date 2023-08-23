@@ -1,5 +1,8 @@
 <?php
 
+
+
+use App\Http\Controllers\Admin\EventsController;
 use App\Http\Controllers\CalendarController;
 use Illuminate\Support\Facades\Auth;
 use Illuminate\Support\Facades\Route;
@@ -8,8 +11,11 @@ use App\Http\Controllers\UserController;
 use App\Http\Controllers\TaskController;
 use App\Http\Controllers\PriceController;
 use App\Http\Controllers\CourseController;
+use App\Http\Controllers\HomeController;
 use App\Http\Controllers\MainController;
 use App\Http\Controllers\MapController;
+use App\Http\Controllers\SystemCalendarController;
+//use App\Http\Controllers\Admin\EventsController;
 
 /*
 |--------------------------------------------------------------------------
@@ -36,9 +42,21 @@ Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name
 
 });*/
 
+
                     //админка
-Route::group(['prefix' => 'admin', 'middleware' => ['auth', 'checkRole']], function () {
-    Route::get('/', function () {return view('admin.index');})->name('admin.index'); 
+Route::group(['prefix' => 'admin', 'as' => 'admin.',  'middleware' => ['auth', 'checkRole']], function () {
+     
+        Route::get('/', [HomeController::class, 'index'])->name('home');  
+
+                        //MAIN
+        Route::get('/main', function () {return view('admin.index');})->name('index');   
+
+                //CALENDAR
+    Route::get('system-calendar', [SystemCalendarController::class, 'index'])->name('systemCalendar');
+
+     // Events
+     Route::delete('events/destroy', [EventsController::class, 'massDestroy' ])->name('events.massDestroy');
+    Route::resource('events', EventsController::class);
 
     Route::get('/admin/index', function () {return view('admin.index');}); 
 
@@ -65,6 +83,8 @@ Route::get('/tasks', [TaskController::class, '']);
 Route::get('/price', [PriceController::class, 'show']);
 
 Route::get('/course', [CourseController::class, 'show']);
+
+
                   //MAP MAP MAP
 Route::get('/map', [MapController::class, 'showMap']);
                 //SLICK
@@ -73,9 +93,7 @@ Route::get('/slick', function () {return view('slick');});
 Route::get('/widget', function() {return view('test/widget');} );
 
                 // Calendar
-Route::get('/calendar', 'CalendarController@showCalendar')->name('calendar.show');
-Route::get('/calendar/next', 'CalendarController@showNextMonth')->name('calendar.next');
-Route::get('/calendar/prev', 'CalendarController@showPreviousMonth')->name('calendar.prev');
+//Route::get('/calendar', [SystemCalendarController::class, 'index'])->name('Systemcalendar.show');
 
 
 

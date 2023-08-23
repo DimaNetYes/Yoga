@@ -21,7 +21,7 @@ class UserController extends Controller
     public function index()
     {
         $this->users = DB::table('users')->take(5)->get();
-        dd($this->users);
+        //dd($this->users);
 
         return view('users.users', ['users' => $this->users]);
     }

@@ -49,35 +49,5 @@ class CalendarController extends Controller
         return view('test.calendar', ['calendarData' => $calendarData, 'events' => $events]);
     }*/
 
-    public function showCalendar()
-    {
-        $currentDate = Carbon::today();
-        $calendarData = $this->generateCalendarData($currentDate);
-
-        return view('test.calendar', compact('calendarData'));
-    }
-
-    public function showNextMonth(Request $request)
-    {
-        $currentDate = Carbon::parse($request->input('date'))->addMonth();
-        $calendarData = $this->generateCalendarData($currentDate);
-
-        return view('test.calendar-month', compact('calendarData'));
-    }
-
-    public function showPreviousMonth(Request $request)
-    {
-        $currentDate = Carbon::parse($request->input('date'))->subMonth();
-        $calendarData = $this->generateCalendarData($currentDate);
-
-        return view('test.calendar-month', compact('calendarData'));
-    }
-
-    private function generateCalendarData($date)
-    {
-        // Ваш код для генерации данных календаря
-    }
-
-
-
+    
 }

@@ -42,25 +42,25 @@
                     <a class="nav-link font-weight-bold text-uppercase  border-bottom border-primary" href="{{ route('admin.index') }}">Main</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link font-weight-bold text-uppercase  border-bottom border-primary" href="{{ route('courses.index') }}">Courses</a>
+                    <a class="nav-link font-weight-bold text-uppercase  border-bottom border-primary" href="{{ route('admin.courses.index') }}">Courses</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link font-weight-bold text-uppercase  border-bottom border-primary" href="{{ route('prices.index') }}">Prices</a>
+                    <a class="nav-link font-weight-bold text-uppercase  border-bottom border-primary" href="{{ route('admin.prices.index') }}">Prices</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link font-weight-bold text-uppercase  border-bottom border-primary" href="{{ route('courses.index') }}">Enrollments</a>
+                    <a class="nav-link font-weight-bold text-uppercase  border-bottom border-primary" href="{{ route('admin.courses.index') }}">Enrollments</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link font-weight-bold text-uppercase  border-bottom border-primary" href="{{ route('courses.index') }}">Schedule</a>
+                    <a class="nav-link font-weight-bold text-uppercase  border-bottom border-primary" href="{{ route('admin.courses.index') }}">Schedule</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link font-weight-bold text-uppercase  border-bottom border-primary" href="{{ route('courses.index') }}">Subscription</a>
+                    <a class="nav-link font-weight-bold text-uppercase  border-bottom border-primary" href="{{ route('admin.courses.index') }}">Subscription</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link font-weight-bold text-uppercase  border-bottom border-primary" href="{{ route('courses.index') }}">Task</a>
+                    <a class="nav-link font-weight-bold text-uppercase  border-bottom border-primary" href="{{ route('admin.courses.index') }}">Task</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link font-weight-bold text-uppercase  border-bottom border-primary" href="{{ route('courses.index') }}">User</a>
+                    <a class="nav-link font-weight-bold text-uppercase  border-bottom border-primary" href="{{ route('admin.courses.index') }}">User</a>
                 </li>
                 <!-- Добавьте ссылки на другие разделы админки -->
             </ul>

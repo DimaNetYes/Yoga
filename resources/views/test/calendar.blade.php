@@ -1,132 +1,53 @@
-<!DOCTYPE html>
-<html>
-<head>
-    <title>Calendar</title>
-    <link rel="stylesheet" href="styles.css">
-    <style>
-    
-        .calendar {
-        text-align: center;
-        margin: 20px;
-        }
+@extends('layouts.admin')
+@section('content')
 
-        table {
-            width: 100%;
-            border-collapse: collapse;
-        }
 
-        th, td {
-            padding: 10px;
-            border: 1px solid #ccc;
-        }
-
-        .day {
-            font-weight: bold;
-        }
-
-        .event {
-            background-color: #f2f2f2;
-            padding: 2px;
-        }
-
-</style>
-
-<script>
-     $(document).ready(function() {
-        $('a[href="{{ route('calendar.prev') }}"], a[href="{{ route('calendar.next') }}"]').on('click', function(e) {
-            e.preventDefault();
-            $.get($(this).attr('href'), function(data) {
-                $('.calendar').html(data);
-                console.log('sadf');
-            });
-        });
-    });
-</script>
-</head>
-<body>
-<div class="calendar">
-    <h1>My Calendar</h1>
-    <div>
-         <a href="{{ route('calendar.prev') }}">Previous Month</a>
-         <a href="{{ route('calendar.next') }}">Next Month</a>
+    <div style="margin-bottom: 10px;" class="row">
+        <div class="col-lg-12">
+            <a class="btn btn-success" href="{{ route("admin.events.create") }}">
+                {{ trans('global.add') }} {{ trans('cruds.event.title_singular') }}
+            </a>
+        </div>
     </div>
-    @foreach ($calendarData as $monthData)
-    <h2>{{ $monthData['month'] }}</h2>
-    <table>
-        <thead>
-            <tr>
-                <th>Sun</th>
-                <th>Mon</th>
-                <th>Tue</th>
-                <th>Wed</th>
-                <th>Thu</th>
-                <th>Fri</th>
-                <th>Sat</th>
-            </tr>
-        </thead>
-        <tbody>
-            @php
-                $week = 1;
-                $currentDayOfWeek = $monthData['days'][0]['date']->dayOfWeek;
-                
-            @endphp
-           
-            <tr>
-                            <!-- create empty td if month started not in monday -->
-                @for ($i = 0; $i < $currentDayOfWeek; $i++)
-                    <td></td>
-                @endfor
 
-                @foreach ($monthData['days'] as $dayData)
-                    <td>
-                        <span class="day">{{ $dayData['date']->day }}</span>
-                        @foreach ($dayData['events'] as $event)
-                            <div class="event">{{ $event->name }}</div>
-                        @endforeach
-                    </td>
+<h3 class="page-title">{{ trans('global.systemCalendar') }}</h3>
+<div class="card">
+    <div class="card-header">
+        {{ trans('global.systemCalendar') }}
+    </div>
 
-                    @php
-                        $currentDayOfWeek++;
-                        if ($currentDayOfWeek === 7) {
-                            $currentDayOfWeek = 0;
-                            echo '</tr>';
-                            if ($week < count($monthData['days']) / 7) {
-                                $week++;
-                                echo '<tr>';
-                            }
-                        }
-                    @endphp
-                @endforeach
+    <div class="card-body">
+        <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/fullcalendar/3.1.0/fullcalendar.min.css' />
 
-                @for ($i = $currentDayOfWeek; $i < 7; $i++)
-                    <td></td>
-                @endfor
-            </tr>
-        </tbody>
-    </table>
-@endforeach
+        <div id='calendar'></div>
 
+
+    </div>
 </div>
+@endsection
 
-
-
-
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.29.1/moment.min.js"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/fullcalendar/5.10.1/fullcalendar.min.js"></script>
-
+@section('scripts')
+@parent
+<script src='https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.17.1/moment.min.js'></script>
+<script src='https://cdnjs.cloudflare.com/ajax/libs/fullcalendar/3.1.0/fullcalendar.min.js'></script>
 <script>
-   
+    $(document).ready(function () {
+            // page is now ready, initialize the calendar...
+            // events={!! json_encode($events) !!};
+            // console.log(events);
+            $('#calendar').fullCalendar({
+                // put your options and callbacks here
+                events: {!! json_encode($events) !!},
+        eventRender: function(event, element) {
+            // Prevent default click behavior on the anchor tag
+            element.find('.fc-title a').click(function(e) {
+                e.preventDefault();
+            });
+        }
+                
 
 
-    $(document).ready(function() {
-        $('#calendar').fullCalendar({
-            events: {!! json_encode($events) !!},
-            // Другие настройки календаря
+            })
         });
-    });
 </script>
-
-
-</body>
-</html>
+@stop
