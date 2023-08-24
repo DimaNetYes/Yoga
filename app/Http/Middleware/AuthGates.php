@@ -35,6 +35,9 @@ class AuthGates
             Gate::define('event_edit', function (\App\Models\User $user) {
                 return $user->role === 1;
             });
+            Gate::define('event_delete', function (\App\Models\User $user) {
+                return $user->role === 1;
+            });
         }
 
         return $next($request);

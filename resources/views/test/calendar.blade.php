@@ -33,11 +33,13 @@
 <script>
     $(document).ready(function () {
             // page is now ready, initialize the calendar...
-            // events={!! json_encode($events) !!};
-            // console.log(events);
+             //$events = {!! json_encode($events) !!};
+             //console.log($events[0].start);
             $('#calendar').fullCalendar({
+                
                 // put your options and callbacks here
                 events: {!! json_encode($events) !!},
+                timeFormat: 'HH:mm',      //ОТВЕЧАЕТ ЗА ОТОБРАЖЕНИЕ ВРЕМЕНИ fullCalendar
         eventRender: function(event, element) {
             // Prevent default click behavior on the anchor tag
             element.find('.fc-title a').click(function(e) {

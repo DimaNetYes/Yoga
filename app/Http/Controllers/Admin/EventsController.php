@@ -52,6 +52,7 @@ class EventsController extends Controller
 
     public function update(UpdateEventRequest $request, Event $event)
     {
+        
         $event->update($request->all());
 
         return redirect()->route('admin.systemCalendar');
@@ -69,10 +70,11 @@ class EventsController extends Controller
     public function destroy(Event $event)
     {
         abort_if(Gate::denies('event_delete'), Response::HTTP_FORBIDDEN, '403 Forbidden');
-
+       
         $event->delete();
 
-        return back();
+        //return back();
+        return redirect()->route('admin.systemCalendar');
     }
 
     public function massDestroy(MassDestroyEventRequest $request)

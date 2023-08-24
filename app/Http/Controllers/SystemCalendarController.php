@@ -32,7 +32,7 @@ class SystemCalendarController extends Controller
                 if (!$crudFieldValue) {
                     continue;
                 }
-
+                
                 $events[] = [
                     'title' => trim($source['prefix'] . " " . $model->{$source['field']}
                         . " " . $source['suffix']),

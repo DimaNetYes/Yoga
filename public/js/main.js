@@ -24,7 +24,7 @@ $(document).ready(function () {
       format: 'YYYY-MM-DD HH:mm:ss',
       locale: 'en',
       sideBySide: true,
-      stepping: 30
+      stepping: 5
     })
   
     $('.timepicker').datetimepicker({

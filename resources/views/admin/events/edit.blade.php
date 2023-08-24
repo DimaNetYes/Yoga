@@ -69,10 +69,15 @@
                 <input type="hidden" name="recurrence" value="{{ $event->recurrence }}">
             @endif
             <div>
-                <input class="btn btn-danger" type="submit" value="{{ trans('global.save') }}">
+                <input class="btn btn-success" type="submit" value="{{ trans('global.save') }}">
+                
             </div>
         </form>
-
+        <form action="{{ route("admin.events.destroy", [$event->id]) }}" method="POST" onsubmit="return confirm('Are you sure you want to delete this event?');">
+            @csrf
+            @method('DELETE')
+            <input class="btn btn-danger" type="submit" value="{{ trans('global.delete') }}">
+        </form>
 
     </div>
 </div>

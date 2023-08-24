@@ -13,6 +13,7 @@ return [
     'edit'                                 => 'Edit',
     'emailVerificationSuccess'             => 'User email verified successfully',
     'entries'                              => 'Entries',
+    'delete'                               => 'Delete',
     'filterDate'                           => 'Filter by date',
     'forgot_password'                      => 'Forgot your password?',
     'home'                                 => 'Home',

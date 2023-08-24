@@ -59,7 +59,7 @@
                                 {{ $event->name ?? '' }}
                             </td>
                             <td>
-                                {{ $event->start_time ?? '' }}
+                            {{ $event->start_time ?? '' }}
                             </td>
                             <td>
                                 {{ $event->end_time ?? '' }}
