@@ -135,7 +135,7 @@
                             <div class="sociallinks__item_instagram">
                                 <!-- Вставка SVG-изображения Instagram -->
                                 <a href="https://www.instagram.com/yoga_im_atelier_salzwedel/" target="_blank"><img src="/img/icons8-instagram.svg" alt="Instagram Icon"></a>
-                                <a href="">
+                                <a href="https://wa.me/+4915127138054" target="_blank">
                                     <img src="/img/icons8-whatsapp.svg" alt="Whatsapp">
                                 </a>
                             </div>

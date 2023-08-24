@@ -3,6 +3,7 @@
 
 
 use App\Http\Controllers\Admin\EventsController;
+use App\Http\Controllers\Admin\NewsController;
 use App\Http\Controllers\CalendarController;
 use Illuminate\Support\Facades\Auth;
 use Illuminate\Support\Facades\Route;
@@ -62,10 +63,14 @@ Route::group(['prefix' => 'admin', 'as' => 'admin.',  'middleware' => ['auth', '
 
             //courses
     Route::resource('courses', CourseController::class);
-    Route::post('/courses', [CourseController::class, 'store'])->name('admin.courses.store');
+    Route::post('/courses', [CourseController::class, 'store'])->name('courses.store');
 
             //prices
     Route::resource('prices', PriceController::class);
+
+                //NEWS
+    Route::resource('news', NewsController::class);
+    Route::get('/news', [NewsController::class, 'index'])->name('news.index');
     
 });
 
@@ -95,5 +100,8 @@ Route::get('/widget', function() {return view('test/widget');} );
                 // Calendar
 //Route::get('/calendar', [SystemCalendarController::class, 'index'])->name('Systemcalendar.show');
 
+                //CALENDAR FOR USERS
+Route::get('calendar', [SystemCalendarController::class, 'show'])->name('calendar');
+               
 
 

@@ -3,7 +3,7 @@
         <nav class="navbar navbar-expand-lg navbar-light bg-light" style="font-size: 25px;">
             <ul class="navbar-nav">
                 <li class="nav-item">
-                    <a class="nav-link font-weight-bold text-uppercase  border-bottom border-primary" href="{{ route('admin.index') }}">Main</a>
+                    <a class="nav-link font-weight-bold text-uppercase  border-bottom border-primary" href="{{ route('admin.systemCalendar') }}">Calendar</a>
                 </li>
                 <li class="nav-item">
                     <a class="nav-link font-weight-bold text-uppercase  border-bottom border-primary" href="{{ route('admin.courses.index') }}">Courses</a>

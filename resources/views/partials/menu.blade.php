@@ -60,6 +60,30 @@
                     {{ trans('global.systemCalendar') }}
                 </a>
             </li>
+            <li class="nav-item">
+                <a href="{{ route('admin.courses.index') }}" class="nav-link {{ request()->is('admin/course') || request()->is('admin/course/*') ? 'active' : '' }}">
+                    <i class="nav-icon fa-fw fas fa-book">
+
+                    </i>
+                     Course 
+                </a>
+            </li>
+            <li class="nav-item">
+                <a href="{{ route('admin.prices.index') }}" class="nav-link {{ request()->is('admin/price') || request()->is('admin/price/*') ? 'active' : '' }}">
+                    <i class="nav-icon fa-fw fas fa-money">
+
+                    </i>
+                     Prices
+                </a>
+            </li>
+            <li class="nav-item">
+                <a href="{{ route('admin.news.index') }}" class="nav-link {{ request()->is('admin/news') || request()->is('admin/news/*') ? 'active' : '' }}">
+                    <i class="nav-icon fa-fw fas fa-newspaper">
+
+                    </i>
+                     News
+                </a>
+            </li>
             @can('event_access')
                 <li class="nav-item">
                     <a href="{{ route("admin.events.index") }}" class="nav-link {{ request()->is('admin/events') || request()->is('admin/events/*') ? 'active' : '' }}">

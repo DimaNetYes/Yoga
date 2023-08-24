@@ -10,7 +10,7 @@
                     <div class="row">
                         <div class="col-lg-9">
                             <div class="d-flex justify-content-between align-items-center mt-3">
-                                <a href="{{ route('courses.create') }}" class="btn btn-primary">
+                                <a href="{{ route('admin.courses.create') }}" class="btn btn-primary">
                                     <i class="fas fa-plus mr-2"></i> Kurs hinzufügen
                                 </a>
                             </div>
@@ -43,10 +43,10 @@
                                                                              @endif</td>
                                 <td> {{ $course->prices->first() ? $course->prices->first()->subscription_type : '' }}</td>
                                 <td>
-                                    <a href="{{ route('courses.edit', $course->id) }}" class="btn btn-primary">
+                                    <a href="{{ route('admin.courses.edit', $course->id) }}" class="btn btn-primary">
                                         <i class="fas fa-pencil-alt"></i> Edit
                                     </a>
-                                    <form action="{{ route('courses.destroy', $course->id) }}" method="POST" class="d-inline">
+                                    <form action="{{ route('admin.courses.destroy', $course->id) }}" method="POST" class="d-inline">
                                         @csrf
                                         @method('DELETE')
                                         <button type="submit" class="btn btn-danger">

@@ -58,13 +58,15 @@ class EventsController extends Controller
         return redirect()->route('admin.systemCalendar');
     }
 
-    public function show(Event $event)
+    public function show(Event $events)
     {
-        abort_if(Gate::denies('event_show'), Response::HTTP_FORBIDDEN, '403 Forbidden');
+        //abort_if(Gate::denies('event_show'), Response::HTTP_FORBIDDEN, '403 Forbidden');
+       
+        //$events->load('event');
+        $events = Event::withCount('events')
+            ->get();
 
-        $event->load('event');
-
-        return view('admin.events.show', compact('event'));
+        return view('events.calendar', compact('events'));
     }
 
     public function destroy(Event $event)

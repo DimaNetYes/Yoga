@@ -6,6 +6,7 @@
     <html lang="{{ str_replace('_', '-', app()->getLocale()) }}">
     <!-- CSRF Token -->
     <meta name="csrf-token" content="{{ csrf_token() }}">
+    <link rel="icon" type="image/x-icon" href="{{ asset('img/favicon-32x32.png') }}">
 
     <title>Main</title>
 
