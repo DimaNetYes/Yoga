@@ -30,7 +30,7 @@ use App\Http\Controllers\SystemCalendarController;
 */
 Auth::routes();
 
-Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
+Route::get('/home', [App\Http\Controllers\HomeController::class, 'NoRule'])->name('home');
 
 
 
@@ -74,7 +74,7 @@ Route::group(['prefix' => 'admin', 'as' => 'admin.',  'middleware' => ['auth', '
     
 });
 
-Route::get('/', [MainController::class, 'index']);
+Route::get('/', [MainController::class, 'index'])->name("base");
 
 
 Route::get('/post/{id}', [PostController::class, 'show']);
