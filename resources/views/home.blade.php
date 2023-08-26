@@ -1,4 +1,4 @@
-@extends('layouts.app')
+@extends('layouts.admin')
 <style>
 @keyframes fadeOut {
     0% { opacity: 1; }

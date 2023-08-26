@@ -15,7 +15,7 @@
             <div class="collapse navbar-collapse" id="navbarNav">
                 <ul class="navbar-nav ml-auto">
                     <li class="nav-item">
-                        <a class="nav-link" href="#submenu:uslugi">Dienstleistungen</a>
+                        <a class="nav-link" href="/">Hauptseite</a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link" href="{{route("calendar")}}">Zeitplan</a>
@@ -33,7 +33,7 @@
                         <a class="nav-link" href="/afisha-news">Nachricht</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="/kontakty">Kontakte</a>
+                        <a class="nav-link" href="#footer__phone">Kontakte</a>
                     </li>
                 </ul>
             </div>

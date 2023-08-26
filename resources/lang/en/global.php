@@ -37,7 +37,7 @@ return [
     'results_could_not_be_loaded'          => 'The results could not be loaded',
     'search_input_too_short'               => 'Please enter :count or more characters',
     'show'                                 => 'Show',
-    'systemCalendar'                       => 'Calendar',
+    'systemCalendar'                       => 'Kalender',
     'thankYouForUsingOurApplication'       => 'Thank you for using our website',
     'timeFrom'                             => 'From',
     'timeTo'                               => 'To',
