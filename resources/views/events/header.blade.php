@@ -23,14 +23,21 @@
                     <li class="nav-item">
                         <a class="nav-link" href="/prices">Preise</a>
                     </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="/yoga">Richtungen</a>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="yogaDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            Richtungen
+                        </a>
+                        <div class="dropdown-menu dropdown-menu-horizontal" aria-labelledby="yogaDropdown">
+                            <a class="dropdown-item" href="#">Erste Schritte im Yoga</a>
+                            <a class="dropdown-item" href="#">Hatha Yoga</a>
+                            <a class="dropdown-item" href="#">Nidra Yoga</a>
+                        </div>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link" href="/teachers">Lehrer</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="/afisha-news">Nachricht</a>
+                        <a class="nav-link" href="/#slider-container">Nachricht</a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link" href="#footer__phone">Kontakte</a>

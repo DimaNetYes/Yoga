@@ -59,6 +59,13 @@
      <link href="{{ asset('css/header.css') }}" rel="stylesheet">
      <link href="{{ asset('css/main.css') }}" rel="stylesheet">
      <link href="{{ asset('css/footer.css') }}" rel="stylesheet">
+
+     <style>
+      /* Ваши стили для снятия свойства white-space: nowrap; */
+      .fc-content {
+          white-space: normal !important; /* или просто "normal" */
+      }
+    </style>
      
 </head>
 

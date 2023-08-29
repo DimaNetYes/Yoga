@@ -38,7 +38,7 @@ class NewsController extends Controller
              
             $image->move(public_path('img'), $imageName);
 
-            $validatedData['image_url'] = 'img/' . $imageName;
+            $validatedData['image_url'] = '/img/' . $imageName;
         }
 
         $news = new News($validatedData);
@@ -57,6 +57,8 @@ class NewsController extends Controller
 
     public function update(Request $request, $id)
     {
+
+        
         // Ваша логика для обновления новости
         $news = News::findOrFail($id);
 
@@ -66,6 +68,7 @@ class NewsController extends Controller
             'image_url' => 'nullable|image|mimes:jpeg,png,jpg,gif',
         ]);
 
+        
          // Проверяем, был ли загружен новый файл
         if ($request->hasFile('image_url')) {
             $image = $request->file('image_url');
@@ -74,8 +77,9 @@ class NewsController extends Controller
             
            $image->move(public_path('img'), $imageName);
 
-           $validatedData['image_url'] = 'img/' . $imageName;
+           $validatedData['image_url'] = '/img/' . $imageName;
         }else {
+            
             $validatedData['image_url'] = $news->image_url;
         }
 

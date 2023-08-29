@@ -55,7 +55,7 @@
 
     <div id="image11" class="style2 image">
         <span class="frame deferred">
-            <img src="/img/IMG_7051.jpg" data-src="done" alt="" style="opacity: 1;">
+            <img src="/img/IMG_7070.jpg" data-src="done" alt="" style="opacity: 1;">
         </span>
     </div>
 
@@ -70,7 +70,7 @@
 
     <div id="image11_2" class="style2 image">
         <span class="frame deferred">
-            <img src="/img/IMG_7070.jpg" data-src="done" alt="" style="opacity: 1;">
+            <img src="/img/IMG_7051.jpg" data-src="done" alt="" style="opacity: 1;">
         </span>
     </div>
 

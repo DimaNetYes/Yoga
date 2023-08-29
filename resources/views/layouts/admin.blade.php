@@ -24,6 +24,12 @@
 
     <script src="{{ asset('js/main.js') }}" defer></script>
     @yield('styles')
+    <style>
+      /* Ваши стили для снятия свойства white-space: nowrap; */
+      .fc-content {
+          white-space: normal !important; /* или просто "normal" */
+      }
+    </style>
 </head>
 
 <body class="app header-fixed sidebar-fixed aside-menu-fixed pace-done sidebar-lg-show">

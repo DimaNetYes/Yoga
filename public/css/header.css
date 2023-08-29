@@ -73,6 +73,53 @@ ul.navbar-nav li a {
   color: black;
 }
 
+/* Открывать выпадающее меню при наведении */
+.dropdown:hover .dropdown-menu {
+  display: block;
+}
+
+/* Стилизация выпадающего меню */
+.dropdown-menu-horizontal {
+  display: none;
+  position: absolute;
+  background-color: #fff;
+  border: 1px solid #ddd;
+  padding: 0; /* Уберите верхний и нижний паддинг */
+  min-width: 200px;
+  z-index: 1000;
+}
+
+/* Уберите верхний отступ у первого элемента меню */
+.dropdown-menu-horizontal .dropdown-item:first-child {
+  margin-top: 0;
+}
+
+/* Добавьте нижнюю границу и отступы для разделения между пунктами меню */
+.dropdown-menu-horizontal .dropdown-item {
+  margin: 0; /* Уберите верхний и нижний отступ */
+  display: block;
+  width: 100%;
+  padding: 10px 20px;
+  clear: both;
+  font-weight: normal;
+  color: #333;
+  white-space: nowrap;
+  border-radius: 0;
+  transition: background-color 0.3s ease-in-out;
+  line-height: normal;
+  border-bottom: 1px solid #ddd; /* Добавьте нижнюю границу */
+}
+
+/* Уберите нижнюю границу у последнего элемента меню */
+.dropdown-menu-horizontal .dropdown-item:last-child {
+  border-bottom: none;
+}
+
+.dropdown-menu-horizontal .dropdown-item:hover {
+  background-color: #f0f0f0;
+  color: rgb(226, 203, 129);
+}
+
 .mobilePhone_Email {
   position: relative;
   right: 20px;
