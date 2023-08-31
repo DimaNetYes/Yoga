@@ -1,14 +1,14 @@
 <?php
 
-namespace App\Http\Controllers;
+namespace App\Http\Controllers\Admin;
 
 use App\Models\Price;
 use Illuminate\Database\Eloquent\Collection;
+use App\Http\Controllers\Controller;
 use Illuminate\Http\Request;
 use Illuminate\Support\Collection as SupportCollection;
 
-
-class PriceController extends Controller
+  class PriceController extends Controller
 {
 
     public $title = 'Die Kosten für den Unterricht';
@@ -57,11 +57,10 @@ class PriceController extends Controller
      * @param  int  $id
      * @return \Illuminate\Http\Response
      */
-    public function show()
+    public function show($id)
     {
-        $title = $this->title;
 
-        return view('prices.price', compact('title'));
+
     }
 
     /**
@@ -115,3 +114,4 @@ class PriceController extends Controller
         return redirect()->route('prices.index')->with('success', 'Eintrag erfolgreich gelöscht');
     }
 }
+

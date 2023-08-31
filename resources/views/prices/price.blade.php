@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <html lang="{{ str_replace('_', '-', app()->getLocale()) }}">
+    <!-- CSRF Token -->
+    <meta name="csrf-token" content="{{ csrf_token() }}">
+    <link rel="icon" type="image/x-icon" href="{{ asset('img/favicon-32x32.png') }}">
+
+    <title>Main</title>
+
+    <!-- Scripts -->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="{{ asset('js/app.js') }}" defer></script>
+    <script src="{{ asset('js/newsAnimation.js') }}" defer></script>
+    
+    <!-- Include Slick Carousel JavaScript -->
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+    
+  
+  
+  
+  
+
+    <!-- Fonts -->
+    <link rel="dns-prefetch" href="//fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css?family=Nunito" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" integrity="sha512-..." crossorigin="anonymous" />
+   
+    <!-- Include Slick Carousel CSS -->
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
+
+    <!-- Styles -->
+    <link href="{{ asset('css/app.css') }}" rel="stylesheet">
+     <!-- Styles -->
+     <link href="{{ asset('css/header.css') }}" rel="stylesheet">
+     <link href="{{ asset('css/main.css') }}" rel="stylesheet">
+     <link href="{{ asset('css/footer.css') }}" rel="stylesheet">
+     <link href="{{ asset('css/price.css') }}" rel="stylesheet">
+
+     <style>
+
+    
+      
+
+
+    </style>
+     
+</head>
+
+<body >
+@include('events/header')
+
+
+
+<div class="container">
+        <div class="row">
+            <div class="col-md-12">
+                <div class="tabs">
+                    <ul class="nav-tabs pricing__header">
+                        <li class="active"><a href="#tab1" data-toggle="tab" class="price__a"><img src="/img/logoUl1.jpg" alt=""> 10 Lektionen</a></li>
+                        <li><a href="#tab2" data-toggle="tab" class="price__a"><img src="/img/logoUl1.jpg" alt=""> Probestunde</a></li>
+                    </ul>
+                </div>
+
+                <div class="tab-content price__main">
+                    <div id="tab1" class="tab-pane active">
+                        <div class="section-content">
+                            <div class="pricing__table">
+                                <div class="row">
+                                    <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+                                        <div class="pricing-inner">
+                                            <div class="pricingtable-price">
+                                                <span>60 €</span>
+                                            </div>
+                                            <div class="pricingtable-title">
+                                                <h2>5 TEILNAHMEN</h2>
+                                            </div>
+                                            <ul class="pricingtable-feautures">
+                                                <li><i class="fa fa-check"></i> <span>von 16:00 bis 21:00 Uhr</span></li>
+                                                <li><i class="fa fa-check"></i><span> Alle vorgestellten Yogarichtungen</span></li>
+                                                <li><i class="fa fa-check"></i><span> 1 Kursstunde = 90 min </span></li>
+                                                <li>
+                                                    <div>
+                                                        <img src="/img/pay.png" alt="Visa Mastercard" style="height:60px;">
+                                                    </div>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div id="tab2" class="tab-pane">
+                        <div class="section-content">
+                            <div class="pricing__table">
+                                <div class="row">
+                                    <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+                                        <div class="pricing-inner">
+                                            <div class="pricingtable-price">
+                                                <span>GRATIS</span>
+                                            </div>
+                                            <div class="pricingtable-title">
+                                                <h2>Probestunde</h2>
+                                            </div>
+                                            <ul class="pricingtable-feautures">
+                                                <li><i class="fa fa-check"></i> <span>Eine Gruppenstunde</span></li>
+                                                <li><i class="fa fa-check"></i><span> Alle vorgestellten Yogarichtungen</span></li>
+                                                <li><i class="fa fa-check"></i><span> Mit dem kauf eines fünfer tickets belegst du einen festen kurs mit 5 teilnahmen </span></li>
+                                                <li>
+                                                    <div>
+                                                        <img src="/img/pay.png" alt="Visa Mastercard" style="height:60px;">
+                                                    </div>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+
+
+        <!-- ПЕРЕКЛЮЧАТЕЛЬ ВКЛАДОК цен -->
+<script>
+    $(document).ready(function() {
+        // Обработчик клика на вкладках
+        $('.nav-tabs li').click(function() {
+            // Убираем класс "active" у всех вкладок
+            $('.nav-tabs li').removeClass('active');
+            // Добавляем класс "active" только к кликнутой вкладке
+            $(this).addClass('active');
+
+            // Получаем идентификатор вкладки, на которую кликнули
+            var tabId = $(this).find('a').attr('href');
+            // Скрываем все контенты
+            $('.tab-content .tab-pane').hide();
+            // Показываем только контент выбранной вкладки
+            $(tabId).show();
+        });
+    });
+</script>
+
+</body>
+
+
+
+
+
+
+

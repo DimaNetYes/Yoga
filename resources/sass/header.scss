@@ -134,6 +134,19 @@ ul.navbar-nav li {
     color: black;
 }
 
+a.sp-black{
+    text-decoration: none;
+}
+
+a.sp-black:hover {
+    color: rgba(21,222,64, .9);
+   
+}
+
+.sp-black-inst:hover{
+    color:rgb(59,81,234);
+}
+
 .i-black {
     margin-right: 10px;
     font-size: 14px;

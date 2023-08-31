@@ -21,7 +21,7 @@
                         <a class="nav-link" href="{{route("calendar")}}">Zeitplan</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="/prices">Preise</a>
+                        <a class="nav-link" href="{{route("price")}}">Preise</a>
                     </li>
                     <li class="nav-item dropdown">
                         <a class="nav-link dropdown-toggle" href="#" id="yogaDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
@@ -53,7 +53,7 @@
                 </div>
                 <div class="d-flex align-items-center">
                     <i class="fas fa-envelope mr-2 i-black"></i>
-                    <span class="sp-black">DaniSchermer@gmail.com</span>
+                    <a href="mailto:creatura_creare@gmx.de" class="sp-black">creatura_creare@gmx.de</a>
                 </div>
                 <a href="https://www.instagram.com/yoga_im_atelier_salzwedel/" target="_blank" class="mt-2 sp-black">
                     <i class="fab fa-instagram i-black instagram"></i>
@@ -67,7 +67,7 @@
             
                 <div class="col-md-8 text-white">
                     <!-- Left-side content -->
-                    <h1 class="t181__title t-title t-title_md studio" style="font-weight: 600; position:absolute; top:-40px;">Stundenplan</h1>
+                    <h1 class="t181__title t-title t-title_md studio" style="font-weight: 600; position:absolute; top:-40px;">{{ $title }}</h1>
                 </div>
                 
             </div>

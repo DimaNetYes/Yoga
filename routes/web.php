@@ -102,6 +102,9 @@ Route::get('/widget', function() {return view('test/widget');} );
 
                 //CALENDAR FOR USERS
 Route::get('calendar', [SystemCalendarController::class, 'show'])->name('calendar');
+
+                //PRICES
+Route::get('price', [PriceController::class, 'show'])->name('price');
                
 
 

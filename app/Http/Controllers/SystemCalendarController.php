@@ -50,6 +50,7 @@ class SystemCalendarController extends Controller
     {
         
         $events = [];
+        $title = 'Stundenplan';
 
         foreach ($this->sources as $source) {
             foreach ($source['model']::all() as $model) {
@@ -68,8 +69,8 @@ class SystemCalendarController extends Controller
                 ];
             }
         }
-
-        return view('events.calendar', compact('events'));
+        
+        return view('events.calendar', compact('events', 'title'));
 
     }
 

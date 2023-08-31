@@ -1,0 +1,101 @@
+/* Ваши стили для снятия свойства white-space: nowrap; */
+.fc-content {
+    white-space: normal !important; /* или просто "normal" */
+}
+
+.container {
+  
+}
+
+.nav-tabs {
+  border-bottom: 1px solid #ddd;
+  list-style: none;
+}
+
+.tabs {
+  display: flex;
+  justify-content: center;
+}
+
+.pricing__header li {
+  display: inline-block;
+  margin-bottom: -1px;
+  font-size: 16px;
+  color: #000000;
+  line-height: 54px;
+  margin-top: 75px;
+}
+
+li .price__a {
+  height: 55px;
+  font-size: 18px;
+  padding: 15px 30px;
+  text-decoration: none;
+  border: 1px solid #ddd;
+  border-bottom: 3px solid white;
+  border-radius: 5px;
+  margin-right: 100px;
+  color: black;
+  font-family: 'Noto Sans Bold';
+}
+          /* убирает все стили крове выбранной а*/
+.pricing__header li:not(.active) a {
+      border: 0px solid #ddd;
+      /* Добавьте другие стили для вкладок, которые не активны */
+  }
+
+.nav-tabs li a img{
+  height: 40px;
+}
+
+.price__main{
+  display: flex;
+  justify-content: center;
+}
+
+#tab1 {
+  
+  width: 70vw;
+  justify-content: center;
+  text-align: center;
+}
+
+.pricingtable-price{
+  padding: 15px 20px;
+  background-color: #F4F7F8;
+  border: 1px solid #E9E9E9;
+  font-size: 50px;
+  font-weight: 700;
+  color: #666;
+}
+
+.pricingtable-title{
+  padding: 20px;
+  text-transform: uppercase;
+  background-color: rgb(70,113,123);
+  color: white;
+  font-family: Klavika;
+}
+
+.pricingtable-feautures{
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  border: 1px solid #E9E9E9;
+}
+
+.pricingtable-feautures li{
+  padding: 12px;
+  border-bottom: 1px solid #E9E9E9;
+  font-size: 15px;
+}
+
+.pricingtable-feautures li:nth-child(even){
+  background-color: #F4F7F8;
+}
+
+#tab2 {
+  width: 70vw;
+  justify-content: center;
+  text-align: center;
+}
