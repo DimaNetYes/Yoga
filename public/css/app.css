@@ -11991,6 +11991,14 @@ textarea.form-control-lg {
   font-family: "Noto Sans Bold";
   src: url(/fonts/NotoSans-Bold.woff2?a617006fd558375879b7b0480c91e43a) format("woff2");
 }
+@font-face {
+  font-family: "Font Awesome";
+  src: url(/fonts/FontAwesome5BrandsRegular.woff2?6d375b94673cbd93d8a8cf0b6891c8f3) format("woff2");
+}
+@font-face {
+  font-family: "FontAwesome";
+  src: url(/fonts/FontAwesome5.otf?1c8854732e06bc9e30c688723f17abfd) format("otf");
+}
 body {
   font-family: "Noto Sans", sans-serif;
 }

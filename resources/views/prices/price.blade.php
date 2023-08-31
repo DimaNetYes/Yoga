@@ -39,8 +39,23 @@
      <link href="{{ asset('css/main.css') }}" rel="stylesheet">
      <link href="{{ asset('css/footer.css') }}" rel="stylesheet">
      <link href="{{ asset('css/price.css') }}" rel="stylesheet">
+     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+
+
 
      <style>
+        .ul-style{
+            margin: 0 auto;
+            width: 70vw;
+            margin-top: 80px;
+            font-size: 16px;
+        }
+        
+.ul-style ul {
+    list-style-type: none;
+    padding-left: 0;
+}
+
 
     
       
@@ -123,6 +138,16 @@
                         </div>
                     </div>
                 </div>
+
+
+                <div class="ul-style">
+                    <p>Zusatzleistungen:</p>
+                    <ul>
+                     <li><i class="fas fa-check-circle" style="margin-right: 5px;"></i> Teppichverleih - 1 €</li>
+                    </ul>
+                </div>
+
+
             </div>
         </div>
     </div>

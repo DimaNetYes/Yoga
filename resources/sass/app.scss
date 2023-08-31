@@ -25,6 +25,19 @@
     /* Дополнительные форматы файла шрифта (если есть) */
 }
 
+@font-face {
+    font-family: 'Font Awesome';
+    src: url('../../public/fonts/FontAwesome5BrandsRegular.woff2') format('woff2'), /* указывайте путь к файлу Noto Sans .woff2 */
+    /* Дополнительные форматы файла шрифта (если есть) */
+}
+
+@font-face {
+    font-family: 'FontAwesome';
+    src: url('../../public/fonts/FontAwesome5.otf') format('otf'), /* указывайте путь к файлу Noto Sans .woff2 */
+    /* Дополнительные форматы файла шрифта (если есть) */
+}
+
+
 body {
     font-family: 'Noto Sans', sans-serif;
 }
