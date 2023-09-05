@@ -148,7 +148,7 @@ Siehe Auch</h3>
                     <div class="caption price__caption" style="">
                         <h4 class="price__h4"><a href="#" class="price__a">Hatha Yoga Kurs</a></h4>
                         <p class="price__p">Der Hauptaspekt des Hatha-Yoga ist die Entwicklung der Flexibilität und die Erhaltung der Gesundheit der Gelenke, insbesondere der Wirbelsäule. Jede Übung betrifft einen bestimmten Körperteil, ein bestimmtes Organ oder eine bestimmte Gruppe von Organen. Bei der Durchführung von Übungen wird die Atmung sowie ein Punkt – eine Stelle im Körper, auf die die Konzentration gerichtet werden soll – berücksichtigt.</p>
-                        <a href="#" class="btn btn-primary price__btn">Узнать больше</a>
+                        <a href="#" class="btn btn-primary price__btn">Um mehr zu lernen</a>
                     </div>
                 </div>
             </div>
@@ -158,7 +158,7 @@ Siehe Auch</h3>
                     <div class="caption price__caption" style="">
                         <h4 class="price__h4"><a href="#" class="price__a">Rhytm Yoga Kurs</a></h4>
                         <p class="price__p">Rhythmus-Yoga ist ein Yoga-Stil, der sich auf die Synchronisierung von Bewegung mit Rhythmus und Musik konzentriert, um körperliche und emotionale Harmonie zu erreichen. Kreativität und Ausdruck: Dieser Stil ermöglicht es jedem Praktizierenden, seine Einzigartigkeit durch Bewegungs- und Tanzelemente auszudrücken.</p>
-                        <a href="#" class="btn btn-primary price__btn">Узнать больше</a>
+                        <a href="#" class="btn btn-primary price__btn">Um mehr zu lernen</a>
                     </div>
                 </div>
             </div>
@@ -166,7 +166,7 @@ Siehe Auch</h3>
     </div>
 </div>
 
-@include('events/footer')
+@include('main/footer')
 
         <!-- ПЕРЕКЛЮЧАТЕЛЬ ВКЛАДОК цен -->
 <script>

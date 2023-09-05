@@ -77,7 +77,7 @@
                        <!-- Use Bootstrap classes for the buttons -->
                         <div class="t-btnwrapper d-flex flex-column flex-md-row ">
                             <a href="{{route("calendar")}}" target="" class="btn btn-primary btn-lg btn-block mb-3 mb-md-0 mr-md-3" >ZEITPLAN ANZEIGEN</a>
-                            <a href="/prices" target="" class="btn btn-outline-primary btn-lg btn-block">WÄHLEN SIE EIN ABO</a>
+                            <a href="{{route("price")}}" target="" class="btn btn-outline-primary btn-lg btn-block">WÄHLEN SIE EIN ABO</a>
                         </div>
                     </div>
                 </div>

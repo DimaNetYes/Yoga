@@ -180,3 +180,51 @@ li .price__a {
   background-color: rgb(70, 100, 115);
   box-shadow: 1px 1px 5px 3px rgb(70, 113, 123);
 }
+
+@media (max-width: 1300px) and (min-width: 1025px) {
+  .price__type {
+    width: 36vw;
+  }
+  .price__p {
+    height: 255px;
+  }
+}
+@media (max-width: 1024px) and (min-width: 481px) {
+  .price__type {
+    width: 300px;
+  }
+  .price__p {
+    height: auto;
+  }
+  .price__btn {
+    margin-bottom: 20px;
+    margin-top: 10px;
+  }
+}
+@media (max-width: 480px) {
+  .nav-tabs.pricing__header {
+    margin-bottom: 40px;
+    border-bottom: 2px solid #aaa;
+    text-align: center;
+  }
+  .pricing__header li.active a {
+    color: #fff;
+    box-shadow: inset 250px 0 0 0 rgb(70, 113, 123);
+  }
+  .pricing__header li:not(.active) a {
+    border: 1px solid #aaa;
+  }
+  li .price__a {
+    margin-right: 50px;
+  }
+  .price__type {
+    width: auto;
+  }
+  .price__p {
+    height: auto;
+  }
+  .price__btn {
+    margin-top: 20px;
+    margin-bottom: 40px;
+  }
+}

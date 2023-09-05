@@ -146,8 +146,8 @@
         //Kostyl
 @media (max-width: 1200px) and (min-width: 992px) {
     #footer__feedback {
-      width: 68%;
-      text-align: right;
+      width: auto;
+      text-align: center;
   }
 
 }
@@ -161,6 +161,11 @@
 
  /* Adjust styles for mobile devices */
  @media (max-width: 768px) {
+
+  #footer__feedback {
+    width: 100%;
+    text-align: center;
+  }
 
  footer .footer span {
     width: 100% !important;
