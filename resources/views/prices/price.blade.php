@@ -44,23 +44,7 @@
 
 
      <style>
-        .ul-style{
-            margin: 0 auto;
-            width: 70vw;
-            margin-top: 80px;
-            font-size: 16px;
-        }
         
-.ul-style ul {
-    list-style-type: none;
-    padding-left: 0;
-}
-
-
-    
-      
-
-
     </style>
      
 </head>
@@ -75,7 +59,7 @@
             <div class="col-md-12">
                 <div class="tabs">
                     <ul class="nav-tabs pricing__header">
-                        <li class="active"><a href="#tab1" data-toggle="tab" class="price__a"><img src="/img/logoUl1.jpg" alt=""> 10 Lektionen</a></li>
+                        <li class="active"><a href="#tab1" data-toggle="tab" class="price__a"><img src="/img/logoUl1.jpg" alt=""> 5 Lektionen</a></li>
                         <li><a href="#tab2" data-toggle="tab" class="price__a"><img src="/img/logoUl1.jpg" alt=""> Probestunde</a></li>
                     </ul>
                 </div>
@@ -148,13 +132,41 @@
                 </div>
 
 
-            </div>
+            </div>  
         </div>
     </div>
 
 
+    <div class="container">
+    <div class="section-content price__section_content"> <!-- Добавлен класс text-center для центрирования контента -->
+        <h3 style="text-align:center; margin-bottom: 70px; font-family: 'Noto Sans Bold'; font-size: 30px; color: #666666">
+Siehe Auch</h3>
+        <div class="row">
+            <div class="col-md-6"> <!-- Используем col-md-6 для создания двух колонок на больших экранах -->
+                <div class="thumbnail">
+                    <a href="#" class="price__img_a"><img src="img/Rhytm.jpg" alt="Rhytm Yoga" class="price__type"></a>
+                    <div class="caption price__caption" style="">
+                        <h4 class="price__h4"><a href="#" class="price__a">Hatha Yoga Kurs</a></h4>
+                        <p class="price__p">Der Hauptaspekt des Hatha-Yoga ist die Entwicklung der Flexibilität und die Erhaltung der Gesundheit der Gelenke, insbesondere der Wirbelsäule. Jede Übung betrifft einen bestimmten Körperteil, ein bestimmtes Organ oder eine bestimmte Gruppe von Organen. Bei der Durchführung von Übungen wird die Atmung sowie ein Punkt – eine Stelle im Körper, auf die die Konzentration gerichtet werden soll – berücksichtigt.</p>
+                        <a href="#" class="btn btn-primary price__btn">Узнать больше</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-6">
+                <div class="thumbnail">
+                    <a href="#" class="price__img_a"><img src="img/Hatha.jpg" alt="Hatha Yoga" class="price__type"></a>
+                    <div class="caption price__caption" style="">
+                        <h4 class="price__h4"><a href="#" class="price__a">Rhytm Yoga Kurs</a></h4>
+                        <p class="price__p">Rhythmus-Yoga ist ein Yoga-Stil, der sich auf die Synchronisierung von Bewegung mit Rhythmus und Musik konzentriert, um körperliche und emotionale Harmonie zu erreichen. Kreativität und Ausdruck: Dieser Stil ermöglicht es jedem Praktizierenden, seine Einzigartigkeit durch Bewegungs- und Tanzelemente auszudrücken.</p>
+                        <a href="#" class="btn btn-primary price__btn">Узнать больше</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
 
-
+@include('events/footer')
 
         <!-- ПЕРЕКЛЮЧАТЕЛЬ ВКЛАДОК цен -->
 <script>
@@ -175,6 +187,7 @@
         });
     });
 </script>
+
 
 </body>
 

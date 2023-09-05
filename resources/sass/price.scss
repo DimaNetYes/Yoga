@@ -99,3 +99,94 @@ li .price__a {
   justify-content: center;
   text-align: center;
 }
+
+
+                      //Нижние элементы с направлениями ЙОГИ
+.ul-style{
+  margin: 0 auto;
+  width: 70vw;
+  margin-top: 80px;
+  font-size: 16px;
+}
+
+.ul-style ul {
+  list-style-type: none;
+  padding-left: 0;
+}
+
+
+.price__section_content {
+  padding: 0 50px;
+  margin-top: 70px;
+  margin-bottom: 100px;
+}
+
+.price__type {
+  width: 570px;
+  height: 320px;
+  transition: filter 0.3s ease; /* Анимация для свойства filter */
+}
+
+
+
+.price__caption {
+  font-size: 16px;
+  color: #000000;
+  line-height: 24px;
+}
+
+
+.thumbnail:hover .price__a {
+  color: #fff;
+  box-shadow: inset 250px 0 0 0 rgb(70, 113, 123);
+}
+
+.thumbnail:hover .price__type {
+  filter: brightness(0.8);
+}
+
+.price__a {
+  box-shadow: inset 0 0 0 0 rgb(70,113,123);
+  color: rgb(70,113,123);
+  padding: 0 .25rem;
+  margin: 0 -.25rem;
+  transition: color .3s ease-in-out, box-shadow .3s ease-in-out;
+}
+
+.price__a:hover {
+  color: #fff;
+  box-shadow: inset 250px 0 0 0 rgb(70,113,123);
+}
+
+.price__a {
+  color: rgb(70,113,123);
+  font-family: 'Poppins', sans-serif;
+  font-size: 27px;
+  font-weight: 700;
+  line-height: 1.5;
+  text-decoration: none;
+}
+
+.price__h4 {
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+.price__p {
+  height: 175px;
+  word-spacing: 0.5em;
+}
+
+.price__btn {
+  background-color: rgb(70,113,123);
+  border-radius: 0px;
+  border: 0px;
+  padding: 10px 20px;
+  font-size: 1.1rem;
+}
+
+.price__btn:hover {
+  background-color: rgb(70,100,115);
+  box-shadow: 1px 1px 5px 3px rgb(70, 113, 123);
+
+}
