@@ -123,7 +123,7 @@
                         <strong>Telefonnummer:</strong>
                         <p>+49 1512 7138054</p>
                         <strong>Email:</strong>
-                        <p style="color: rgb(52, 191, 234); font-weight: 400;">info@Grow.com</p>
+                        <p style="color: rgb(52, 191, 234); font-weight: 400;"><a href="mailto:creatura_creare@gmx.de" style="color: rgb(52, 191, 234);font-weight: 400; text-decoration:none;">creatura_creare@gmx.de</a></p>
                     </div>
                     <div class="sociallinks">
                         <div class="sociallinks__wrapper">

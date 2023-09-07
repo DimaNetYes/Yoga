@@ -59,9 +59,14 @@ class PriceController extends Controller
      */
     public function show()
     {
-        $title = $this->title;
 
-        return view('prices.price', compact('title'));
+        $price = Price::find(23);
+        
+
+        $title = $this->title;
+        
+
+        return view('prices.price', compact('title', 'price'));
     }
 
     /**
@@ -72,6 +77,7 @@ class PriceController extends Controller
      */
     public function edit($id)
     {
+        
         $price = Price::find($id);
         
         return view('admin.prices.edit', compact('price'));

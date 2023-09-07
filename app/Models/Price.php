@@ -9,7 +9,8 @@ class Price extends Model
 {
     use HasFactory;
 
-    protected $fillable = ['cost', 'subscription_type'];
+    protected $fillable = ['course_id', 'cost', 'subscription_type', 'title', 'punkt1', 'punkt2', 'punkt3'];
+
     public function course()
     {
         return $this->belongsTo(Course::class);

@@ -59,7 +59,7 @@
             <div class="col-md-12">
                 <div class="tabs">
                     <ul class="nav-tabs pricing__header">
-                        <li class="active"><a href="#tab1" data-toggle="tab" class="price__a"><img src="/img/logoUl1.jpg" alt=""> 5 Lektionen</a></li>
+                        <li class="active"><a href="#tab1" data-toggle="tab" class="price__a"><img src="/img/logoUl1.jpg" alt=""> {{ $price->subscription_type }}</a></li>
                         <li><a href="#tab2" data-toggle="tab" class="price__a"><img src="/img/logoUl1.jpg" alt=""> Probestunde</a></li>
                     </ul>
                 </div>
@@ -72,15 +72,15 @@
                                     <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
                                         <div class="pricing-inner">
                                             <div class="pricingtable-price">
-                                                <span>60 €</span>
+                                                <span> {{ floor($price->cost) }} €</span>
                                             </div>
                                             <div class="pricingtable-title">
-                                                <h2>5 TEILNAHMEN</h2>
+                                                <h2> {{ $price->title }}</h2>
                                             </div>
                                             <ul class="pricingtable-feautures">
-                                                <li><i class="fa fa-check"></i> <span>von 16:00 bis 21:00 Uhr</span></li>
-                                                <li><i class="fa fa-check"></i><span> Alle vorgestellten Yogarichtungen</span></li>
-                                                <li><i class="fa fa-check"></i><span> 1 Kursstunde = 90 min </span></li>
+                                                <li><i class="fa fa-check"></i> <span> {{ $price->punkt1 }}</span></li>
+                                                <li><i class="fa fa-check"></i><span>  {{ $price->punkt2 }}</span></li>
+                                                <li><i class="fa fa-check"></i><span>  {{ $price->punkt3 }} </span></li>
                                                 <li>
                                                     <div>
                                                         <img src="/img/pay.png" alt="Visa Mastercard" style="height:60px;">
@@ -93,6 +93,7 @@
                             </div>
                         </div>
                     </div>
+                    
                     <div id="tab2" class="tab-pane">
                         <div class="section-content">
                             <div class="pricing__table">
@@ -121,6 +122,7 @@
                             </div>
                         </div>
                     </div>
+                    
                 </div>
 
 

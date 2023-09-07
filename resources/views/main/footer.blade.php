@@ -20,7 +20,7 @@
       </div>
       <div class="footer__inline col-lg-4 col-md-12">
         <span id="footer__phone">+49 1512 7138054</span>
-        <span id="footer__info">info@Grow.com</span>
+        <span id="footer__info"><a href="mailto:creatura_creare@gmx.de" style="text-decoration: none; color: white; font-size: 18px;">creatura_creare@gmx.de</a></span>
         <span id="footer__feedback"><a href="https://g.page/Burgstraße+75,+29410+Salzwedel/review?gm" target="_blank"> Hinterlasse Kommentar</a></span>
         <div class="sociallinks__item_instagram footer__sociallinks_instagram">
             <!-- Вставка SVG-изображения Instagram -->

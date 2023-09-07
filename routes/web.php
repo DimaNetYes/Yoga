@@ -1,7 +1,6 @@
 <?php
 
-
-
+use App\Http\Controllers\Admin\AdminPriceController;
 use App\Http\Controllers\Admin\EventsController;
 use App\Http\Controllers\Admin\NewsController;
 use App\Http\Controllers\CalendarController;
@@ -11,6 +10,7 @@ use App\Http\Controllers\PostController;
 use App\Http\Controllers\UserController;
 use App\Http\Controllers\TaskController;
 use App\Http\Controllers\PriceController;
+
 use App\Http\Controllers\CourseController;
 use App\Http\Controllers\HomeController;
 use App\Http\Controllers\MainController;
@@ -42,7 +42,8 @@ Route::get('/home', [App\Http\Controllers\HomeController::class, 'NoRule'])->nam
    Route::get('users/{id}', function($all){return $all;}); 
 
 });*/
-
+                         //ERORS
+Route::fallback(function(){return view('errors.404');});  //Этот маршрут срабатывает, если другого не найдено
 
                     //админка
 Route::group(['prefix' => 'admin', 'as' => 'admin.',  'middleware' => ['auth', 'checkRole']], function () {
@@ -66,7 +67,9 @@ Route::group(['prefix' => 'admin', 'as' => 'admin.',  'middleware' => ['auth', '
     Route::post('/courses', [CourseController::class, 'store'])->name('courses.store');
 
             //prices
-    Route::resource('prices', PriceController::class);
+    Route::resource('prices', AdminPriceController::class);
+   
+   
 
                 //NEWS
     Route::resource('news', NewsController::class);
