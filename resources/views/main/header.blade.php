@@ -1,4 +1,3 @@
-
 <header>
     <div id="container26" class="default full screen" style="--onvisible-speed: 1s; --onvisible-background-color: rgba(0,0,0,0.001);">
     <div class="t-cover__filter" style=""></div>
@@ -9,9 +8,24 @@
                 <img src="img\Logo_GROW!.JPG" alt="GROW" height="75" id="img1">
             </a>
 
-            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <button class="navbar-toggler btn__header" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
             </button>
+            
+             <!-- Добавляем мобильный телефон, email и значок Instagram -->
+             <div class="d-flex flex-column align-items-center ml-lg-4 mobilePhone_Email mobilePhone_Email__top">
+                <div class="d-flex align-items-center">
+                    <i class="fas fa-phone-alt mr-2 i-black"></i>
+                    <span class="sp-black">+49 1512 7138054</span>
+                </div>
+                <div class="d-flex align-items-center">
+                    <i class="fas fa-envelope mr-2 i-black"></i>
+                    <a href="mailto:creatura_creare@gmx.de" class="sp-black">creatura_creare@gmx.de</a>
+                </div>
+                <a href="https://www.instagram.com/yoga_im_atelier_salzwedel/" target="_blank" class="mt-2 sp-black sp-black-inst">
+                    <i class="fab fa-instagram i-black instagram"></i>
+                </a>
+            </div>
 
             <div class="collapse navbar-collapse" id="navbarNav">
                 <ul class="navbar-nav ml-auto">
@@ -48,7 +62,7 @@
             </div>
 
              <!-- Добавляем мобильный телефон, email и значок Instagram -->
-             <div class="d-flex flex-column align-items-center ml-lg-4 mobilePhone_Email">
+             <div class="d-flex flex-column align-items-center ml-lg-4 mobilePhone_Email mobilePhone_Email__bottom">
                 <div class="d-flex align-items-center">
                     <i class="fas fa-phone-alt mr-2 i-black"></i>
                     <span class="sp-black">+49 1512 7138054</span>
@@ -61,6 +75,8 @@
                     <i class="fab fa-instagram i-black instagram"></i>
                 </a>
             </div>
+
+            
         </nav>
 
         <!-- Add the new content here using Bootstrap classes -->

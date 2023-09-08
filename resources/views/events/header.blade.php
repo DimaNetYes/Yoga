@@ -12,6 +12,8 @@
                 <span class="navbar-toggler-icon"></span>
             </button>
 
+             
+
             <div class="collapse navbar-collapse" id="navbarNav">
                 <ul class="navbar-nav ml-auto">
                     <li class="nav-item">
@@ -45,8 +47,8 @@
                 </ul>
             </div>
 
-             <!-- Добавляем мобильный телефон, email и значок Instagram -->
-             <div class="d-flex flex-column align-items-center ml-lg-4 mobilePhone_Email">
+            <!-- Добавляем мобильный телефон, email и значок Instagram -->
+            <div class="d-flex flex-column align-items-center ml-lg-4 mobilePhone_Email">
                 <div class="d-flex align-items-center">
                     <i class="fas fa-phone-alt mr-2 i-black"></i>
                     <span class="sp-black">+49 1512 7138054</span>
@@ -59,6 +61,8 @@
                     <i class="fab fa-instagram i-black instagram"></i>
                 </a>
             </div>
+
+            
         </nav>
 
         <!-- Add the new content here using Bootstrap classes -->

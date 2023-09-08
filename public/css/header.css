@@ -181,3 +181,91 @@ h1.studio {
     margin-top: 40px;
   }
 }
+@media (min-width: 993px) {
+  .mobilePhone_Email__top {
+    display: none !important;
+  }
+}
+@media (max-width: 992px) and (min-width: 481px) {
+  /* Стили для выпадающего меню в кнопке бургера */
+  .navbar-toggler {
+    background-color: transparent; /* Убираем фон кнопки */
+    color: black; /* Цвет значка бургера */
+    font-size: 24px; /* Размер значка бургера */
+  }
+  /* Центрирование пунктов меню в выпадающем меню */
+  .navbar-collapse {
+    text-align: center; /* Выравниваем текст по центру */
+    margin-right: 80px;
+  }
+  /* Стили для пунктов меню в выпадающем меню */
+  .navbar-collapse ul.navbar-nav li.nav-item {
+    margin: 15px 0; /* Отступы между пунктами меню */
+  }
+  /* Стили для ссылок в пунктах меню в выпадающем меню */
+  .navbar-collapse ul.navbar-nav li.nav-item a.nav-link {
+    color: black; /* Цвет текста ссылок */
+    font-size: 18px; /* Размер текста ссылок */
+    text-decoration: none; /* Убираем подчеркивание ссылок */
+    transition: color 0.3s; /* Плавное изменение цвета при наведении */
+  }
+  /* Стили для активной ссылки в выпадающем меню */
+  .navbar-collapse ul.navbar-nav li.nav-item a.nav-link.active {
+    color: rgba(21, 222, 64, 0.9); /* Цвет активной ссылки */
+  }
+  /*стили для нижних 3-х элементов кнопки меню*/
+  .navbar-collapse.collapse.show .navbar-nav.ml-auto {
+    justify-content: center !important;
+  }
+  .btn__header {
+    margin: 0 auto;
+  }
+  .mobilePhone_Email__bottom {
+    display: none !important;
+  }
+}
+@media (max-width: 480px) {
+  /* Стили для выпадающего меню в кнопке бургера */
+  .navbar-toggler {
+    background-color: transparent; /* Убираем фон кнопки */
+    border: none; /* Убираем границы кнопки */
+    color: black; /* Цвет значка бургера */
+    font-size: 24px; /* Размер значка бургера */
+  }
+  /* Центрирование пунктов меню в выпадающем меню */
+  .navbar-collapse {
+    text-align: center; /* Выравниваем текст по центру */
+  }
+  /* Стили для пунктов меню в выпадающем меню */
+  .navbar-collapse ul.navbar-nav li.nav-item {
+    margin: 15px 0; /* Отступы между пунктами меню */
+  }
+  /* Стили для ссылок в пунктах меню в выпадающем меню */
+  .navbar-collapse ul.navbar-nav li.nav-item a.nav-link {
+    color: black; /* Цвет текста ссылок */
+    font-size: 18px; /* Размер текста ссылок */
+    text-decoration: none; /* Убираем подчеркивание ссылок */
+    transition: color 0.3s; /* Плавное изменение цвета при наведении */
+  }
+  /* Стили для активной ссылки в выпадающем меню */
+  .navbar-collapse ul.navbar-nav li.nav-item a.nav-link.active {
+    color: rgba(21, 222, 64, 0.9); /* Цвет активной ссылки */
+  }
+  /*стили для нижних 3-х элементов кнопки меню*/
+  .navbar-collapse.collapse.show .navbar-nav.ml-auto {
+    justify-content: center !important;
+  }
+  #img1 {
+    left: 20px;
+  }
+  .mobilePhone_Email {
+    margin: 0px auto;
+    right: 0px;
+  }
+  .btn__header {
+    margin: 0 auto;
+  }
+  .mobilePhone_Email__bottom {
+    display: none !important;
+  }
+}

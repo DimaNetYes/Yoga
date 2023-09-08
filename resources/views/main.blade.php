@@ -39,6 +39,10 @@
      <link href="{{ asset('css/footer.css') }}" rel="stylesheet">
      
 
+     <style>
+      
+     </style>
+
 </head>
 <body>
 <wrapper>
