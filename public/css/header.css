@@ -181,12 +181,12 @@ h1.studio {
     margin-top: 40px;
   }
 }
-@media (min-width: 993px) {
+@media (min-width: 992px) {
   .mobilePhone_Email__top {
     display: none !important;
   }
 }
-@media (max-width: 992px) and (min-width: 481px) {
+@media (max-width: 991px) and (min-width: 481px) {
   /* Стили для выпадающего меню в кнопке бургера */
   .navbar-toggler {
     background-color: transparent; /* Убираем фон кнопки */
