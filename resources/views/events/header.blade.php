@@ -79,12 +79,12 @@
         </nav>
 
         <!-- Add the new content here using Bootstrap classes -->
-        <div class="container mt-5" style="position:relative; z-index:1;">
+        <div class="container mt-5" style="position:relative; z-index:1; margin-top: 0px !important;">
             <div class="row text-white">
             
                 <div class="col-md-8 text-white">
                     <!-- Left-side content -->
-                    <h1 class="t181__title t-title t-title_md studio" style="font-weight: 600; position:absolute; top:-40px;">{{ $title }}</h1>
+                    <h1 class="t181__title t-title t-title_md studio header__price__h1" style="font-weight: 600; ">{{ $title }}</h1>
                 </div>
                 
             </div>

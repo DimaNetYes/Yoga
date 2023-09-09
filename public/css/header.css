@@ -223,12 +223,14 @@ h1.studio {
   .mobilePhone_Email__bottom {
     display: none !important;
   }
+  .header__price__h1 {
+    width: 94vw;
+  }
 }
 @media (max-width: 480px) {
   /* Стили для выпадающего меню в кнопке бургера */
   .navbar-toggler {
     background-color: transparent; /* Убираем фон кнопки */
-    border: none; /* Убираем границы кнопки */
     color: black; /* Цвет значка бургера */
     font-size: 24px; /* Размер значка бургера */
   }
@@ -267,5 +269,8 @@ h1.studio {
   }
   .mobilePhone_Email__bottom {
     display: none !important;
+  }
+  .header__price__h1 {
+    width: 94vw;
   }
 }

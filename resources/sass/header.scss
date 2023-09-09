@@ -251,6 +251,11 @@ h1.studio {
         display: none !important;
     }
 
+    //Стиль для header/events
+    .header__price__h1{
+        width: 94vw;
+    }
+
 }
 
 @media (max-width: 480px) {
@@ -303,6 +308,11 @@ h1.studio {
             //double menu
     .mobilePhone_Email__bottom  {
         display: none !important;
+    }
+
+            //Стиль для header/events
+    .header__price__h1{
+        width: 94vw;
     }
 }
 
