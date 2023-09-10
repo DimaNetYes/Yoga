@@ -49,7 +49,7 @@
                         </div>
                     </li>
 
-                    <li class="nav-item">
+                    <li class="nav-item" style="display:none;">
                         <a class="nav-link" href="/teachers">Lehrer</a>
                     </li>
                     <li class="nav-item">
