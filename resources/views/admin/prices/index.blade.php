@@ -31,7 +31,7 @@
                                     <a href="{{ route('admin.prices.edit', $price->id) }}" class="btn btn-primary">
                                         <i class="fas fa-pencil-alt"></i> Edit
                                     </a>
-                                    @if (!$loop->first) <!-- Проверяем, не последний ли элемент -->
+                                    @if (!$loop->last) <!-- Проверяем, не последний ли элемент -->
                                         <form action="{{ route('admin.prices.destroy', $price->id) }}" method="POST" class="d-inline">
                                             @csrf
                                             @method('DELETE')

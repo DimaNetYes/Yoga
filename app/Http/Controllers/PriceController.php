@@ -60,7 +60,9 @@ class PriceController extends Controller
     public function show()
     {
 
-        $price = Price::find(23);
+        //$price = Price::find(23);
+
+        $price = Price::all();
         
 
         $title = $this->title;

@@ -47,7 +47,7 @@ use Illuminate\Support\Collection as SupportCollection;
         $course = Course::latest()->first()->id;
         $request->merge(['course_id' => $course]);
         
-       
+      
         // Проверка и валидация данных oder $data = $request->validate([...]) and Price::create($data);
          $request->validate([
             'subscription' => 'required|string',
@@ -70,7 +70,7 @@ use Illuminate\Support\Collection as SupportCollection;
             
         ]);
         
-
+       
         $price->save();
 
         //Price::create($data);

@@ -59,28 +59,68 @@
             <div class="col-md-12">
                 <div class="tabs">
                     <ul class="nav-tabs pricing__header">
-                        <li class="active"><a href="#tab1" data-toggle="tab" class="price__a"><img src="/img/logoUl1.jpg" alt=""> {{ $price->subscription_type }}</a></li>
-                        <li><a href="#tab2" data-toggle="tab" class="price__a"><img src="/img/logoUl1.jpg" alt=""> Probestunde</a></li>
+                        @foreach ($price as $key => $value) 
+                        @if ($loop->first)
+                             <li class="active"><a href="#tab{{ $key }}" data-toggle="tab" class="price__a"><img src="/img/logoUl1.jpg" alt=""> {{ $value->subscription_type }}</a></li>
+                        @else
+                            <li><a href="#tab{{ $key }}" data-toggle="tab" class="price__a"><img src="/img/logoUl1.jpg" alt=""> {{ $value->subscription_type }}</a></li>
+                        @endif
+                        @endforeach
+                        
+
+            
                     </ul>
                 </div>
 
                 <div class="tab-content price__main">
-                    <div id="tab1" class="tab-pane active">
+                    @foreach ($price as $key => $value)
+                    
+                    @if ($loop->first)
+                        <div id="tab{{ $key }}" class="tab-pane active">
+                            <div class="section-content">
+                                <div class="pricing__table">
+                                    <div class="row">
+                                        <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+                                            <div class="pricing-inner">
+                                                <div class="pricingtable-price">
+                                                     <span>GRATIS</span>
+                                                </div>
+                                                <div class="pricingtable-title">
+                                                    <h2> {{ $value->title }}</h2>
+                                                </div>
+                                                <ul class="pricingtable-feautures">
+                                                    <li><i class="fa fa-check"></i> <span> {{ $value->punkt1 }}</span></li>
+                                                    <li><i class="fa fa-check"></i><span>  {{ $value->punkt2 }}</span></li>
+                                                    <li><i class="fa fa-check"></i><span>  {{ $value->punkt3 }} </span></li>
+                                                    <li>
+                                                        <div>
+                                                            <img src="/img/pay.png" alt="Visa Mastercard" style="height:60px;">
+                                                        </div>
+                                                    </li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    @else
+                    <div id="tab{{ $key }}" class="tab-pane">
                         <div class="section-content">
                             <div class="pricing__table">
                                 <div class="row">
                                     <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
                                         <div class="pricing-inner">
                                             <div class="pricingtable-price">
-                                                <span> {{ floor($price->cost) }} €</span>
+                                                <span> {{ floor($value->cost) }} €</span>
                                             </div>
                                             <div class="pricingtable-title">
-                                                <h2> {{ $price->title }}</h2>
+                                                <h2> {{ $value->title }}</h2>
                                             </div>
                                             <ul class="pricingtable-feautures">
-                                                <li><i class="fa fa-check"></i> <span> {{ $price->punkt1 }}</span></li>
-                                                <li><i class="fa fa-check"></i><span>  {{ $price->punkt2 }}</span></li>
-                                                <li><i class="fa fa-check"></i><span>  {{ $price->punkt3 }} </span></li>
+                                                <li><i class="fa fa-check"></i> <span> {{ $value->punkt1 }}</span></li>
+                                                <li><i class="fa fa-check"></i><span>  {{ $value->punkt2 }}</span></li>
+                                                <li><i class="fa fa-check"></i><span>  {{ $value->punkt3 }} </span></li>
                                                 <li>
                                                     <div>
                                                         <img src="/img/pay.png" alt="Visa Mastercard" style="height:60px;">
@@ -93,37 +133,10 @@
                             </div>
                         </div>
                     </div>
-                    
-                    <div id="tab2" class="tab-pane">
-                        <div class="section-content">
-                            <div class="pricing__table">
-                                <div class="row">
-                                    <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
-                                        <div class="pricing-inner">
-                                            <div class="pricingtable-price">
-                                                <span>GRATIS</span>
-                                            </div>
-                                            <div class="pricingtable-title">
-                                                <h2>Probestunde</h2>
-                                            </div>
-                                            <ul class="pricingtable-feautures">
-                                                <li><i class="fa fa-check"></i> <span>Eine Gruppenstunde</span></li>
-                                                <li><i class="fa fa-check"></i><span> Alle vorgestellten Yogarichtungen</span></li>
-                                                <li><i class="fa fa-check"></i><span> Mit dem kauf eines fünfer tickets belegst du einen festen kurs mit 5 teilnahmen </span></li>
-                                                <li>
-                                                    <div>
-                                                        <img src="/img/pay.png" alt="Visa Mastercard" style="height:60px;">
-                                                    </div>
-                                                </li>
-                                            </ul>
-                                        </div>
+                    @endif
+                        
+                    @endforeach
                                     </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    
-                </div>
 
 
                 <div class="ul-style">
