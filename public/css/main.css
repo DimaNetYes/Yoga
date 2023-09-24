@@ -613,4 +613,7 @@
     margin-top: 3rem;
     margin-bottom: 6rem;
   }
+  main .container-fluid {
+    padding: 0px;
+  }
 }

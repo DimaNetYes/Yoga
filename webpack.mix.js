@@ -17,4 +17,5 @@ mix.js('resources/js/app.js', 'public/js')
     .sass('resources/sass/main.scss', 'public/css')
     .sass('resources/sass/footer.scss', 'public/css')
     .sass('resources/sass/price.scss', 'public/css')
+    .sass('resources/sass/calendar.scss', 'public/css')
     .sourceMaps();
