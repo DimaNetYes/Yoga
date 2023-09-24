@@ -15,7 +15,7 @@
         <div>
           <span>Dirigierkurse:</span>
           <span>Wochentags - 16:00-21:00</span>
-          <span>Wochende - 18:00-20:00</span>
+          <span>Wochende - workshops nach die Ankündigung</span>
         </div>
       </div>
       <div class="footer__inline col-lg-4 col-md-12">

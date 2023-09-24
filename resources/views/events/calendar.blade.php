@@ -32,12 +32,23 @@
              //console.log($events[0].start);
             $('#calendar').fullCalendar({
                 locale: 'de', 
+                displayEventTime: false, // Скрыть время начала события в заголовке события
                 // put your options and callbacks here
                 events: {!! json_encode($events) !!},
                 timeFormat: 'HH:mm',      //ОТВЕЧАЕТ ЗА ОТОБРАЖЕНИЕ ВРЕМЕНИ fullCalendar
         eventRender: function(event, element) {
 
             element.css('pointer-events', 'none');  //Предотвращаю нажатие на событие для пользователя
+             
+            // Показывать начало и конец события внутри элемента
+            var startTime = moment(event.start).format('HH:mm');
+            var endTime = moment(event.end).format('HH:mm');
+            var timeHtml = '<div class="event-time"><span class="bold-time" style="font-size: 1em; font-weight:bold;">' + startTime + ' - ' + endTime + '</span><br/> ' + event.title + '</div>';
+
+            // Предотвращение дублирования заголовка события
+            element.find('.fc-title').css('display', 'none');
+
+             element.find('.fc-content').append(timeHtml);
 
             // Prevent default click behavior on the anchor tag
             element.find('.fc-title a').click(function(e) {

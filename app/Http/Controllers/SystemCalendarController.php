@@ -69,6 +69,7 @@ class SystemCalendarController extends Controller
                 ];
             }
         }
+
         
         return view('events.calendar', compact('events', 'title'));
 
