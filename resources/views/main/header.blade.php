@@ -85,9 +85,11 @@
             
                 <div class="col-md-8 text-white">
                     <!-- Left-side content -->
-                    <h1 class="t181__title t-title t-title_md studio" style="font-weight: 600;">Studio für Yoga und spirituelle Praktiken «Daniela Schermer» in Salzwedel.</h1>
+                    <h1 class="t181__title t-title t-title_md studio" style="font-weight: 600;">YOGA IM ATELIER 
+                    <br/>Studio für Yoga und mentale Gesundheit in Salzwedel.</h1>
                     <div class="t181__descr t-descr t-descr_lg praktik" style="color: #e8e8e8;">
-                        <span>Unser Studio steht allen offen, die Harmonie und Ausgeglichenheit suchen. Unabhängig von Ihrem Erfahrungsstand bieten wir Kurse an, die Ihnen helfen, im Yoga zu wachsen und sich weiterzuentwickeln.“ Unsere Praktiken helfen Ihnen dabei, der Hektik des Alltags völlig zu entfliehen und sich auf eine Reise durch Ihr eigenes Universum zu begeben. Hier finden Sie Harmonie mit der Natur, der Welt und sich selbst.</span>
+                        <span>In unserem Studio hat sich ein qualifiziertes Kollektiv aus Yoga-Therapeutinnen zusammengefunden, das in professioneller Weise unterrichtet und anleitet.
+Der Raum steht allen offen, die nach Ausgeglichenheit und innerer Ruhe suchen. Unabhängig von Ihrem Erfahrungsstand bieten wir Kurse an, die Ihnen helfen, im Yoga zu wachsen und sich weiterzuentwickeln.“ Unsere Praktiken helfen Ihnen dabei, der Hektik des Alltags völlig zu entfliehen und sich auf eine Reise durch Ihr eigenes Universum zu begeben. Hier finden Sie Harmonie mit der Natur, der Welt und sich selbst.</span>
                     </div>
                     <div style="margin-top: 60px; margin-bottom: 30px;">
                        <!-- Use Bootstrap classes for the buttons -->

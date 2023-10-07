@@ -13,7 +13,7 @@
         <div class="col-lg-6 col-md-6 col-sm-12 order-lg-2 order-md-2 order-sm-1 order-2 custom-height">
         <div class="style1" style="padding:20px 50px;">
             <h2 id="text12">Yoga für Anfänger und Fortgeschrittene</h2>
-            <p id="text15" class="style3">Verschiedene Unterrichtsniveaus ermöglichen es Ihnen, Kurse für Personen mit jedem Ausbildungsniveau auszuwählen</p>
+            <p id="text15" class="style3">Verschiedene Unterrichtsniveaus ermöglichen es Ihnen.</p>
         </div>
         </div>
     </div>
