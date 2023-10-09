@@ -5,15 +5,15 @@
         <div class="col-lg-6 col-md-6 col-sm-12 order-lg-1 order-md-1 order-sm-2 order-1 custom-height">
         <div class="style1" data-position="center">
             <span class="frame deferred">
-            <img src="/img/IMG_7055.jpg" data-src="done" alt="" class="img-fluid">
+            <img src="/img/Webside1.png" data-src="done" alt="" class="img-fluid main__img1">
             </span>
         </div>
         </div>
         <!-- Text Column -->
         <div class="col-lg-6 col-md-6 col-sm-12 order-lg-2 order-md-2 order-sm-1 order-2 custom-height">
         <div class="style1" style="padding:20px 50px;">
-            <h2 id="text12">Yoga für Anfänger und Fortgeschrittene</h2>
-            <p id="text15" class="style3">Verschiedene Unterrichtsniveaus ermöglichen es Ihnen.</p>
+            <h2 id="text12">Intensität und Intention</h2>
+            <p id="text15" class="style3"> <i>Was ist Dein Beweg-Grund?</i><br/> …diese Frage haben ich aufgegriffen und kreiere daraus, gemeinsam mit meinen Kolleginnen, ein besonderes Angebot an Yoga-Stunden. Neben den verschiedenen physischen Intensitätsstufen bieten wir kreative und mentale Formen von Yoga. <br/><i>»Yoga ist nichts anderes als eine Wissenschaft der Achtsamkeit: Werde Dir genau bewusst, was Du tust, wo tu es tust und wie Du es tust «</i></br> Hansaji </p>
         </div>
         </div>
     </div>
@@ -25,8 +25,8 @@
         <!-- Text Column -->
         <div class="col-lg-6 col-md-6 col-sm-12 order-lg-1 order-md-1 order-sm-1 order-2 custom-height">
         <div class="style1" style="padding:20px 50px;">
-            <h2 id="text12">Ihre Yoga-Reise beginnt hier</h2>
-            <p id="text15" class="style3">Als wir Yoga eingeführt haben, wollten wir, dass sich unsere Kunden hier so wohl wie möglich fühlen. Bei uns werden Sie sich immer willkommen fühlen.</p>
+            <h2 id="text12">Deine Yoga-Reise beginnt mit uns</h2>
+            <p id="text15" class="style3"><span style="color: black;">Daniela Schermer (Studioleitung):</span><br/> Zertifizierte Hatha-Yogatherapeutin, Faszien-Yoga-Lehrerin, Heilpädagogin, Jobcoachin für Menschen mit Handicap <br/><br/> <span style="color: black;">Ivonne Ritter Findeisen (freie Mitarbeiterin):</span> <br/> Zertifizierte Hatha Yoga Lehrerin/Mediengestalterin <br/><br/> <span style="color: black;">Martina Michaelis (freie Mitarbeiterin):</span><br/>Zertifizierte Benefit Yoga® Lehrerin/ freie Rednerin</p>
         </div>
         </div>
         <!-- Image Column -->

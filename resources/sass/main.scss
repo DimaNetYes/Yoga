@@ -91,11 +91,16 @@ $guters: 2rem;
     transition: transform 1s ease;
   }
   
-  .custom-height .style1.visible img {
-    transform: scale(1.2);
+  .custom-height .style1.visible .main__img1{
+    transform: scale(1.03);
+    object-fit: fill;
   }
 
-   
+  .custom-height .style1.visible img {
+    transform: scale(1.1);
+    
+  }
+  
 
    .style1 {
     opacity: 0;
@@ -793,9 +798,5 @@ $guters: 2rem;
   margin-bottom: 6rem;
 }
 
-               //CALENDAR for Mobile WIDTH
-main .container-fluid {
-  padding: 0px;
-}
 
 }
