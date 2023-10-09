@@ -474,11 +474,11 @@ $guters: 2rem;
 
   @media (max-width: 1024px) and (min-width: 768px) {
     #container19 {
-      max-height: 480px; /* Set the maximum height to 480px for smaller screens */
+      //max-height: 480px; /* Set the maximum height to 480px for smaller screens */
     }
 
     .custom-height {
-        max-height: 480px; /* Set the maximum height to 480px for medium-sized screens */
+        //max-height: 480px; /* Set the maximum height to 480px for medium-sized screens */
         overflow: hidden; /* Hide any content that overflows the div's height */
       }
 
