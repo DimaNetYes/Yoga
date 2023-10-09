@@ -21,7 +21,7 @@
   <!-- Bootstrap and other scripts here -->
 
 <div id="container19" class="style4">
-    <div class="row" style="max-width: 100vw;">
+    <div class="row" style="">
         <!-- Text Column -->
         <div class="col-lg-6 col-md-6 col-sm-12 order-lg-1 order-md-1 order-sm-1 order-2 custom-height">
         <div class="style1" style="padding:20px 50px;">
