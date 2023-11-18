@@ -128,7 +128,7 @@ li .price__a {
 }
 
 .price__type {
-  width: 570px;
+  width: 460px;
   height: 320px;
   transition: filter 0.3s ease; /* Анимация для свойства filter */
 }
