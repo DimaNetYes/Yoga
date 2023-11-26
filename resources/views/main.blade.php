@@ -18,10 +18,6 @@
     <!-- Include Slick Carousel JavaScript -->
     <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
     
-  
-  
-  
-  
 
     <!-- Fonts -->
     <link rel="dns-prefetch" href="//fonts.gstatic.com">
@@ -37,6 +33,7 @@
      <link href="{{ asset('css/header.css') }}" rel="stylesheet">
      <link href="{{ asset('css/main.css') }}" rel="stylesheet">
      <link href="{{ asset('css/footer.css') }}" rel="stylesheet">
+     <link href="{{ asset('css/cookie.css') }}" rel="stylesheet">
      
 
      <style>
@@ -56,8 +53,14 @@
 
     <footer>
         @include('main/footer')
+        
     </footer>
-
+    
+    
+    @if (isset($showCookieConsent) && $showCookieConsent)
+    <?php //dd(request()->cookies->all()); ?>
+        @include('components.cookie-consent')
+    @endif
 
 </wrapper>
     <!-- Подключаем скрипты Bootstrap -->
@@ -70,6 +73,10 @@
 
     <!-- Include Slick Carousel library -->
     <script src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+
+    
+    
+
 
 </body>
 </html>

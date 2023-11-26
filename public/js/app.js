@@ -995,6 +995,17 @@ eval("__webpack_require__.r(__webpack_exports__);\n// extracted by mini-css-extr
 
 /***/ }),
 
+/***/ "./resources/sass/cookie.scss":
+/*!************************************!*\
+  !*** ./resources/sass/cookie.scss ***!
+  \************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+eval("__webpack_require__.r(__webpack_exports__);\n// extracted by mini-css-extract-plugin\n//# sourceURL=[module]\n//# sourceMappingURL=data:application/json;charset=utf-8;base64,eyJ2ZXJzaW9uIjozLCJmaWxlIjoiLi9yZXNvdXJjZXMvc2Fzcy9jb29raWUuc2NzcyIsIm1hcHBpbmdzIjoiO0FBQUEiLCJzb3VyY2VzIjpbIndlYnBhY2s6Ly8vLi9yZXNvdXJjZXMvc2Fzcy9jb29raWUuc2Nzcz85MWZmIl0sInNvdXJjZXNDb250ZW50IjpbIi8vIGV4dHJhY3RlZCBieSBtaW5pLWNzcy1leHRyYWN0LXBsdWdpblxuZXhwb3J0IHt9OyJdLCJuYW1lcyI6W10sInNvdXJjZVJvb3QiOiIifQ==\n//# sourceURL=webpack-internal:///./resources/sass/cookie.scss\n");
+
+/***/ }),
+
 /***/ "./resources/sass/app.scss":
 /*!*********************************!*\
   !*** ./resources/sass/app.scss ***!
@@ -1199,6 +1210,7 @@ module.exports = JSON.parse('{"name":"axios","version":"0.21.4","description":"P
 /******/ 			"css/footer": 0,
 /******/ 			"css/main": 0,
 /******/ 			"css/header": 0,
+/******/ 			"css/cookie": 0,
 /******/ 			"css/calendar": 0
 /******/ 		};
 /******/ 		
@@ -1249,13 +1261,14 @@ module.exports = JSON.parse('{"name":"axios","version":"0.21.4","description":"P
 /******/ 	// startup
 /******/ 	// Load entry module and return exports
 /******/ 	// This entry module depends on other loaded chunks and execution need to be delayed
-/******/ 	__webpack_require__.O(undefined, ["css/app","css/price","css/footer","css/main","css/header","css/calendar"], () => (__webpack_require__("./resources/js/app.js")))
-/******/ 	__webpack_require__.O(undefined, ["css/app","css/price","css/footer","css/main","css/header","css/calendar"], () => (__webpack_require__("./resources/sass/app.scss")))
-/******/ 	__webpack_require__.O(undefined, ["css/app","css/price","css/footer","css/main","css/header","css/calendar"], () => (__webpack_require__("./resources/sass/header.scss")))
-/******/ 	__webpack_require__.O(undefined, ["css/app","css/price","css/footer","css/main","css/header","css/calendar"], () => (__webpack_require__("./resources/sass/main.scss")))
-/******/ 	__webpack_require__.O(undefined, ["css/app","css/price","css/footer","css/main","css/header","css/calendar"], () => (__webpack_require__("./resources/sass/footer.scss")))
-/******/ 	__webpack_require__.O(undefined, ["css/app","css/price","css/footer","css/main","css/header","css/calendar"], () => (__webpack_require__("./resources/sass/price.scss")))
-/******/ 	var __webpack_exports__ = __webpack_require__.O(undefined, ["css/app","css/price","css/footer","css/main","css/header","css/calendar"], () => (__webpack_require__("./resources/sass/calendar.scss")))
+/******/ 	__webpack_require__.O(undefined, ["css/app","css/price","css/footer","css/main","css/header","css/cookie","css/calendar"], () => (__webpack_require__("./resources/js/app.js")))
+/******/ 	__webpack_require__.O(undefined, ["css/app","css/price","css/footer","css/main","css/header","css/cookie","css/calendar"], () => (__webpack_require__("./resources/sass/app.scss")))
+/******/ 	__webpack_require__.O(undefined, ["css/app","css/price","css/footer","css/main","css/header","css/cookie","css/calendar"], () => (__webpack_require__("./resources/sass/header.scss")))
+/******/ 	__webpack_require__.O(undefined, ["css/app","css/price","css/footer","css/main","css/header","css/cookie","css/calendar"], () => (__webpack_require__("./resources/sass/main.scss")))
+/******/ 	__webpack_require__.O(undefined, ["css/app","css/price","css/footer","css/main","css/header","css/cookie","css/calendar"], () => (__webpack_require__("./resources/sass/footer.scss")))
+/******/ 	__webpack_require__.O(undefined, ["css/app","css/price","css/footer","css/main","css/header","css/cookie","css/calendar"], () => (__webpack_require__("./resources/sass/price.scss")))
+/******/ 	__webpack_require__.O(undefined, ["css/app","css/price","css/footer","css/main","css/header","css/cookie","css/calendar"], () => (__webpack_require__("./resources/sass/calendar.scss")))
+/******/ 	var __webpack_exports__ = __webpack_require__.O(undefined, ["css/app","css/price","css/footer","css/main","css/header","css/cookie","css/calendar"], () => (__webpack_require__("./resources/sass/cookie.scss")))
 /******/ 	__webpack_exports__ = __webpack_require__.O(__webpack_exports__);
 /******/ 	
 /******/ })()

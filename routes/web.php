@@ -4,6 +4,7 @@ use App\Http\Controllers\Admin\AdminPriceController;
 use App\Http\Controllers\Admin\EventsController;
 use App\Http\Controllers\Admin\NewsController;
 use App\Http\Controllers\CalendarController;
+use App\Http\Controllers\CookieController;
 use Illuminate\Support\Facades\Auth;
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\PostController;
@@ -109,5 +110,5 @@ Route::get('calendar', [SystemCalendarController::class, 'show'])->name('calenda
                 //PRICES
 Route::get('price', [PriceController::class, 'show'])->name('price');
                
-
+Route::post('/set-cookie', [CookieController::class,'setCookie']);
 

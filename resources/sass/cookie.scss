@@ -1,0 +1,385 @@
+#cookie-notification {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    background-color: #333;
+    color: #fff;
+    padding: 10px;
+    text-align: center;
+    z-index: 100;
+    height: 40vh;
+    display: flex; /* Используем flexbox */
+    align-items: center; /* Выравниваем по центру по вертикали */
+    justify-content: space-between; /* Равномерно распределяем элементы по оси X */
+
+    opacity: 0; /* Начальная прозрачность */
+    transition: opacity 0.5s ease; /* Плавность появления */
+}
+
+#overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5); /* Четвёртый параметр - уровень прозрачности */
+    z-index: 99; /* Выше уведомления о куки, но ниже других элементов */
+}
+
+#cookie-notification p {
+    //max-width: 80%; /* Максимальная ширина текста */
+    margin: 0 auto; /* Выравниваем текст по центру */
+    border-right: 1px solid #d8d8d8;
+    max-width: 60vw;
+    padding-right: 1rem;
+}
+
+#cookie-buttons {
+    display: flex; /* Используем flexbox */
+    flex-direction: column; /* Располагаем кнопки в столбец */
+    margin: 0 auto;
+    
+}
+
+#cookie-buttons button {
+    background-color: #ffffff;
+    border: 1px solid #ffffff;
+    color: #262626;
+    padding: 12px 10px;
+    line-height: 1.2;
+    font-size: .813em;
+    font-weight: 600;
+    margin: 5px;
+    cursor: pointer;
+}
+
+#cookie-notification button:hover {
+    border: 1px solid #bbb;
+    background-color: #bbb;
+}
+
+
+
+#cookie-notification.show {
+    opacity: 1; /* Прозрачность при показе */
+}
+
+#overlay.show {
+    display: flex;
+}
+
+
+
+#cookie-notification button:last-child {
+    margin-bottom: 0; /* Убираем отступ снизу у последней кнопки */
+}
+
+.modal {
+    display: none;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background: rgba(0, 0, 0, 0.7);
+    padding: 20px;
+    z-index: 101;
+}
+
+/* Стили для ползунков и их контейнеров */
+.slider-container {
+    margin-bottom: 20px;
+}
+
+                                    /*-------КНОПКА toggleßßßßßßßßßßßßßßßßßßßß*/
+// Colors
+$brand-primary: #29b5a8;
+$gray: gray;
+$gray-lighter: lighten($gray, 35%);
+
+// Button Colors
+$btn-default-color: $gray;
+$btn-default-bg: $gray-lighter;
+
+// Toggle Sizes
+$toggle-default-size: 1.5rem;
+$toggle-default-label-width: 4rem;
+$toggle-default-font-size: 0.75rem;
+
+@mixin toggle-color($color: $btn-default-color, $bg: $btn-default-bg, $active-bg: $brand-primary, $active-color: #ffffff) {
+  color: $color;
+  background: $bg;
+
+  &:before,
+  &:after {
+    color: $color;
+  }
+
+  &.active {
+    background-color: $active-bg;
+    color: $active-color;
+
+    &:before {
+      opacity: 1;
+    }
+
+    &:after {
+      opacity: 0;
+    }
+  }
+}
+
+@mixin toggle-mixin($size: $toggle-default-size, $margin: $toggle-default-label-width, $font-size: $toggle-default-font-size) {
+  margin: 0 $margin;
+  padding: 0;
+  position: relative;
+  border: none;
+  height: $size;
+  width: $size * 2;
+  border-radius: $size;
+
+  &:focus,
+  &.focus {
+    &,
+    &.active {
+      outline: none;
+    }
+  }
+
+  &:before,
+  &:after {
+    line-height: $size;
+    width: $margin;
+    text-align: center;
+    font-weight: 600;
+    font-size: $font-size;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    position: absolute;
+    bottom: 0;
+    transition: opacity 0.25s;
+  }
+
+  &:before {
+    content: 'Off';
+    left: -$margin;
+  }
+
+  &:after {
+    content: 'On';
+    right: -$margin;
+    opacity: 0.5;
+  }
+
+  > .handle {
+    position: absolute;
+    top: ($size * 0.25) / 2;
+    left: ($size * 0.25) / 2;
+    width: $size * 0.75;
+    height: $size * 0.75;
+    border-radius: $size * 0.75;
+    background: #fff;
+    transition: left 0.25s;
+  }
+
+  &.active {
+    transition: background-color 0.25s;
+
+    > .handle {
+      left: $size + (($size * 0.25) / 2);
+      transition: left 0.25s;
+    }
+
+    &:before {
+      opacity: 0.5;
+    }
+
+    &:after {
+      opacity: 1;
+    }
+  }
+
+  &.btn-sm {
+    &:before,
+    &:after {
+      color: #fff;
+      letter-spacing: 0.75px;
+      left: $size * 0.275;
+      width: $size * 1.55;
+    }
+
+    &:before {
+      text-align: right;
+    }
+
+    &:after {
+      text-align: left;
+      opacity: 0;
+    }
+
+    &.active {
+      &:before {
+        opacity: 0.8;
+      }
+
+      &:after {
+        opacity: 1;
+      }
+    }
+  }
+
+  &.btn-xs {
+    &:before,
+    &:after {
+      display: none;
+    }
+  }
+}
+
+.btn-toggle {
+  background-color: $gray;
+  color: black;
+  &:hover {
+    background-color: $gray;
+    color: black;
+    > .handle {
+      background-color: $gray-lighter;
+    }
+  }
+  @include toggle-mixin;
+
+  &.btn-lg {
+    @include toggle-mixin($size: 2.5rem, $font-size: 1rem, $margin: 5rem);
+  }
+
+  &.btn-sm {
+    @include toggle-mixin($font-size: 0.55rem, $margin: 0.5rem);
+  }
+
+  &.btn-xs {
+    @include toggle-mixin($size: 1rem, $margin: 0);
+  }
+
+  &.btn-secondary {
+    @include toggle-color($active-bg: $brand-primary);
+  }
+
+  &.active {
+    background-color: $brand-primary;
+    color: #fff;
+
+    &:before,
+    &:after {
+      color: black;
+    }
+
+    > .handle {
+    //   background-color: #fff;
+    }
+  }
+
+  button.btn-toggle {
+    &.active {
+      background-color: $brand-primary;
+      color: #fff;
+
+      &:before,
+      &:after {
+        color: #fff;
+      }
+
+      > .handle {
+        // background-color: #fff;
+      }
+    }
+  }
+
+  .btn-cookie {
+    background-color: black !important;
+  }
+}
+
+.cookie-buttons-modals {
+    display: flex;
+    flex-direction: column-reverse;
+    
+    align-items: center;
+}
+
+.cookie-buttons-modals button{
+
+    border: 1px solid black;
+    background: black;
+    color: white;
+    padding: 15px 10px;
+    line-height: 1.2;
+    font-size: 0.813em;
+    font-weight: 600;
+    margin: 5px;
+    margin-bottom: 15px;
+    cursor: pointer;
+
+}
+
+.cookie-buttons-modals button:hover{
+    background-color: darkslategray;
+    border-color: darkslategray;
+}
+
+.cookie-buttons-modals:last-child button{
+    width:200px;
+}
+
+.close{
+    width: 60px; 
+    font-size: 50px;
+    cursor: pointer;
+    position: absolute;
+    top: 0;
+    right: 10px;
+}
+
+.close:hover{
+    color:gray;
+}
+
+
+@media (max-width: 480px) {
+
+    #cookie-notification.cookie-notification{
+        display: flex;
+        opacity: 1.0;
+        flex-direction: column;
+        position: fixed;
+        bottom: 0;
+        left: 0;
+        width: 100%;
+        background-color: #333;
+        color: #fff;
+        padding: 10px;
+        text-align: center;
+        z-index: 100;
+        /* height: 40vh; */
+        height: auto;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        opacity: 0;
+        transition: opacity 0.5s ease;
+        
+    }
+
+    #cookie-notification p {
+        margin: 9px auto;
+        padding: 1rem 0.5rem;
+        border-right: none;
+        max-width: none;
+    }
+
+    #cookie-buttons {
+        width: 100%;
+    }
+
+}
+
+                        //Конец КНОПКИ!!!
