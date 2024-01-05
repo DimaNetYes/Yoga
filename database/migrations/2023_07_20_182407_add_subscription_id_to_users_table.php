@@ -14,9 +14,9 @@ class AddSubscriptionIdToUsersTable extends Migration
     public function up()
     {
         Schema::table('users', function (Blueprint $table) {
-            $table->unsignedBigInteger('subscription_id')->nullable()->after('id');
+            $table->unsignedBigInteger('user_id');
 
-            $table->foreign('subscription_id')->references('id')->on('subscriptions')->onDelete('set null');
+            $table->foreign('user_id')->references('id')->on('users');
         });
     }
 
@@ -28,7 +28,8 @@ class AddSubscriptionIdToUsersTable extends Migration
     public function down()
     {
         Schema::table('users', function (Blueprint $table) {
-            $table->dropColumn('subscription_id');
+            $table->dropForeign(['user_id']);
+            $table->dropColumn('user_id');
         });
     }
 }

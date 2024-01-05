@@ -14,6 +14,7 @@ use App\Http\Controllers\PriceController;
 
 use App\Http\Controllers\CourseController;
 use App\Http\Controllers\HomeController;
+use App\Http\Controllers\ImpressumController;
 use App\Http\Controllers\MainController;
 use App\Http\Controllers\MapController;
 use App\Http\Controllers\SystemCalendarController;
@@ -111,4 +112,6 @@ Route::get('calendar', [SystemCalendarController::class, 'show'])->name('calenda
 Route::get('price', [PriceController::class, 'show'])->name('price');
                
 Route::post('/set-cookie', [CookieController::class,'setCookie']);
+
+Route::get('/impressum', [ImpressumController::class, 'show'])->name('impressum');
 

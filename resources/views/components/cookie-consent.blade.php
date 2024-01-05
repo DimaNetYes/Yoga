@@ -117,8 +117,8 @@
                 // Устанавливаем куку согласия
                 var cookieConsent = document.cookie = 'cookieConsent=true; expires=' + new Date(new Date().getTime() + 365 * 24 * 60 * 60 * 1000).toUTCString() + '; path=/;';
 
-                var csrfToken = $('meta[name="csrf-token"]').attr('content');
-               
+                var csrfToken = $('meta[name="csrf-token"]').attr('content'); //token for Ajax Laravel
+                
                 $.ajax({
                     url: '/set-cookie',
                     type: 'POST',
@@ -132,6 +132,7 @@
                         console.log(response);
                     }
                 });
+                    
             }
 
             function hideOverlay() {
