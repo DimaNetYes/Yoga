@@ -18,6 +18,10 @@ class CreatePricesTable extends Migration
             $table->unsignedBigInteger('course_id');
             $table->string('subscription_type');
             $table->decimal('cost', 8, 2);
+            $table->string('title');
+            $table->string('punkt1');
+            $table->string('punkt2');
+            $table->string('punkt3');
             //conection
 
             $table->foreign('course_id')->references('id')->on('courses');

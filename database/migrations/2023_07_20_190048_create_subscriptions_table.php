@@ -15,14 +15,14 @@ class CreateSubscriptionsTable extends Migration
     {
         Schema::create('subscriptions', function (Blueprint $table) {
             $table->id();
-            
+            $table->unsignedBigInteger('user_id');
             $table->unsignedBigInteger('course_id');
             $table->unsignedBigInteger('price_id');
             $table->date('start_date');
             $table->date('end_date');
             //conections
 
-            
+            $table->foreign('user_id')->references('id')->on('users');
             $table->foreign('course_id')->references('id')->on('courses');
             $table->foreign('price_id')->references('id')->on('prices');
             

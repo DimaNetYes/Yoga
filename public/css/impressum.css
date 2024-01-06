@@ -1,0 +1,354 @@
+@charset "UTF-8";
+* {
+  border: 0px;
+  margin: 0px;
+  padding: 0px;
+}
+
+/* Стили для header */
+#container26 {
+  background-image: url("/img/nature.jpg");
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+  min-height: 150vh;
+  position: relative;
+  color: white;
+  margin: 0;
+}
+
+.t-cover__filter {
+  top: 0;
+  left: 0;
+  position: absolute;
+  z-index: -100;
+}
+
+#img1 {
+  position: relative;
+  left: 40px;
+  padding: 5px;
+}
+
+/* Стили для текста внутри header */
+#text03, #text26 {
+  opacity: 1;
+  transform: none;
+  text-align: center;
+}
+
+/* Стили для списка и его элементов (если необходимо) */
+ul.style1 {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+ul.style1 li {
+  margin: 0 10px;
+}
+
+nav.navbar {
+  width: 90vw;
+  max-width: 1160px;
+  min-height: 12vh;
+  margin: 0 auto; /* Выравниваем по центру */
+  background: white;
+}
+
+#navbarNav {
+  justify-content: center;
+}
+
+ul.navbar-nav li {
+  margin-right: 15px; /* Добавляем правый отступ 15px между элементами */
+  font-size: 15px;
+}
+ul.navbar-nav li a {
+  color: black;
+}
+
+/* Открывать выпадающее меню при наведении */
+.dropdown:hover .dropdown-menu {
+  display: block;
+}
+
+/* Стилизация выпадающего меню */
+.dropdown-menu-horizontal {
+  display: none;
+  position: absolute;
+  background-color: #fff;
+  border: 1px solid #ddd;
+  padding: 0; /* Уберите верхний и нижний паддинг */
+  min-width: 200px;
+  z-index: 1000;
+}
+
+/* Уберите верхний отступ у первого элемента меню */
+.dropdown-menu-horizontal .dropdown-item:first-child {
+  margin-top: 0;
+}
+
+/* Добавьте нижнюю границу и отступы для разделения между пунктами меню */
+.dropdown-menu-horizontal .dropdown-item {
+  margin: 0; /* Уберите верхний и нижний отступ */
+  display: block;
+  width: 100%;
+  padding: 10px 20px;
+  clear: both;
+  font-weight: normal;
+  color: #333;
+  white-space: nowrap;
+  border-radius: 0;
+  transition: background-color 0.3s ease-in-out;
+  line-height: normal;
+  border-bottom: 1px solid #ddd; /* Добавьте нижнюю границу */
+}
+
+/* Уберите нижнюю границу у последнего элемента меню */
+.dropdown-menu-horizontal .dropdown-item:last-child {
+  border-bottom: none;
+}
+
+.dropdown-menu-horizontal .dropdown-item:hover {
+  background-color: #f0f0f0;
+  color: rgb(226, 203, 129);
+}
+
+.mobilePhone_Email {
+  position: relative;
+  right: 20px;
+}
+
+.sp-black {
+  font-size: 14px;
+  color: black;
+}
+
+a.sp-black {
+  text-decoration: none;
+}
+
+a.sp-black:hover {
+  color: rgba(21, 222, 64, 0.9);
+}
+
+.sp-black-inst:hover {
+  color: rgb(59, 81, 234);
+}
+
+.i-black {
+  margin-right: 10px;
+  font-size: 14px;
+  color: black;
+}
+
+.instagram {
+  font-size: 24px;
+}
+
+h1.studio {
+  font-size: 42px;
+  margin-top: 40px;
+}
+
+.praktik {
+  margin-top: 60px;
+}
+
+.praktik span {
+  font-weight: 400;
+  font-size: 20px;
+}
+
+wrapper {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+main-container {
+  flex-grow: 1;
+  background-color: #f0f0f0; /* Серый цвет фона */
+}
+
+main {
+  margin: 50px auto 0px;
+  z-index: 1;
+  width: 90%;
+  max-width: 1160px;
+  box-sizing: border-box;
+  color: white;
+}
+
+.layout-content {
+  background: rgba(0, 0, 0, 0.6); /* Черный фон с прозрачностью 0.6 */
+  padding: 20px;
+  border-radius: 10px 10px 0px 0px; /* Добавьте скругленные углы по желанию */
+  line-height: 1em;
+}
+.layout-content h1 {
+  font-family: Klavika Medium;
+  margin: 10px 20px;
+}
+.layout-content .impressum__Grow {
+  font-size: 2em;
+  font-weight: bolder;
+  margin-top: 50px;
+  margin-bottom: 50px;
+}
+.layout-content .impressum__tel {
+  margin-top: 50px;
+}
+.layout-content .impressum__Umsatz {
+  margin-top: 50px;
+  margin-bottom: 50px;
+}
+
+.impressum__Img img {
+  height: 190px;
+  width: 270px;
+  margin-top: 50px;
+}
+
+/* Add this CSS at the end of your existing styles */
+.welcome-section {
+  background-color: rgba(0, 0, 0, 0.8); /* Choose the desired background color for the welcome section */
+  color: white; /* Choose the text color */
+  max-width: 1160px;
+  margin: 0 auto;
+  padding: 20px; /* Add padding as needed */
+  box-sizing: border-box;
+}
+
+.dark-line p {
+  font-size: 16px;
+  color: grey;
+  margin: 0;
+  font-size: 18px; /* Adjust the font size as needed */
+  text-align: center; /* Align the text to the center */
+}
+
+@media (max-width: 1124px) {
+  /* Уменьшаем ширину header на маленьких экранах */
+  header {
+    width: 100%;
+  }
+  nav.navbar {
+    width: 100%;
+    margin: 0 auto; /* Выравниваем по центру */
+    background: white;
+  }
+  h1.studio {
+    font-size: 42px;
+    margin-top: 40px;
+  }
+  main {
+    width: 100%;
+    top: 450px;
+  }
+}
+@media (min-width: 481px) and (max-width: 1024px) {
+  #container26 {
+    min-height: 100vh;
+  }
+}
+@media (min-width: 992px) {
+  .mobilePhone_Email__top {
+    display: none !important;
+  }
+}
+@media (max-width: 991px) and (min-width: 481px) {
+  /* Стили для выпадающего меню в кнопке бургера */
+  .navbar-toggler {
+    background-color: transparent; /* Убираем фон кнопки */
+    color: black; /* Цвет значка бургера */
+    font-size: 24px; /* Размер значка бургера */
+  }
+  /* Центрирование пунктов меню в выпадающем меню */
+  .navbar-collapse {
+    text-align: center; /* Выравниваем текст по центру */
+    margin-right: 80px;
+  }
+  /* Стили для пунктов меню в выпадающем меню */
+  .navbar-collapse ul.navbar-nav li.nav-item {
+    margin: 15px 0; /* Отступы между пунктами меню */
+  }
+  /* Стили для ссылок в пунктах меню в выпадающем меню */
+  .navbar-collapse ul.navbar-nav li.nav-item a.nav-link {
+    color: black; /* Цвет текста ссылок */
+    font-size: 18px; /* Размер текста ссылок */
+    text-decoration: none; /* Убираем подчеркивание ссылок */
+    transition: color 0.3s; /* Плавное изменение цвета при наведении */
+  }
+  /* Стили для активной ссылки в выпадающем меню */
+  .navbar-collapse ul.navbar-nav li.nav-item a.nav-link.active {
+    color: rgba(21, 222, 64, 0.9); /* Цвет активной ссылки */
+  }
+  /*стили для нижних 3-х элементов кнопки меню*/
+  .navbar-collapse.collapse.show .navbar-nav.ml-auto {
+    justify-content: center !important;
+  }
+  .btn__header {
+    margin: 0 auto;
+  }
+  .mobilePhone_Email__bottom {
+    display: none !important;
+  }
+  .header__price__h1 {
+    width: 94vw;
+  }
+}
+@media (max-width: 480px) {
+  #container26 {
+    min-height: 120vh;
+  }
+  /* Стили для выпадающего меню в кнопке бургера */
+  .navbar-toggler {
+    background-color: transparent; /* Убираем фон кнопки */
+    color: black; /* Цвет значка бургера */
+    font-size: 24px; /* Размер значка бургера */
+  }
+  /* Центрирование пунктов меню в выпадающем меню */
+  .navbar-collapse {
+    text-align: center; /* Выравниваем текст по центру */
+  }
+  /* Стили для пунктов меню в выпадающем меню */
+  .navbar-collapse ul.navbar-nav li.nav-item {
+    margin: 15px 0; /* Отступы между пунктами меню */
+  }
+  /* Стили для ссылок в пунктах меню в выпадающем меню */
+  .navbar-collapse ul.navbar-nav li.nav-item a.nav-link {
+    color: black; /* Цвет текста ссылок */
+    font-size: 18px; /* Размер текста ссылок */
+    text-decoration: none; /* Убираем подчеркивание ссылок */
+    transition: color 0.3s; /* Плавное изменение цвета при наведении */
+  }
+  /* Стили для активной ссылки в выпадающем меню */
+  .navbar-collapse ul.navbar-nav li.nav-item a.nav-link.active {
+    color: rgba(21, 222, 64, 0.9); /* Цвет активной ссылки */
+  }
+  /*стили для нижних 3-х элементов кнопки меню*/
+  .navbar-collapse.collapse.show .navbar-nav.ml-auto {
+    justify-content: center !important;
+  }
+  #img1 {
+    left: 20px;
+  }
+  .mobilePhone_Email {
+    margin: 0px auto;
+    right: 0px;
+  }
+  .btn__header {
+    margin: 0 auto;
+  }
+  .mobilePhone_Email__bottom {
+    display: none !important;
+  }
+  .header__price__h1 {
+    width: 94vw;
+  }
+}

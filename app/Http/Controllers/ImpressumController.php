@@ -7,5 +7,8 @@ use Illuminate\Http\Request;
 
 class ImpressumController extends Controller
 {
-    //
+    public function show(){
+        return view('impressum');
+    }
+   
 }
