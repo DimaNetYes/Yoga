@@ -105,7 +105,7 @@
                             </div>
                         </div>
                     @else
-                    <div id="tab{{ $key }}" class="tab-pane">
+                    <div id="tab{{ $key }}" class="tab-pane price__tab">
                         <div class="section-content">
                             <div class="pricing__table">
                                 <div class="row">

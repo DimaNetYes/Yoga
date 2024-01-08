@@ -36,7 +36,7 @@
   <div class="row">
     <div class="informationen__footer">
       <a href="" class=" a__footer_impressum">Informationen</a>
-      <a href="{{route("impressum")}}" class=" a__footer_impressum">Impressum</a>
+      <a href="/impressum" class=" a__footer_impressum">Impressum</a>
     </div>
   </div>
 

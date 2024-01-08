@@ -1,17 +1,9 @@
 
-    <x-main>
-       <x-slot name="title">
-            TTTTT
-       </x-slot>
-            asdfsadf
+    <x-my-component type="error" :message=" $mul ">
+        <x-slot name="title">This is a alert</x-slot>
        
+    </x-my-component>
 
-        {{ $txt }}
-    </x-main>
-<?php
-
-    dd($mul);
-?>
 
 
 

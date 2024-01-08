@@ -21,10 +21,6 @@
     <!-- Include Slick Carousel JavaScript -->
     <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
     
-  
-  
-  
-  
 
     <!-- Fonts -->
     <link rel="dns-prefetch" href="//fonts.gstatic.com">
@@ -60,8 +56,14 @@
 
     <footer>
         @include('main/footer')
+        
     </footer>
-
+    
+    
+    @if (isset($showCookieConsent) && $showCookieConsent)
+    <?php //dd(request()->cookies->all()); ?>
+        @include('components.cookie-consent')
+    @endif
 
 </wrapper>
     <!-- Подключаем скрипты Bootstrap -->
@@ -162,6 +164,10 @@
             });
         });
     </script>
+
+
+    
+    
 
 
 </body>

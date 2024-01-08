@@ -4,6 +4,7 @@ use App\Http\Controllers\Admin\AdminPriceController;
 use App\Http\Controllers\Admin\EventsController;
 use App\Http\Controllers\Admin\NewsController;
 use App\Http\Controllers\CalendarController;
+use App\Http\Controllers\CookieController;
 use Illuminate\Support\Facades\Auth;
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\PostController;
@@ -13,6 +14,7 @@ use App\Http\Controllers\PriceController;
 
 use App\Http\Controllers\CourseController;
 use App\Http\Controllers\HomeController;
+use App\Http\Controllers\ImpressumController;
 use App\Http\Controllers\MainController;
 use App\Http\Controllers\MapController;
 use App\Http\Controllers\SystemCalendarController;
@@ -109,5 +111,7 @@ Route::get('calendar', [SystemCalendarController::class, 'show'])->name('calenda
                 //PRICES
 Route::get('price', [PriceController::class, 'show'])->name('price');
                
+Route::post('/set-cookie', [CookieController::class,'setCookie']);
 
+Route::get('/impressum', [ImpressumController::class, 'show'])->name('impressum');
 
