@@ -32,6 +32,14 @@
       </div>
     </div>
   </div>
+
+  <div class="row">
+    <div class="informationen__footer">
+      <a href="" class=" a__footer_impressum">Informationen</a>
+      <a href="{{route("impressum")}}" class=" a__footer_impressum">Impressum</a>
+    </div>
+  </div>
+  
   <div class="row">
     <div class="commerc">
       <p class="col-lg-6 col-md-12" id="p__footer_1">© 2023 "Grow! Yoga & Bildung"</p>

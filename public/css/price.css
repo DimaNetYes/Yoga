@@ -109,6 +109,12 @@ li .price__a {
   text-align: center;
 }
 
+.price__tab {
+  width: 70vw;
+  justify-content: center;
+  text-align: center;
+}
+
 .ul-style {
   margin: 0 auto;
   width: 70vw;
