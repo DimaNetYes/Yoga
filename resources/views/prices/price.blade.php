@@ -129,6 +129,13 @@
 
 
                 <div class="ul-style">
+                    <p>Informationen:</p>
+                    <ul>
+                     <li><a href="" class="fas fa-check-circle" style="margin-right: 5px;">FÜNFER - TICKET</a>  </li>
+                    </ul>
+                </div>
+
+                <div class="ul-style">
                     <p>Zusatzleistungen:</p>
                     <ul>
                      <li><i class="fas fa-check-circle" style="margin-right: 5px;"></i> Teppichverleih - 1 €</li>

@@ -45,9 +45,7 @@
 <div class="container__info">
         <h1>Liebe Yogint, lieber Yogi</h1>
 
-        <p>Aus organisatorischen Gründen bitte ich um Dein Mitwirken:</p>
-
-        aus organisatorischen Gründen bitte ich um Dein Mitwirken:
+        <p>Aus organisatorischen Gründen bitte ich um Dein Mitwirken:
 
 Das Fünfer-Ticket soil Dir eine zeitlich gut machbare Kursteilnahme ermöglichen, die Dich nicht länger bindet, als Du wirklich Freude und Erfüllung im Yoga findest.
 
@@ -78,7 +76,7 @@ Aktuell strebeich die Zertifizierung als Präventionskurs zur Abrechnung bei den
 
 Wenn Du damit konform bist, sage ich Danke!" und freue mich auf die gemeinsame Zeit,
 
-Daniela Schermer
+Daniela Schermer</p>
 
     </div>
 

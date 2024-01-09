@@ -63,7 +63,7 @@
         <div class="wrapper">
             <div class="inner">
                 <h2 id="text17" class="">Das erste Studio seiner Art in Salzwedel.</h2>
-                <p id="text49" class="style3">Bei uns kannst du dich vom Yoga-Anfänger zum erfahrenen Praktiker und weiter zum Yogalehrer entwickeln</p>
+                <p id="text49" class="style3">Bei uns kannst du dich vom Yoga-Anfänger zum erfahrenen Praktiker entwickeln</p>
             </div>
         </div>
     </div>
@@ -115,7 +115,7 @@
             <div class="col-12 col-lg-6 col-md-12 Map__El">
                 <!-- Карта -->
                 <div class="map-container">
-                    <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d2409.47253104764!2d11.151745000000002!3d52.849889000000005!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47afad3c062e369f%3A0x7844941ac34ca6a2!2sBurgstra%C3%9Fe%2075%2C%2029410%20Salzwedel!5e0!3m2!1sru!2sde!4v1690889070242!5m2!1sru!2sde" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2409.4783326916095!2d11.149156776555493!3d52.84978447214948!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47afad3c061ad353%3A0x322ea3faa4f8f6f7!2sBurgstra%C3%9Fe%2077%2C%2029410%20Salzwedel!5e0!3m2!1sru!2sde!4v1704797346822!5m2!1sru!2sde" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
                 </div>
             </div>
             <div class="col-12 col-lg-6 col-md-12 Map__El Map__El1">
@@ -124,7 +124,7 @@
                     <div class="unsere"><strong><span class="info__adresse">Unsere Adresse</span></strong></div>
                     <div class="info__info">
                         <strong>Adresse:</strong>
-                        <p>Burgstraße 75, 29410 Salzwedel</p>
+                        <p>Burgstraße 77, 29410 Salzwedel</p>
                         <strong>Telefonnummer:</strong>
                         <p>+49 1512 7138054</p>
                         <strong>Email:</strong>
