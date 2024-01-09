@@ -88,11 +88,7 @@
                     <h1 class="t181__title t-title t-title_md studio" style="font-weight: 600;">YOGA IM ATELIER 
                     <br/><br/>Studio für Yoga und mentale Gesundheit in Salzwedel</h1>
                     <div class="t181__descr t-descr t-descr_lg praktik" style="color: #e8e8e8;">
-                        <span>In meinem Studio hat sich ein qualifiziertes Kollektiv aus Yoga- Therapeutinnen zusammengefunden, das in professioneller Weise unterrichtet und anleitet.
-
-Der Raum steht allen offen, die nach Ausgeglichenheit und innerer Ruhe suchen. Unabhängig von Deinen Erfahrungsstand bieten wir Kurse, die Dich befähigen im Yoga zu wachsen und Deinen Weg zu gehen.
-
-Unsere Praktiken leiten Dich an, Deinen Geist zur Ruhe zu bringen, Dich zu neu zu betrachten. Du findest einen anderen Zugang zur Natur, der Welt und Dir selbst.</span>
+                        <span>In meinem Studio hat sich ein qualifiziertes Kollektiv aus Yoga- Therapeutinnen zusammengefunden, das in professioneller Weise unterrichtet und anleitet. Der Raum steht allen offen, die nach Ausgeglichenheit und innerer Ruhe suchen. Unabhängig von Deinem Erfahrungsstand bieten wir Kurse, die Dich befähigen im Yoga zu wachsen und Deinen Weg zu gehen. Unsere Praktiken leiten Dich an, Deinen Geist zur Ruhe zu bringen, Dich zu neu zu betrachten. Du findest einen anderen Zugang zur Natur, der Welt und Dir selbst..</span>
                     </div>
                     <div style="margin-top: 60px; margin-bottom: 30px;">
                        <!-- Use Bootstrap classes for the buttons -->

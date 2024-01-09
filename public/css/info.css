@@ -1,0 +1,65 @@
+.studio header__price__h1 {
+  color: white;
+}
+
+.container__info {
+  max-width: 800px;
+  margin: 12px auto;
+  padding: 20px;
+  border: 1px solid #ccc;
+  border-radius: 10px;
+  background-color: #f9f9f9;
+  font-family: "Nunito", sans-serif;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.8);
+}
+
+h1 {
+  color: #333;
+  text-align: center;
+}
+
+p {
+  line-height: 1.6;
+  margin-bottom: 15px;
+}
+
+ol {
+  margin-bottom: 15px;
+}
+
+li {
+  margin-bottom: 5px;
+}
+
+.alert {
+  background-color: #dff0d8;
+  border-color: #d6e9c6;
+  color: #3c763d;
+  padding: 15px;
+  border-radius: 5px;
+  margin-bottom: 20px;
+}
+
+.alert-warning {
+  background-color: #fcf8e3;
+  border-color: #faebcc;
+  color: #8a6d3b;
+}
+
+.button-container {
+  text-align: center;
+  margin-top: 20px;
+}
+
+.button {
+  padding: 10px 20px;
+  background-color: #5bc0de;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.button:hover {
+  background-color: #2aabd2;
+}

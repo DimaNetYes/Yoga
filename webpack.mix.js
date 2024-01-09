@@ -20,4 +20,5 @@ mix.js('resources/js/app.js', 'public/js')
     .sass('resources/sass/calendar.scss', 'public/css')
     .sass('resources/sass/cookie.scss', 'public/css')
     .sass('resources/sass/impressum.scss', 'public/css')
+    .sass('resources/sass/info.scss', 'public/css')
     .sourceMaps();

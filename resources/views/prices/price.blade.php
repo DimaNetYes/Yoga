@@ -18,11 +18,6 @@
     
     <!-- Include Slick Carousel JavaScript -->
     <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
-    
-  
-  
-  
-  
 
     <!-- Fonts -->
     <link rel="dns-prefetch" href="//fonts.gstatic.com">
@@ -40,13 +35,7 @@
      <link href="{{ asset('css/footer.css') }}" rel="stylesheet">
      <link href="{{ asset('css/price.css') }}" rel="stylesheet">
      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
-
-
-
-     <style>
-        
-    </style>
-     
+ 
 </head>
 
 <body >
