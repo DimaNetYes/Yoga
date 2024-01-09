@@ -92,7 +92,7 @@
                             <img src="{{ $article->image_url }}" data-src="done" alt="{{ $article->title }}" style="opacity: 1;" alt={{ $article->title }}>
                         </span>
                     </div>
-                    <p id="" class="style3">{{ $article->content }}</p>
+                    <p id="" class="style3">{!! $article->content !!}</p>
                 </div>
 
                

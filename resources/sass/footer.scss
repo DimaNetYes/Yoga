@@ -3,7 +3,7 @@
     background-color: rgba(22, 90, 110);
     padding: 20px;
     padding-top: 45px;
-    height: 450px;
+    // height: 450px;
   }
   
   .footer__inline {
@@ -12,6 +12,10 @@
     width: 33.33%;
     padding: 10px;
     box-sizing: border-box;
+  }
+
+  .footer__inline_right{
+    padding-left: 40px;
   }
 
   .footer__logo {
@@ -128,8 +132,8 @@
 }
 
 #footer__feedback {
-    width: 58%;
-    text-align: right;
+    // width: 58%;
+    // text-align: right;
 }
 
 #footer__feedback a {
@@ -147,7 +151,7 @@
     
     vertical-align: middle;
     width: 100%;
-    padding: 10px 30px;
+    padding: 13px 30px;
 }
 
 .footer__whatsapp {

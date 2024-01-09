@@ -24,9 +24,9 @@
                     @foreach ($news as $item)
                         <tr>
                             <td>{{ $item->id }}</td>
-                            <td>{{ $item->title }}</td>
+                            <td>{!! $item->title !!}</td>
                             <td>{{ $item->created_at->format('d.m.Y H:i') }}</td>
-                            <td style="white-space: pre-wrap; width:40%;">{{ $item->content }}</td>
+                            <td style="white-space: pre-wrap; width:40%;">{!! $item->content !!}</td>
                             <td>
                                 
                                 <a class="btn btn-sm btn-warning" href="{{ route('admin.news.edit', $item->id) }}">Bearbeiten</a>

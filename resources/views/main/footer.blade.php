@@ -13,12 +13,17 @@
       <div class="footer__inline col-lg-4 col-md-12 footer__graph">
         <span class="footer__work">Öffnungszeiten des Studios</span>
         <div>
-          <span>Dirigierkurse:</span>
-          <span>Wochentags - 16:00-21:00</span>
-          <span>Wochende - workshops nach die Ankündigung</span>
+          <span>gültig ab 02.02.2024</span>
+          <span>Mo: 8:30-12:00 Uhr | 15:00-20:00 Uhr</span>
+          <span>Di: 8:30-13:00 Uhr | Mi: 15:00-20:00 Uhr</span>
+          <span>Do: 8:30-14:00 Uhr</span>
+          <span>Fr: 8:30-12:00 Uhr | 15:00-20:00 Uhr</span>
+          <span>Sa/So: nach Ankündigung</span>
+          <span>Während der Kurszeiten ist die Eingangstür verschlossen und Telefonate können nicht entgegengenommen werden.
+Danke für das Verständnis.</span>
         </div>
       </div>
-      <div class="footer__inline col-lg-4 col-md-12">
+      <div class="footer__inline footer__inline_right col-lg-4 col-md-12">
         <span id="footer__phone">+49 1512 7138054</span>
         <span id="footer__info"><a href="mailto:creatura_creare@gmx.de" style="text-decoration: none; color: white; font-size: 18px;">creatura_creare@gmx.de</a></span>
         <span id="footer__feedback"><a href="https://g.page/Burgstraße+77,+29410+Salzwedel/review?gm" target="_blank"> Hinterlasse Kommentar</a></span>

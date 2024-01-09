@@ -41,6 +41,9 @@ class NewsController extends Controller
             $validatedData['image_url'] = '/img/' . $imageName;
         }
 
+        // Преобразование новых строк в HTML-теги <br>
+        $validatedData['content'] = nl2br($validatedData['content']);
+
         $news = new News($validatedData);
         $news->save();
         return redirect()->route('admin.news.index')->with('success', 'Новость успешно создана!');
@@ -82,6 +85,9 @@ class NewsController extends Controller
             
             $validatedData['image_url'] = $news->image_url;
         }
+
+         // Преобразование новых строк в HTML-теги <br>
+         $validatedData['content'] = nl2br($validatedData['content']);
 
         $news->update($validatedData);
         return redirect()->route('admin.news.index')->with('success', 'Die News wurden erfolgreich aktualisiert.');

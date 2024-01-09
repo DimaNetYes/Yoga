@@ -43,7 +43,7 @@
 @include('events/header')
 
 <div class="container__info">
-        <h1>Liebe Yogint, lieber Yogi</h1>
+        <h1>Liebe Yogini, lieber Yogi</h1>
 
         <p>Aus organisatorischen Gründen bitte ich um Dein Mitwirken:
 
