@@ -118,3 +118,7 @@ Route::post('/set-cookie', [CookieController::class,'setCookie']);
 Route::get('/impressum', [ImpressumController::class, 'show'])->name('impressum');
 Route::get('/info', [InfoController::class, 'show'])->name('info');
 
+                //Richtungen
+Route::get('ersteschritte', function() {
+    return view('richtungen.ersteSchritte');
+})->name('ersteschritte');

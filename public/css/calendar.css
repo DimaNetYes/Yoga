@@ -2,8 +2,4 @@
   main .container-fluid {
     padding: 0px !important;
   }
-  .fc-scroller fc-day-grid-container {
-    height: 500px !important;
-    overflow: hidden scroll;
-  }
 }

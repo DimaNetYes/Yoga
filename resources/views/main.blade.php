@@ -58,7 +58,6 @@
     
     
     @if (isset($showCookieConsent) && $showCookieConsent)
-    <?php //dd(request()->cookies->all()); ?>
         @include('components.cookie-consent')
     @endif
 
@@ -76,7 +75,22 @@
 
     
     
+<!-- Include snowfall.jquery.js -->
+<script src="{{ asset('js/snowfall.jquery.js') }}"></script>
 
 
+<script>
+$(document).ready(function(){
+    // Initialize the snowfall effect without a custom image
+    $('#container26').snowfall({
+        flakeCount: 50,
+        maxSpeed : 1, 
+        maxSize : 5,
+        round: true,
+        
+        // other options can be added as needed
+    });
+});
+</script>
 </body>
 </html>
