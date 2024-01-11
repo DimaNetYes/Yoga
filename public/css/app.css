@@ -11984,6 +11984,10 @@ textarea.form-control-lg {
   src: url(/fonts/KlavikaDisplay-Black.woff2?88fd409e6e3fdec070f93b7d6a89cfb1) format("woff2");
 }
 @font-face {
+  font-family: "Klavika Light";
+  src: url(/fonts/KlavikaDisplay-ExtraLight.woff2) format("woff2");
+}
+@font-face {
   font-family: "Noto Sans";
   src: url(/fonts/NotoSans.woff2?4bcbd9ed90a493e5910e286d5edd2efb) format("woff2");
 }

@@ -43,8 +43,10 @@
                             Richtungen
                         </a>
                         <div class="dropdown-menu dropdown-menu-horizontal" aria-labelledby="yogaDropdown">
-                            <a class="dropdown-item" href="#">Erste Schritte im Yoga</a>
-                            <a class="dropdown-item" href="#">Hatha Yoga</a>
+                        <a class="dropdown-item" href="{{ route('ersteschritte') }}">Erste Schritte im Yoga</a>
+                            <a class="dropdown-item" href="#">Yoganastik</a>
+                            <a class="dropdown-item" href="#">Faszinastik</a>
+                            <a class="dropdown-item" href="#">Yoga und Musik</a>
                             <a class="dropdown-item" href="#">Nidra Yoga</a>
                         </div>
                     </li>

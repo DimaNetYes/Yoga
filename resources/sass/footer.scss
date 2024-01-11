@@ -266,7 +266,10 @@
 
 
 @media (max-width: 1024px) and (min-width: 481px){
-
+  .footer {
+    height: 100%;
+  }
+  
   .a__footer_impressum{
     font-size: 20px;
     margin-top: 15px;

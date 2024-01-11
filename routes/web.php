@@ -120,5 +120,6 @@ Route::get('/info', [InfoController::class, 'show'])->name('info');
 
                 //Richtungen
 Route::get('ersteschritte', function() {
-    return view('richtungen.ersteSchritte');
+    $title = 'Erste Schritte im Yoga'; 
+    return view('richtungen.ersteSchritte')->with('title', $title);
 })->name('ersteschritte');
