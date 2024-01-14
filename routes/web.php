@@ -123,3 +123,13 @@ Route::get('ersteschritte', function() {
     $title = 'Erste Schritte im Yoga'; 
     return view('richtungen.ersteSchritte')->with('title', $title);
 })->name('ersteschritte');
+
+Route::get('yoganastik', function() {
+    $title = 'Yoganastik'; 
+    return view('richtungen.yogaNastik')->with('title', $title);
+})->name('yogaNastik');
+
+Route::get('faszinastik', function() {
+    $title = 'Faszinastik'; 
+    return view('richtungen.fasziNastik')->with('title', $title);
+})->name('fasziNastik');
