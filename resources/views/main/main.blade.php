@@ -26,7 +26,7 @@
         <div class="col-lg-6 col-md-6 col-sm-12 order-lg-1 order-md-1 order-sm-1 order-2 custom-height">
         <div class="style1" style="padding:20px 50px;">
             <h2 id="text12">Deine Yoga-Reise beginnt mit uns</h2>
-            <p id="text15" class="style3"><span style="color: black;">Daniela Schermer (Studioleitung):</span><br/> Zertifizierte Hatha-Yogatherapeutin, Faszien-Yoga-Lehrerin, Heilpädagogin, Jobcoachin für Menschen mit Handicap <br/><br/> <span style="color: black;">Ivonne Ritter Findeisen (freie Mitarbeiterin):</span> <br/> Zertifizierte Hatha Yoga Lehrerin/Mediengestalterin <br/><br/> <span style="color: black;">Martina Michaelis (freie Mitarbeiterin):</span><br/>Zertifizierte Benefit Yoga® Lehrerin/ freie Rednerin</p>
+            <p id="text15" class="style3"><span style="color: black;">Daniela Schermer (Studioleitung):</span><br/> Zertifizierte Hatha-Yogatherapeutin, Faszien-Yoga-Lehrerin, Heilpädagogin, Jobcoachin für Menschen mit Handicap <br/><br/> <span style="color: black;">Ivonne Ritter Findeisen (freie Mitarbeiterin):</span> <br/> Zertifizierte Yin Yoga Lehrerin/Diplom-Journalistin <br/><br/> <span style="color: black;">Martina Michaelis (freie Mitarbeiterin):</span><br/>Zertifizierte Benefit Yoga® Lehrerin/ freie Rednerin</p>
         </div>
         </div>
         <!-- Image Column -->
@@ -76,7 +76,6 @@
 
                                  <!-- news_slider.blade.php -->
 
-    
     <div id="slider-container" class="style3 container columns" style="opacity: 1; transform: none;">
     <h2 class='newsH2'>Veranstaltungen und Neuigkeiten</h2>
         <div class="wrapper1">
@@ -86,7 +85,8 @@
             @foreach($newsArticles as $article)
                 
                 <div class="slider-item">
-                    <h2 id="" class="">{{ $article->title }}</h2>
+                    <h2 id="" class="">{!! $article->title !!}</h2>
+                    
                     <div class="style3 image d-flex justify-content-center align-items-center" data-position="center" style="opacity: 1; transform: none;">
                         <span  class="frame deferred news" style="background-image: none; background-size: 100% 100%; background-position: left top; background-repeat: no-repeat;">
                             <img src="{{ $article->image_url }}" data-src="done" alt="{{ $article->title }}" style="opacity: 1;" alt={{ $article->title }}>
@@ -102,6 +102,7 @@
         <!-- Вставляем кнопки "Previous" и "Next" для пролистывания остальных слайдов -->
         <button class="slick-prev">&#9668;</button>
         <button class="slick-next">&#9658;</button>
+    
     </div>
 
 

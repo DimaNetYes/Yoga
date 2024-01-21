@@ -39,6 +39,16 @@
                             <input type="text" class="form-control" id="punkt3" name="punkt3" value="" placeholder="Beschreibung, Bedingungen, Einschränkung. Maximal 10 Wörter.">
                         </div>
                         <br/>
+                        <div class="form-group">
+                            <label for="subscription">Absatz 4</label>
+                            <input type="text" class="form-control" id="punkt4" name="punkt4" value="" placeholder="Beschreibung, Bedingungen, Einschränkung. Maximal 10 Wörter.">
+                        </div>
+                        <br/>
+                        <div class="form-group">
+                            <label for="subscription">Absatz 5</label>
+                            <input type="text" class="form-control" id="punkt5" name="punkt5" value="" placeholder="Beschreibung, Bedingungen, Einschränkung. Maximal 10 Wörter.">
+                        </div>
+                        <br/>
                         <!-- <input type="hidden" name="course_id" value="24"> -->
                         <!-- Добавьте другие поля, если необходимо -->
                         <button type="submit" class="btn btn-primary">Hinzufügen</button>

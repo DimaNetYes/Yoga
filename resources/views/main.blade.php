@@ -18,7 +18,6 @@
     <!-- Include Slick Carousel JavaScript -->
     <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
     
-
     <!-- Fonts -->
     <link rel="dns-prefetch" href="//fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css?family=Nunito" rel="stylesheet">
@@ -58,6 +57,7 @@
     
     
     @if (isset($showCookieConsent) && $showCookieConsent)
+    <?php //dd(request()->cookies->all()); ?>
         @include('components.cookie-consent')
     @endif
 
@@ -72,13 +72,8 @@
 
     <!-- Include Slick Carousel library -->
     <script src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
-
-    
-    
-<!-- Include snowfall.jquery.js -->
+    <!-- Include snowfall.jquery.js -->
 <script src="{{ asset('js/snowfall.jquery.js') }}"></script>
-
-
 <script>
 $(document).ready(function(){
     // Initialize the snowfall effect without a custom image
@@ -92,5 +87,6 @@ $(document).ready(function(){
     });
 });
 </script>
+
 </body>
 </html>

@@ -22,3 +22,7 @@ mix.js('resources/js/app.js', 'public/js')
     .sass('resources/sass/impressum.scss', 'public/css')
     .sass('resources/sass/info.scss', 'public/css')
     .sourceMaps();
+
+mix.autoload({
+    jquery: ['$', 'window.$', 'window.jQuery']
+});    

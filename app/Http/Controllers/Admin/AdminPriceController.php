@@ -9,7 +9,7 @@ use App\Models\Course;
 use Illuminate\Http\Request;
 use Illuminate\Support\Collection as SupportCollection;
 
-  class AdminPriceController extends Controller
+class AdminPriceController extends Controller
 {
 
     public $title = 'Die Kosten für den Unterricht';
@@ -21,7 +21,7 @@ use Illuminate\Support\Collection as SupportCollection;
     public function index()
     {
         $prices = Price::orderBydesc('created_at')->get();
-        
+
         return view('admin.prices.index', compact('prices'));
     }
 
@@ -46,17 +46,19 @@ use Illuminate\Support\Collection as SupportCollection;
 
         $course = Course::latest()->first()->id;
         $request->merge(['course_id' => $course]);
-        
-      
+
+
         // Проверка и валидация данных oder $data = $request->validate([...]) and Price::create($data);
-         $request->validate([
+        $request->validate([
             'subscription' => 'required|string',
             'cost' => 'required|numeric',
             'title' => 'nullable|string',
             'punkt1' => 'nullable|string',
             'punkt2' => 'nullable|string',
             'punkt3' => 'nullable|string',
-            
+            'punkt4' => 'nullable|string', // Add validation for new point
+            'punkt5' => 'nullable|string', // Add validation for new point
+
         ]);
         // Создание новой цены
         $price = new Price([
@@ -67,10 +69,12 @@ use Illuminate\Support\Collection as SupportCollection;
             'punkt1' => $request->input('punkt1'),
             'punkt2' => $request->input('punkt2'),
             'punkt3' => $request->input('punkt3'),
-            
+            'punkt4' => $request->input('punkt4'), // Add new point
+            'punkt5' => $request->input('punkt5'), // Add new point
+
         ]);
-        
-       
+
+
         $price->save();
 
         //Price::create($data);
@@ -98,9 +102,9 @@ use Illuminate\Support\Collection as SupportCollection;
      */
     public function edit($id)
     {
-        
+
         $price = Price::find($id);
-        
+
         return view('admin.prices.edit', compact('price'));
     }
 
@@ -114,14 +118,17 @@ use Illuminate\Support\Collection as SupportCollection;
     public function update(Request $request, $id)
     {
         $price = Price::find($id);
-        
+
         $price->subscription_type = $request->input('subscription');
         $price->cost = $request->input('cost');
         $price->title = $request->input('title');
         $price->punkt1 = $request->input('punkt1');
         $price->punkt2 = $request->input('punkt2');
         $price->punkt3 = $request->input('punkt3');
-        
+        $price->punkt4 = $request->input('punkt4'); // Update for new point
+        $price->punkt5 = $request->input('punkt5'); // Update for new point
+
+
         $price->save();
 
         return redirect()->route('admin.prices.index')->with('success', 'Запись успешно обновлена');
@@ -137,11 +144,11 @@ use Illuminate\Support\Collection as SupportCollection;
     {
         $price = Price::findOrFail($id);
 
-            //все связанные таблицы
-       /* if($price->subscription){
-            $price->subscription->delete();
-       } */
- 
+        //все связанные таблицы
+        /* if($price->subscription){
+             $price->subscription->delete();
+        } */
+
         $price->delete();
 
         return redirect()->route('admin.prices.index')->with('success', 'Eintrag erfolgreich gelöscht');

@@ -110,6 +110,7 @@ li .price__a {
   text-align: center;
 }
 
+
 .price__tab{
   width: 70vw;
   justify-content: center;
@@ -207,6 +208,10 @@ li .price__a {
 
 }
 
+.price__descr{
+  margin-left: 5px;
+}
+
 @media (min-width: 481px) and (max-width: 1200px) {
 
     .pricing__header li {
@@ -288,9 +293,8 @@ li .price__a {
   }
 
   li .price__a{
-    margin-right: 50px;
     display: inline-block;
-    width: 100%;
+    min-width: 72vw;
     height: 60px;
     font-size: 18px;
     padding: 10px 30px;

@@ -199,6 +199,10 @@ li .price__a {
   box-shadow: 1px 1px 5px 3px rgb(70, 113, 123);
 }
 
+.price__descr {
+  margin-left: 5px;
+}
+
 @media (min-width: 481px) and (max-width: 1200px) {
   .pricing__header li {
     display: inline-block;
@@ -263,9 +267,8 @@ li .price__a {
     margin-top: 25px;
   }
   li .price__a {
-    margin-right: 50px;
     display: inline-block;
-    width: 100%;
+    min-width: 72vw;
     height: 60px;
     font-size: 18px;
     padding: 10px 30px;

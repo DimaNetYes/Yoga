@@ -43,6 +43,16 @@
                             <input type="text" class="form-control" id="punkt3" name="punkt3" value="{{ $price->punkt3 }}" placeholder="Beschreibung, Bedingungen, Einschränkung. Maximal 10 Wörter.">
                         </div>
                         <br/>
+                        <div class="form-group">
+                            <label for="subscription">Absatz 4</label>
+                            <input type="text" class="form-control" id="punkt4" name="punkt4" value="{{ $price->punkt4 }}" placeholder="Beschreibung, Bedingungen, Einschränkung. Maximal 10 Wörter.">
+                        </div>
+                        <br/>
+                        <div class="form-group">
+                            <label for="subscription">Absatz 5</label>
+                            <input type="text" class="form-control" id="punkt5" name="punkt5" value="{{ $price->punkt5 }}" placeholder="Beschreibung, Bedingungen, Einschränkung. Maximal 10 Wörter.">
+                        </div>
+                        <br/>
                         <!-- Добавьте другие поля, если необходимо -->
                         <button type="submit" class="btn btn-primary">Speichern</button>
                         <a href="{{ url()->previous() }}" class="btn btn-secondary mb-6 ml-4">Zurück</a>

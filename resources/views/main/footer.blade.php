@@ -115,6 +115,3 @@ Danke für das Verständnis.</span>
   });
 </script>
 
-<script>
-    
-</script>

@@ -41,6 +41,7 @@
             position: relative;
             color: white;
         }
+
         /* Добавляем подчеркивание для заголовков */
         main h2 {
             text-decoration: underline;
@@ -118,21 +119,26 @@
                     verbessern</h1>
 
                 <p>
-                    Yoganastik ist eine Gymnastikart, die Elemente des Yoga und der klassischen Gymnastik vereint. Es
-                    wurde Mitte des 20. Jahrhunderts in Deutschland als Methode zum Stressabbau und zur Verbesserung der
-                    allgemeinen Gesundheit entwickelt.
+                    Yoganastik, dieser Begriff wird erstmals 1977 von der DDR-Zeitung „Volksstimme“ geprägt. Er
+                    beschreibt eine Übungsserie, die den Asana des klassischen Hatha-Yoga angelehnt ist und später zu
+                    einer Broschüre zusammengefasst wurde. Da sich vor diesem kulturpolitischen Hintergrund jede Form
+                    der Spiritualität oder mentalen Anlehnung schwergetan hat, wurde aus dem Asana eine Gymnastikübung.
+
                 </p>
                 <hr>
                 <p>
-                    Yoganastik umfasst verschiedene Übungen, die darauf abzielen, die Muskeln zu dehnen, die Gelenke zu
-                    stärken und die Flexibilität zu verbessern. Diese Übungen werden in einem langsamen und ruhigen
-                    Tempo durchgeführt, wobei der Schwerpunkt auf bewusster Atmung und Entspannung liegt.
+                    Unter dem Motto „abgestaubt und aufpoliert“ greife ich diese Form des Übens in einem meiner Kurse
+                    auf und gebe Dir die Freiheit auch diesen Weg zu beschreiten.
+                    Zweifellos kann man über diese Herangehensweise an Yoga streiten, da besonders in der Schrift der
+                    Hatha Yoga Pradipika der eigentlich meditative Urgedanke der Meditation betont wird, doch habe ich
+                    in meiner Zeit als Yogalehrerin immer wieder die Erfahrung gemacht, dass Menschen durchaus über das
+                    Praktizieren zur mentalen Anbindung gefunden haben, dass die physischen Übungen in ihnen die Frage
+                    nach dem höheren Sinn erst geweckt haben.
+
                 </p>
 
                 <p>
-                    Yoganastik ist für Menschen jeden Alters und Fitnessniveaus geeignet. Es ist ein wirksames Mittel,
-                    um Stress abzubauen, das Wohlbefinden zu verbessern und die allgemeine körperliche Aktivität zu
-                    steigern.
+                    
                 </p>
 
                 <img class="erste__img" src="{{ asset('img/Yoganastik3.png') }}" alt="Erste Schritte">
