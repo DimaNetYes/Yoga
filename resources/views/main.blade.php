@@ -72,6 +72,7 @@
 
     <!-- Include Slick Carousel library -->
     <script src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+
     <!-- Include snowfall.jquery.js -->
 <script src="{{ asset('js/snowfall.jquery.js') }}"></script>
 <script>
@@ -87,6 +88,8 @@ $(document).ready(function(){
     });
 });
 </script>
+
+
 
 </body>
 </html>

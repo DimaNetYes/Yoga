@@ -122,7 +122,7 @@
 
         <main>
             <div id="content-container">
-                <h1 class="erste__h1">Faszinastik ist eine dynamischere Art von Yoga</h1>
+                <h1 class="erste__h1">Faszinastik: Eine Innovative Herangehensweise an Körperbewegung und Flexibilität</h1>
 
                 <p>
                     Faszinastik ist eine Gymnastikart, die Elemente aus Yoga, Pilates und Tai Chi vereint. 

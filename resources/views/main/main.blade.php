@@ -78,7 +78,7 @@
 
     <div id="slider-container" class="style3 container columns" style="opacity: 1; transform: none;">
     <h2 class='newsH2'>Veranstaltungen und Neuigkeiten</h2>
-        <div class="wrapper1">
+        <div class="wrapper1 slider__wrapper">
        
             <div class="inner1">
             
@@ -98,10 +98,11 @@
                
             @endforeach
             </div>
-        </div>
-        <!-- Вставляем кнопки "Previous" и "Next" для пролистывания остальных слайдов -->
+              <!-- Вставляем кнопки "Previous" и "Next" для пролистывания остальных слайдов -->
         <button class="slick-prev">&#9668;</button>
         <button class="slick-next">&#9658;</button>
+        </div>
+      
     
     </div>
 
